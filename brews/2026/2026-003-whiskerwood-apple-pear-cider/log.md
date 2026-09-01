@@ -63,3 +63,37 @@ The cider aroma was described as strong but not foul, then clarified as wine-lik
 - Confirm the cinnamon sticks are removed before bottling.
 - If gravity is stable, siphon gently into sanitised beer bottles, prime at 5 g/L, and crown-cap.
 - Bottle-condition, then continue aging toward Christmas.
+
+## 2026-09-01 — Historical correction and bottling-day reconstruction
+
+**Time:**  
+**Stage:** Bottle conditioning
+
+### Measurements
+
+- Bottling took place on 2026-08-30.
+- Priming target: 5 g/L.
+- Vanilla-infused sugar was used for priming.
+- One documented 620 mL bottle received approximately 3 g priming sugar.
+- Latest gravity available before/around this stage remained 1.000; a second matching stable reading was not recorded.
+
+### Actions
+
+- Corrected the earlier record: the batch had already been bottled on 2026-08-30.
+- Bottles and bottling equipment were cleaned and sanitised with NoRinze no-rinse sanitiser.
+- A bottle rinser/sprayer was used to coat bottle interiors; bottles were drained and not water-rinsed afterward.
+- Cider was siphoned gently into crown-cap beer bottles, leaving the main yeast/apple sediment behind.
+- Bottles were individually primed with vanilla-infused sugar using the 5 g/L target.
+- Bottles were crown-capped promptly and moved into upright, dark storage for natural carbonation.
+- The display name was updated from the intermediate "Whiskerwood" concept to the final brew name, **The Three Cats**.
+
+### Observation
+
+The bottled cider was visibly cloudy on bottling day, with settling expected during conditioning. Material left in the fermenter was primarily lees/sediment together with the cinnamon sticks. Earlier aroma notes were strong, wine-like and fruity rather than foul. Label development later described the intended profile with apple and pear character, dryness and gentle cinnamon warmth; these are retained as label/history notes rather than treated as a formal tasting result.
+
+### Next
+
+- 2026-09-13: first carbonation check; chill one bottle for roughly 24 hours before opening.
+- 2026-09-27: early conditioned tasting and sediment/clarity check.
+- 2026-10-25: maturation check.
+- 2026-12-20: Christmas-aging check and chill a bottle for the holiday period.

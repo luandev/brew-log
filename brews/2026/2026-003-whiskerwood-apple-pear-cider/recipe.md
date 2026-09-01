@@ -6,14 +6,15 @@
 |---|---:|---|
 | Fresh apples and pears | Not precisely recorded | Juiced at home |
 | Plain water | ~1–1.5 L | Added during setup |
-| Supermarket apple juice | Not recorded | Added vitamin C; used to bring the batch to ~6–7 L |
-| Turkish apple-flavoured sugar | ~45–50 g | Added before fermentation; product is mostly sugar with apple flavouring |
-| Cinnamon sticks | Not recorded | Present during primary fermentation |
-| Wine yeast | Not recorded | Dry wine yeast |
+| Supermarket apple juice | Not recorded | Contained added vitamin C; brought the batch to ~6–7 L |
+| Turkish apple-flavoured sugar | ~45–50 g | Early fermentable/flavour addition; product was mostly sugar |
+| Cinnamon sticks | Not recorded | Left in primary for an extended period |
+| Dry wine yeast | Not recorded | Used for primary fermentation |
+| Vanilla-infused sugar | 5 g/L target at bottling | Used for bottle priming on 2026-08-30 |
 
 ## Yeast
 
-- Dry wine yeast; amount pitched was not recorded.
+- Dry wine yeast; exact amount pitched was not recorded.
 
 ## Yeast Nutrient
 
@@ -24,59 +25,73 @@
 ### Fruit
 
 - Fresh apple and pear juice.
-- Supermarket apple juice with added vitamin C.
+- Supermarket apple juice containing added vitamin C.
 
 ### Sugar Sources
 
-- Turkish apple-flavoured sugar, approximately 45–50 g recorded during setup.
+- Turkish apple-flavoured sugar, approximately 45–50 g during setup.
+- Vanilla-infused sugar for bottle priming at a target rate of 5 g/L.
 
 ### Tea / Tannins
 
-- Black tea was discussed but no addition was confirmed.
+- Black tea was discussed during planning, but no confirmed addition was recorded.
 
 ### Herbs / Spices
 
 - Cinnamon sticks; exact quantity was not recorded.
+- The sticks remained in the primary fermenter longer than originally intended.
 
 ### Acids
 
 - No separate acid addition was confirmed.
 - The supermarket apple juice contained added vitamin C.
 
-## Target
+## Target / Recorded Measurements
 
-- Volume: ~6–7 L
-- Starting gravity: ~1.038–1.040 at 20 °C (photo reading)
-- Target final gravity: not set
-- Target ABV: not set
-- Fermentation temperature: cider measured around 20 °C; room was around 24 °C during setup
+- Fermenter volume: ~6–7 L
+- Starting gravity: ~1.038–1.040 at about 20 °C, interpreted from hydrometer photo
+- Latest recorded gravity: 1.000
+- Confirmed final gravity: not recorded
+- Confirmed actual ABV: not recorded
+- Fermentation temperature during setup: cider around 20 °C; room around 24 °C
 
 ## Process
 
-1. Juice the fresh apples and pears.
-2. Pasteurise the fresh juice; exact time and temperature were not recorded.
-3. Cool the juice, add approximately 1–1.5 L plain water and approximately 45–50 g Turkish apple-flavoured sugar.
-4. Add supermarket apple juice with vitamin C, bringing the total batch volume to approximately 6–7 L.
+1. Juice fresh apples and pears.
+2. Gently pasteurise the fresh juice and allow it to cool before pitching yeast.
+3. Add approximately 1–1.5 L plain water and approximately 45–50 g Turkish apple-flavoured sugar.
+4. Add supermarket apple juice containing vitamin C until the batch reaches approximately 6–7 L in the 10 L fermenter.
 5. Take the pre-fermentation hydrometer reading at about 20 °C.
-6. Pitch dry wine yeast into the 10 L fermentation bucket and fit the airlock.
-7. The fermenter was given one good shake daily during roughly the first three days, then left undisturbed.
-8. Cinnamon sticks remained in the primary fermenter; the exact amount and removal date were not recorded.
-9. A later hydrometer reading reached 1.000. A confirmation reading is still required before bottling.
+6. Pitch dry wine yeast and fit the airlock.
+7. Shake the fermenter once daily during approximately the first three days, then leave it undisturbed.
+8. Allow primary fermentation to continue as activity slows. Cinnamon sticks remain in the fermenter for an extended period.
+9. Take a later hydrometer reading of 1.000.
+10. On 2026-08-30, clean and sanitise bottles and bottling equipment with NoRinze no-rinse sanitiser and a bottle rinser/sprayer.
+11. Siphon the cider gently away from the sediment rather than pouring or filtering through cloth.
+12. Prime crown-cap bottles individually with vanilla-infused sugar at a 5 g/L target rate and cap promptly.
+13. Store the bottles upright and dark at conditioning temperature, then chill test bottles before opening.
 
 ## Fermentation Stages
 
-1. Primary: 10 L airlocked bucket; active fermentation later slowed substantially.
-2. Secondary: no separate secondary vessel is planned at present.
-3. Conditioning: planned in crown-capped beer bottles.
+1. Primary: 10 L airlocked bucket from 2026-08-16; vigorous activity by about Day 3, later slowing considerably.
+2. Secondary: no separate secondary vessel was used or confirmed.
+3. Bottle conditioning: began 2026-08-30 in crown-cap beer bottles.
+4. Aging: staged checks planned through Christmas 2026.
 
 ## Bottling
 
-- Method: siphon gently from the fermenter directly into sanitised bottles, leaving sediment behind.
-- Priming sugar: 5 g/L planned.
-- Bottle type: crown-cap beer bottles, including 330 mL, 500 mL and 620 mL sizes.
-- Per-bottle priming guide at 5 g/L: 1.65 g / 2.5 g / 3.1 g respectively.
-- Sanitising: NoRinze no-rinse sanitiser and bottle rinser/sprayer were acquired for bottling preparation.
+- Bottling date: 2026-08-30.
+- Method: gentle siphon directly into sanitised beer bottles, leaving yeast/apple lees behind.
+- Priming: vanilla-infused sugar, target 5 g/L.
+- Example actually measured during bottling: approximately 3 g for a 620 mL bottle.
+- Working priming guide at 5 g/L:
+  - 330 mL: 1.65 g
+  - 500 mL: 2.5 g
+  - 620 mL: 3.1 g
+- Bottle type: crown-cap beer bottles.
+- Headspace: approximately 2–3 cm below the cap was the working target.
+- Sanitising: NoRinze no-rinse sanitiser used with a bottle rinser/sprayer; bottles were drained without a final water rinse.
 
 ## Notes
 
-The batch is not recorded as bottled yet. Do not set an actual ABV until final gravity is confirmed and the calculation can be based on stable measurements.
+This recipe records the brew as it actually developed. Several quantities were approximate or never measured, and the log deliberately does not back-fill missing values. A final ABV should remain unset unless a defensible final-gravity measurement is available.
