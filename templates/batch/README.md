@@ -8,6 +8,7 @@ volume_l:
 target_abv:
 actual_abv:
 tags: []
+permalink: /brews/YYYY-NNN/
 ---
 
 # Batch Name
@@ -29,3 +30,13 @@ Short description of the batch.
 | Potential ABV | |
 | Actual ABV | |
 | Volume | |
+
+{% include_relative recipe.md %}
+
+{% include_relative log.md %}
+
+{% include_relative schedule.md %}
+
+{% include_relative tasting.md %}
+
+{% include_relative media.md %}

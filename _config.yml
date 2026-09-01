@@ -1,4 +1,48 @@
 title: Brew Log
 description: Markdown-first cider and wine brewing journal
+url: "https://luandev.github.io"
+baseurl: "/brew-log"
 theme: minima
 markdown: kramdown
+
+include:
+  - brews
+
+sass:
+  style: compressed
+
+header_pages:
+  - index.md
+  - pages/active.md
+  - pages/batches.md
+  - pages/ciders.md
+  - pages/wines.md
+  - pages/schedule.md
+  - docs/brewing-notes.md
+
+defaults:
+  - scope:
+      path: "brews"
+      type: "pages"
+    values:
+      layout: batch
+  - scope:
+      path: "brews/**/recipe.md"
+    values:
+      published: false
+  - scope:
+      path: "brews/**/log.md"
+    values:
+      published: false
+  - scope:
+      path: "brews/**/schedule.md"
+    values:
+      published: false
+  - scope:
+      path: "brews/**/tasting.md"
+    values:
+      published: false
+  - scope:
+      path: "brews/**/media.md"
+    values:
+      published: false

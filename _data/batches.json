@@ -1,0 +1,25 @@
+[
+  {
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "type": "wine",
+    "status": "primary-fermentation",
+    "started": "2026-08-31",
+    "volume_l": 1.2,
+    "target_abv": 12,
+    "actual_abv": null,
+    "tags": [
+      "apple",
+      "golden-syrup"
+    ],
+    "permalink": "/brews/2026-001/",
+    "folder": "brews/2026/2026-001-apple-golden-syrup-wine",
+    "year": "2026",
+    "slug": "2026-001-apple-golden-syrup-wine",
+    "url": "/brews/2026-001/",
+    "is_active": true,
+    "last_log_date": "2026-08-31",
+    "next_action_date": "2026-09-01",
+    "next_action": "Check fermentation activity"
+  }
+]

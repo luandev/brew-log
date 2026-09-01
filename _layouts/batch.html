@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="batch-page">
+  <header class="batch-header">
+    <p class="batch-id-label">{{ page.batch_id }}</p>
+    <h1 class="post-title">{{ page.name | default: page.title }}</h1>
+    <div class="batch-meta-row">
+      <span class="status-badge status-{{ page.status }}">{{ page.status }}</span>
+      <span class="batch-type">{{ page.type }}</span>
+      {% if page.started %}<span class="batch-started">Started {{ page.started }}</span>{% endif %}
+      {% if page.volume_l %}<span class="batch-volume">{{ page.volume_l }} L</span>{% endif %}
+      {% if page.target_abv %}<span class="batch-abv">Target {{ page.target_abv }}% ABV</span>{% endif %}
+    </div>
+    {% if page.tags and page.tags.size > 0 %}
+    <p class="batch-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </p>
+    {% endif %}
+  </header>
+
+  <div class="batch-content post-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,14 @@
+<article class="batch-card">
+  <h3><a href="{{ include.batch.url | relative_url }}">{{ include.batch.name }}</a></h3>
+  <p class="batch-meta">
+    <span class="batch-id">{{ include.batch.batch_id }}</span>
+    <span class="status-badge status-{{ include.batch.status }}">{{ include.batch.status }}</span>
+    <span class="batch-type">{{ include.batch.type }}</span>
+  </p>
+  {% if include.batch.next_action %}
+  <p class="batch-next"><strong>Next:</strong> {{ include.batch.next_action }} <em>({{ include.batch.next_action_date }})</em></p>
+  {% endif %}
+  {% if include.batch.last_log_date %}
+  <p class="batch-updated"><strong>Last log:</strong> {{ include.batch.last_log_date }}</p>
+  {% endif %}
+</article>
