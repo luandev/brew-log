@@ -2,6 +2,10 @@
 
 This repository is a brewing journal and static website.
 
+## Specialized agents
+
+- [docs/log-entry-agent.md](docs/log-entry-agent.md) — **adding batch records**: new batches, log entries, schedule updates, tasting notes (for ChatGPT Custom GPT, Cursor, etc.)
+
 ## Rules
 
 - Markdown is the source of truth.
