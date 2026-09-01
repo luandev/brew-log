@@ -8,6 +8,7 @@ Required metadata (YAML front matter in `README.md`):
 |---|---|
 | `batch_id` | Unique ID, format `YYYY-NNN` (e.g. `2026-001`) |
 | `name` | Display name |
+| `title` | Page title (should match `name`; used by Jekyll for browser tab) |
 | `type` | One of: `cider`, `wine`, `beer`, `vinegar`, `mead`, `experimental` |
 | `status` | Lifecycle status (see below) |
 | `started` | Start date (`YYYY-MM-DD`) |
@@ -21,6 +22,8 @@ Optional metadata:
 | `target_abv` | Target ABV (%) |
 | `actual_abv` | Measured ABV (%) |
 | `tags` | List of tags for filtering |
+| `target_days` | Optional expected batch duration in days (for progress ring) |
+| `thumbnail` | Optional card image path (e.g. `assets/brews/2026-001/thumb.jpg`) |
 
 ### Status values
 
@@ -37,8 +40,26 @@ These are written to `_data/batches.json` at build time:
 | `next_action` | Earliest `Pending` row in `schedule.md` |
 | `next_action_date` | Date column of that row |
 | `last_log_date` | Most recent `## YYYY-MM-DD` heading in `log.md` |
+| `latest_log_excerpt` | First `### Observation` from the latest log entry |
+| `days_elapsed` | Days since `started` |
+| `target_days` | From front matter, or inferred from schedule, or 28 |
+| `progress_percent` | `days_elapsed / target_days` capped at 100 |
+| `pending_schedule` | All `Pending` rows from `schedule.md` |
+| `thumbnail` | From front matter or type-based placeholder |
 | `is_active` | Computed from `status` |
 | `url` | `/brews/<batch_id>/` |
+
+### Schedule index (`_data/schedule.json`)
+
+Flat list of all pending tasks across active batches, sorted by date:
+
+| Field | Description |
+|---|---|
+| `date` | Task date (`YYYY-MM-DD`) |
+| `action` | Task description |
+| `batch_id` | Batch ID |
+| `name` | Batch display name |
+| `url` | Batch page path |
 
 ## Supporting files
 

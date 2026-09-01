@@ -1,13 +1,15 @@
 ---
 ---
 
-// Dark theme — override Minima variables before import
-$brand-color: #d4a057;
-$text-color: #e6edf3;
-$background-color: #0d1117;
+$brand-color: #AD9753;
+$text-color: #F2EBD9;
+$background-color: #0E0F10;
 $grey-color: #8b949e;
-$orange-color: #d4a057;
-$code-background-color: #161b22;
+$orange-color: #6C7C44;
+$code-background-color: #14161a;
+$link-base-color: #AD9753;
+$link-visited-color: #c4ab6a;
+$content-width: 1100px;
 
 @import "minima";
 @import "custom";

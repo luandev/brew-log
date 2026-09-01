@@ -47,6 +47,8 @@ https://luandev.github.io/brew-log/brews/<batch_id>/
 
 Example: `https://luandev.github.io/brew-log/brews/2026-001/`
 
+Site title: **The Lone Tree Orchard**
+
 ## Build
 
 Requires Ruby 3.3 (see `.ruby-version`). Before previewing or deploying, run:

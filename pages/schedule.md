@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Brew Schedule
+title: Schedule
 permalink: /pages/schedule/
 ---
 
-# Brew Schedule
+# Schedule
 
 Combined next actions for active batches.
 

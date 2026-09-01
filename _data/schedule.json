@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-09-01",
+    "action": "Check fermentation activity",
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-09-07",
+    "action": "Take hydrometer reading",
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-09-14",
+    "action": "Check whether ready to rack",
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-10-01",
+    "action": "First tasting",
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "url": "/brews/2026-001/"
+  }
+]

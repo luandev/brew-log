@@ -1,10 +1,10 @@
 ---
 layout: page
-title: All Batches
+title: Batches
 permalink: /pages/batches/
 ---
 
-# All Batches
+# Batches
 
 {% if site.data.batches.size > 0 %}
 <table class="batch-table">

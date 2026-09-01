@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Brewing Notes
+title: About
 permalink: /docs/brewing-notes/
 ---
 

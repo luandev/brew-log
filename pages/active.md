@@ -10,7 +10,7 @@ permalink: /pages/active/
 
 {% if active.size > 0 %}
   {% for batch in active %}
-    {% include batch-card.html batch=batch %}
+    {% include active-brew-card.html batch=batch %}
   {% endfor %}
 {% else %}
   <p>No active batches.</p>

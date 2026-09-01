@@ -1,0 +1,40 @@
+<div class="lto-panel mini-calendar">
+  <h2 class="lto-section-title">Calendar</h2>
+  {% assign now = site.time %}
+  <p class="mini-calendar-header">{{ now | date: "%B %Y" }}</p>
+  <div class="mini-calendar-grid">
+    <span class="mini-calendar-dow">Su</span>
+    <span class="mini-calendar-dow">Mo</span>
+    <span class="mini-calendar-dow">Tu</span>
+    <span class="mini-calendar-dow">We</span>
+    <span class="mini-calendar-dow">Th</span>
+    <span class="mini-calendar-dow">Fr</span>
+    <span class="mini-calendar-dow">Sa</span>
+    {% assign first_day = now | date: "%Y-%m-01" | date: "%w" | plus: 0 %}
+    {% for i in (1..first_day) %}
+      <span class="mini-calendar-day empty">·</span>
+    {% endfor %}
+    {% assign m = now | date: "%m" | plus: 0 %}
+    {% assign total_days = 31 %}
+    {% if m == 2 %}
+      {% assign total_days = 28 %}
+    {% elsif m == 4 or m == 6 or m == 9 or m == 11 %}
+      {% assign total_days = 30 %}
+    {% endif %}
+    {% for day in (1..total_days) %}
+      {% if day < 10 %}
+        {% assign day_str = day | prepend: "0" | slice: -2, 2 %}
+      {% else %}
+        {% assign day_str = day %}
+      {% endif %}
+      {% assign date_key = now | date: "%Y-%m-" | append: day_str %}
+      {% assign has_task = false %}
+      {% for task in site.data.schedule %}
+        {% if task.date == date_key %}
+          {% assign has_task = true %}
+        {% endif %}
+      {% endfor %}
+      <span class="mini-calendar-day{% if has_task %} has-task{% endif %}">{{ day }}</span>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<section class="lto-masthead" aria-label="Site header">
+  <header class="lto-masthead-nav" role="banner">
+    <div class="wrapper lto-header-inner">
+      {% include brand-link.html %}
+      {% include site-nav.html %}
+    </div>
+  </header>
+
+  <div class="lto-masthead-hero">
+    <div class="lto-masthead-hero-art" aria-hidden="true">
+      <img
+        class="lto-masthead-tree"
+        src="{{ '/assets/brand/tree.svg' | relative_url }}"
+        alt=""
+        width="320"
+        height="448"
+      >
+    </div>
+    <div class="wrapper">
+      <div class="lto-hero-content lto-hero-content--masthead">
+        <h1 class="lto-hero-title">The Lone Tree Orchard</h1>
+        <div class="lto-hero-subtitle-row">
+          <img
+            class="lto-hero-branch"
+            src="{{ '/assets/brand/branch-divider.svg' | relative_url }}"
+            alt=""
+            width="120"
+            height="12"
+          >
+          <p class="lto-hero-subtitle">Brew Log</p>
+          <img
+            class="lto-hero-branch lto-hero-branch--flip"
+            src="{{ '/assets/brand/branch-divider.svg' | relative_url }}"
+            alt=""
+            width="120"
+            height="12"
+          >
+        </div>
+        <p class="lto-hero-tagline">
+          {{ site.description }}<br>
+          {{ site.tagline }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+{% assign percent = include.percent | default: 0 | plus: 0 %}
+{% assign radius = 18 %}
+{% assign circumference = 113.1 %}
+{% assign dash = percent | times: 1.131 | round %}
+<svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48" aria-label="{{ percent }} percent complete">
+  <circle class="progress-ring-bg" cx="24" cy="24" r="{{ radius }}"></circle>
+  <circle class="progress-ring-fill" cx="24" cy="24" r="{{ radius }}"
+    stroke-dasharray="{{ dash }} {{ circumference }}"
+    stroke-dashoffset="0"></circle>
+  <text class="progress-ring-text" x="24" y="27" text-anchor="middle">{{ percent }}%</text>
+</svg>

@@ -1,6 +1,7 @@
 ---
 batch_id: 2026-001
 name: Apple & Golden Syrup Wine
+title: Apple & Golden Syrup Wine
 type: wine
 status: primary-fermentation
 started: 2026-08-31

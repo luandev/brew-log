@@ -1,0 +1,30 @@
+<div class="lto-panel">
+  <h2 class="lto-section-title">Past Batches</h2>
+  {% assign finished = site.data.batches | where: "status", "finished" %}
+  {% if finished.size > 0 %}
+  <table class="past-batches-table">
+    <thead>
+      <tr>
+        <th>Batch</th>
+        <th>Name</th>
+        <th>Started</th>
+        <th>ABV</th>
+        <th>Outcome</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for batch in finished %}
+      <tr>
+        <td><a href="{{ batch.url | relative_url }}">{{ batch.batch_id }}</a></td>
+        <td><a href="{{ batch.url | relative_url }}">{{ batch.name }}</a></td>
+        <td>{{ batch.started }}</td>
+        <td>{% if batch.actual_abv %}{{ batch.actual_abv }}%{% elsif batch.target_abv %}{{ batch.target_abv }}%{% else %}—{% endif %}</td>
+        <td><span class="status-badge status-{{ batch.status }}">{{ batch.status }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--text-muted);font-size:0.9rem;">No completed batches yet.</p>
+  {% endif %}
+</div>

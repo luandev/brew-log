@@ -1,0 +1,15 @@
+<div class="lto-panel">
+  <h2 class="lto-section-title">Latest Notes</h2>
+  {% assign noted = site.data.batches | where_exp: "b", "b.latest_log_excerpt" | sort: "last_log_date" | reverse %}
+  {% if noted.size > 0 %}
+    {% for batch in noted limit:3 %}
+    <div class="note-item">
+      <p class="note-date">{{ batch.last_log_date | date: "%B %d, %Y" }}</p>
+      <p class="note-batch"><a href="{{ batch.url | relative_url }}">{{ batch.name }}</a></p>
+      <p class="note-excerpt">{{ batch.latest_log_excerpt }}</p>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="color:var(--text-muted);font-size:0.9rem;">No log notes yet.</p>
+  {% endif %}
+</div>

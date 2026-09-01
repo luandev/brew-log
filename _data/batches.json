@@ -19,6 +19,33 @@
     "url": "/brews/2026-001/",
     "is_active": true,
     "last_log_date": "2026-08-31",
+    "latest_log_excerpt": "Fermentation vessel prepared and placed away from direct sunlight.",
+    "pending_schedule": [
+      {
+        "date": "2026-09-01",
+        "action": "Check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-07",
+        "action": "Take hydrometer reading",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-14",
+        "action": "Check whether ready to rack",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-10-01",
+        "action": "First tasting",
+        "status": "Pending"
+      }
+    ],
+    "days_elapsed": 1,
+    "target_days": 38,
+    "progress_percent": 3,
+    "thumbnail": "",
     "next_action_date": "2026-09-01",
     "next_action": "Check fermentation activity"
   }

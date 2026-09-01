@@ -1,6 +1,7 @@
 ---
 batch_id: YYYY-NNN
 name: Batch Name
+title: Batch Name
 type: cider
 status: planned
 started: YYYY-MM-DD

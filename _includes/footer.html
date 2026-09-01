@@ -1,0 +1,31 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="lto-footer-ornament" aria-hidden="true"></div>
+    <div class="lto-footer-grid">
+      <div>
+        <p class="lto-footer-title">The Lone Tree Orchard</p>
+        <p>{{ site.tagline | default: "Record the process. Refine the craft." }}</p>
+        <p style="margin-top:0.75rem;font-size:0.85rem;">{{ site.description }}</p>
+      </div>
+      <div>
+        <p class="lto-footer-title">Brew Log</p>
+        <ul class="lto-footer-links">
+          <li><a href="{{ '/' | relative_url }}">Dashboard</a></li>
+          <li><a href="{{ '/pages/batches/' | relative_url }}">All Batches</a></li>
+          <li><a href="{{ '/pages/schedule/' | relative_url }}">Schedule</a></li>
+          <li><a href="{{ '/pages/active/' | relative_url }}">Active Brews</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lto-footer-title">Browse</p>
+        <ul class="lto-footer-links">
+          <li><a href="{{ '/pages/ciders/' | relative_url }}">Ciders</a></li>
+          <li><a href="{{ '/pages/wines/' | relative_url }}">Wines</a></li>
+          <li><a href="{{ '/docs/brewing-notes/' | relative_url }}">About</a></li>
+          <li><a href="https://github.com/luandev/brew-log">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:0.8rem;text-align:center;margin:0;">&copy; {{ 'now' | date: '%Y' }} The Lone Tree Orchard</p>
+  </div>
+</footer>

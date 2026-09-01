@@ -1,5 +1,6 @@
-title: Brew Log
-description: Markdown-first cider and wine brewing journal
+title: The Lone Tree Orchard
+description: Small batches. Seasonal ingredients. Thoughtful experiments.
+tagline: Record the process. Refine the craft.
 url: "https://luandev.github.io"
 baseurl: "/brew-log"
 theme: minima
@@ -30,10 +31,7 @@ sass:
 
 header_pages:
   - index.md
-  - pages/active.md
   - pages/batches.md
-  - pages/ciders.md
-  - pages/wines.md
   - pages/schedule.md
   - docs/brewing-notes.md
 
