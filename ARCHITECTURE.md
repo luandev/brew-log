@@ -37,6 +37,8 @@ Batch permalinks are based on immutable `batch_id` (e.g. `/brews/2026-001/`), su
 
 ## Local preview
 
+Requires **Ruby 3.3** (see `.ruby-version`).
+
 ```bash
 bundle install
 ruby scripts/generate_site_data.rb
@@ -44,6 +46,12 @@ bundle exec jekyll serve
 ```
 
 Open `http://localhost:4000/brew-log/`.
+
+## Stack
+
+- **Jekyll 4.4** with Minima theme (not the legacy `github-pages` gem)
+- **Ruby 3.3** for local development and CI
+- **GitHub Actions** for build and deploy (`actions/jekyll-build-pages`)
 
 ## Rendering
 

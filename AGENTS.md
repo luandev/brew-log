@@ -45,9 +45,10 @@ Example: `https://luandev.github.io/brew-log/brews/2026-001/`
 
 ## Build
 
-Before previewing or deploying, run:
+Requires Ruby 3.3 (see `.ruby-version`). Before previewing or deploying, run:
 
 ```bash
+bundle install
 ruby scripts/generate_site_data.rb
 bundle exec jekyll serve
 ```

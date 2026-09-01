@@ -7,6 +7,8 @@ title: Brew Log
 
 A journal of cider, wine, and experimental fermentation batches.
 
+<p class="home-intro">Track recipes, fermentation logs, schedules, and tasting notes — one batch at a time.</p>
+
 {% assign active = site.data.batches | where_exp: "b", "b.is_active" %}
 
 <div class="dashboard-section">

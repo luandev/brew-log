@@ -21,6 +21,8 @@ See [brews/README.md](brews/README.md) and [DATA_MODEL.md](DATA_MODEL.md) for de
 
 ## Local preview
 
+Requires **Ruby 3.3** (see `.ruby-version`). Install via [RubyInstaller](https://rubyinstaller.org/) on Windows, or `rbenv`/`mise` on macOS/Linux.
+
 ```bash
 bundle install
 ruby scripts/generate_site_data.rb
@@ -31,7 +33,9 @@ Then open `http://localhost:4000/brew-log/`.
 
 ## Deployment
 
-Pushing to `main` triggers the GitHub Actions workflow that builds and deploys to GitHub Pages. Ensure GitHub Pages is configured to use **GitHub Actions** as the source (Settings → Pages → Build and deployment → Source: GitHub Actions).
+Pushing to `main` triggers the GitHub Actions workflow that builds with Jekyll 4 and deploys to GitHub Pages. Ensure GitHub Pages is configured to use **GitHub Actions** as the source (Settings → Pages → Build and deployment → Source: GitHub Actions).
+
+The `github-pages` gem is intentionally not used — the workflow builds from the `Gemfile` directly, which allows Jekyll 4 and current dependencies.
 
 ## QR code labels
 

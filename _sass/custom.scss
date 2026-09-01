@@ -1,18 +1,176 @@
-.batch-card {
-  border: 1px solid #e8e8e8;
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
-  margin-bottom: 1rem;
+// Brew Log dark theme
+
+:root {
+  --bg-base: #0d1117;
+  --bg-surface: #161b22;
+  --bg-elevated: #1c2333;
+  --border: #30363d;
+  --border-subtle: #21262d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #d4a057;
+  --accent-dim: #a67c3a;
+  --accent-glow: rgba(212, 160, 87, 0.15);
+  --link: #e3b04b;
+  --link-hover: #f0c878;
+  --success: #3fb950;
+  --info: #58a6ff;
+  --warning: #d29922;
+  --danger: #f85149;
 }
 
-.batch-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+// Typography
+body {
+  background: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 160, 87, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(88, 166, 255, 0.04), transparent);
+  min-height: 100vh;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.site-header {
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.site-nav {
+  .page-link {
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin-left: 0.25rem;
+    padding: 0.35rem 0.65rem;
+    transition: color 0.15s, background 0.15s, border-color 0.15s;
+
+    &:hover {
+      color: var(--accent);
+      background: var(--accent-glow);
+      border-color: var(--border);
+      text-decoration: none;
+    }
+  }
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg-surface);
+}
+
+// Links
+a {
+  color: var(--link);
+
+  &:hover {
+    color: var(--link-hover);
+  }
+}
+
+.post-content,
+.page-content {
+  h1, h2, h3, h4 {
+    color: var(--text);
+    border-bottom-color: var(--border-subtle);
+  }
+
+  h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  blockquote {
+    color: var(--text-muted);
+    border-left: 3px solid var(--accent);
+    background: var(--bg-surface);
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+  }
+
+  code {
+    color: var(--accent);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+  }
+
+  pre {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+    }
+
+    th {
+      background: var(--bg-elevated);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  }
+
+  hr {
+    border-color: var(--border);
+  }
+}
+
+// Batch cards
+.batch-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: var(--accent-dim);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--accent-glow);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
 }
 
 .batch-meta {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
@@ -21,66 +179,95 @@
 }
 
 .batch-id {
-  font-family: monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace;
   font-weight: 600;
+  color: var(--accent);
 }
 
 .batch-type {
   text-transform: capitalize;
+  color: var(--text-muted);
 }
 
+.batch-next,
+.batch-updated {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0;
+}
+
+// Status badges
 .status-badge {
   display: inline-block;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: capitalize;
-  background: #f0f0f0;
-  color: #333;
+  letter-spacing: 0.02em;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
 }
 
 .status-primary-fermentation,
 .status-secondary,
 .status-clearing,
 .status-conditioning {
-  background: #e8f4fd;
-  color: #1565c0;
+  background: rgba(88, 166, 255, 0.12);
+  color: #79b8ff;
+  border-color: rgba(88, 166, 255, 0.3);
 }
 
 .status-bottled,
 .status-aging {
-  background: #fff3e0;
-  color: #e65100;
+  background: rgba(210, 153, 34, 0.12);
+  color: #e3b341;
+  border-color: rgba(210, 153, 34, 0.3);
 }
 
 .status-finished {
-  background: #e8f5e9;
-  color: #2e7d32;
+  background: rgba(63, 185, 80, 0.12);
+  color: #56d364;
+  border-color: rgba(63, 185, 80, 0.3);
 }
 
 .status-failed {
-  background: #ffebee;
-  color: #c62828;
+  background: rgba(248, 81, 73, 0.12);
+  color: #ff7b72;
+  border-color: rgba(248, 81, 73, 0.3);
 }
 
 .status-planned,
 .status-preparing {
-  background: #f3e5f5;
-  color: #6a1b9a;
+  background: rgba(163, 113, 247, 0.12);
+  color: #bc8cff;
+  border-color: rgba(163, 113, 247, 0.3);
+}
+
+// Batch page
+.batch-page {
+  .post-title {
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
 }
 
 .batch-header {
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e8e8e8;
+  padding: 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
 }
 
 .batch-id-label {
-  font-family: monospace;
-  font-size: 0.9rem;
-  color: #666;
+  font-family: "JetBrains Mono", "Cascadia Code", monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
   margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
 }
 
 .batch-meta-row {
@@ -90,60 +277,126 @@
   align-items: center;
   margin-top: 0.75rem;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .batch-tags .tag {
   display: inline-block;
-  background: #f5f5f5;
-  border-radius: 3px;
-  padding: 0.1rem 0.4rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
   margin-right: 0.35rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
-.batch-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-}
-
-.batch-table th,
-.batch-table td {
-  border: 1px solid #e8e8e8;
-  padding: 0.5rem 0.75rem;
-  text-align: left;
-}
-
-.batch-table th {
-  background: #fafafa;
-}
-
-.dashboard-section {
-  margin-bottom: 2rem;
-}
-
-.dashboard-section h2 {
-  border-bottom: 1px solid #e8e8e8;
-  padding-bottom: 0.5rem;
-}
-
+// Tables
+.batch-table,
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.85rem;
+    text-align: left;
+  }
+
+  th {
+    background: var(--bg-elevated);
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  td {
+    background: var(--bg-surface);
+    color: var(--text);
+  }
+
+  tr:hover td {
+    background: var(--bg-elevated);
+  }
+
+  a {
+    color: var(--link);
+    font-weight: 500;
+  }
 }
 
-.schedule-table th,
-.schedule-table td {
-  border: 1px solid #e8e8e8;
-  padding: 0.5rem 0.75rem;
-  text-align: left;
+// Dashboard sections
+.dashboard-section {
+  margin-bottom: 2.5rem;
+
+  h2 {
+    color: var(--text);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: var(--accent);
+      margin-right: 0.5rem;
+      vertical-align: -0.1em;
+      border-radius: 2px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+
+      strong {
+        color: var(--accent);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: var(--text);
+        font-weight: 500;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
 }
 
-.schedule-table th {
-  background: #fafafa;
+// Home hero
+.wrapper .home-intro,
+.page-content > p:first-of-type {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
+// Page titles
+.page-heading,
+.post-title {
+  color: var(--text);
+}
+
+// Responsive
 @media screen and (max-width: 600px) {
   .batch-meta-row {
     flex-direction: column;
@@ -153,6 +406,21 @@
 
   .batch-table,
   .schedule-table {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .batch-header {
+    padding: 1rem;
+  }
+
+  .site-nav .page-link {
+    margin-left: 0;
+    margin-right: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batch-card {
+    transition: none;
   }
 }
