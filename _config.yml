@@ -12,6 +12,19 @@ plugins:
 include:
   - brews
 
+exclude:
+  - AGENTS.md
+  - ARCHITECTURE.md
+  - CONTRIBUTING.md
+  - DATA_MODEL.md
+  - PRD.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - templates
+  - scripts
+  - vendor
+
 sass:
   style: compressed
 
