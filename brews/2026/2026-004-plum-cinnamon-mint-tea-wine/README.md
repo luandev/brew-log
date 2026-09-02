@@ -3,7 +3,7 @@ batch_id: 2026-004
 name: Plum, Cinnamon & Mint Tea Wine
 title: Plum, Cinnamon & Mint Tea Wine
 type: wine
-status: preparing
+status: primary-fermentation
 started: 2026-08-31
 volume_l: 1.0
 target_abv:
@@ -22,7 +22,7 @@ permalink: /brews/2026-004/
 
 ## Summary
 
-Experimental approximately 1 L tea wine prepared on 2026-08-31 from black tea, mint, and Whittard Plum & Cinnamon instant tea. The first hydrometer potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, a second reading was approximately 11%. The must was intended for a PET fermenter. Yeast type, amount, and whether pitching had occurred by the end of the source conversation were not explicitly recorded, so the batch remains documented as preparing rather than assuming active fermentation.
+Experimental approximately 1 L tea wine started on 2026-08-31. The must was made from black tea, mint, and Whittard Plum & Cinnamon instant tea and placed in a PET fermentation vessel. The first hydrometer potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, a second reading was approximately 11%. The brewer has clarified that this batch is in primary fermentation, not merely preparation. Yeast type and amount were not recorded in the source notes.
 
 ## Current Status
 
@@ -32,7 +32,8 @@ Experimental approximately 1 L tea wine prepared on 2026-08-31 from black tea, m
 
 | Measurement | Value |
 |---|---|
-| Prepared volume | ~1 L |
+| Batch start | 2026-08-31 |
+| Volume | ~1 L |
 | Starting gravity | Not recorded |
 | First potential-alcohol reading | 10% |
 | Adjusted potential-alcohol reading | ~11% |
