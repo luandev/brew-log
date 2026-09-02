@@ -31,3 +31,32 @@ The source photos show a dark red/plum-coloured tea infusion containing tea and 
 - Confirm whether yeast was pitched and record its type and amount.
 - Once fermentation is active, monitor with hydrometer readings.
 - When gravity is stable, rack off sediment and proceed to clearing and aging.
+
+## 2026-09-02 — Status correction
+
+**Time:** Not recorded  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- Batch start date confirmed from the source conversation: 2026-08-31.
+- Volume remains recorded as approximately 1 L.
+- Latest recorded potential-alcohol reading: approximately 11%.
+- No new gravity or ABV measurement was provided.
+
+### Actions
+
+- Brewer clarified that batch 2026-004 is already in fermentation and should not be shown as still preparing.
+- Corrected the active stage to `primary-fermentation` with a start date of 2026-08-31.
+- Preserved the original Day 1 log entry rather than rewriting historical notes.
+- Updated the recipe summary and schedule to match the corrected fermentation stage.
+
+### Observation
+
+The original source conversation took place on 2026-08-31, so the brew must not be presented as starting on 2026-09-02. Yeast type and amount remain unrecorded.
+
+### Next
+
+- Check current fermentation activity.
+- Take a hydrometer reading during primary fermentation.
+- Wait for stable gravity before racking or moving to clearing.
