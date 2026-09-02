@@ -9,8 +9,8 @@ Rules:
 
 | Stage | Started | Ended | Status |
 |---|---|---|---|
-| preparing | 2026-08-31 | | active |
-| primary-fermentation | | | planned |
+| preparing | 2026-08-31 | 2026-08-31 | completed |
+| primary-fermentation | 2026-08-31 | | active |
 | secondary | | | planned |
 | clearing | | | planned |
 | conditioning | | | planned |
