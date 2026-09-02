@@ -2,6 +2,7 @@
   {
     "batch_id": "2026-002",
     "name": "Cranberry & Maple Wine",
+    "title": "Cranberry & Maple Wine",
     "type": "wine",
     "status": "primary-fermentation",
     "started": "2026-09-01",
@@ -182,9 +183,10 @@
   },
   {
     "batch_id": "2026-003",
-    "name": "Whiskerwood Apple & Pear Cider",
+    "name": "The Three Cats",
+    "title": "The Three Cats",
     "type": "cider",
-    "status": "primary-fermentation",
+    "status": "conditioning",
     "started": "2026-08-16",
     "volume_l": null,
     "target_abv": null,
@@ -193,6 +195,7 @@
       "apple",
       "pear",
       "cinnamon",
+      "vanilla-sugar",
       "bottle-conditioned"
     ],
     "permalink": "/brews/2026-003/",
@@ -202,21 +205,26 @@
     "url": "/brews/2026-003/",
     "is_active": true,
     "last_log_date": "2026-09-01",
-    "latest_log_excerpt": "The cider aroma was described as strong but not foul, then clarified as wine-like and fruity. Cinnamon sticks had been forgotten in the fermenter during primary; their removal has not been confirmed. ",
+    "latest_log_excerpt": "The bottled cider was visibly cloudy on bottling day, with settling expected during conditioning. Material left in the fermenter was primarily lees/sediment together with the cinnamon sticks. Earlier ",
     "pending_schedule": [
       {
-        "date": "2026-09-01",
-        "action": "Take a confirmation hydrometer reading before bottling",
+        "date": "2026-09-13",
+        "action": "First carbonation check: chill one bottle for ~24 h, then assess carbonation, aroma, flavour and sediment",
         "status": "Pending"
       },
       {
-        "date": "2026-09-01",
-        "action": "Confirm cinnamon sticks are removed before bottling",
+        "date": "2026-09-27",
+        "action": "Early conditioned tasting and clarity/sediment check",
         "status": "Pending"
       },
       {
-        "date": "2026-09-01",
-        "action": "If gravity is stable, bottle and prime at 5 g/L",
+        "date": "2026-10-25",
+        "action": "Maturation check; compare carbonation, aroma, flavour and clarity with the September sample",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-12-20",
+        "action": "Christmas-aging check; chill a bottle for the holiday period",
         "status": "Pending"
       }
     ],
@@ -227,42 +235,96 @@
         "status": "Done"
       },
       {
-        "date": "2026-09-01",
-        "action": "Take a confirmation hydrometer reading before bottling",
+        "date": "2026-08-30",
+        "action": "Clean and sanitise bottles and bottling equipment",
+        "status": "Done"
+      },
+      {
+        "date": "2026-08-30",
+        "action": "Bottle cider, prime with vanilla-infused sugar at 5 g/L, and crown-cap",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-13",
+        "action": "First carbonation check: chill one bottle for ~24 h, then assess carbonation, aroma, flavour and sediment",
         "status": "Pending"
       },
       {
-        "date": "2026-09-01",
-        "action": "Confirm cinnamon sticks are removed before bottling",
+        "date": "2026-09-27",
+        "action": "Early conditioned tasting and clarity/sediment check",
         "status": "Pending"
       },
       {
-        "date": "2026-09-01",
-        "action": "If gravity is stable, bottle and prime at 5 g/L",
+        "date": "2026-10-25",
+        "action": "Maturation check; compare carbonation, aroma, flavour and clarity with the September sample",
         "status": "Pending"
+      },
+      {
+        "date": "2026-12-20",
+        "action": "Christmas-aging check; chill a bottle for the holiday period",
+        "status": "Pending"
+      },
+      {
+        "date": "Stage",
+        "action": "Start",
+        "status": "End"
+      },
+      {
+        "date": "First carbonation check",
+        "action": "2026-09-13 15:00",
+        "status": "2026-09-13 15:30"
+      },
+      {
+        "date": "Early conditioned tasting",
+        "action": "2026-09-27 15:00",
+        "status": "2026-09-27 15:30"
+      },
+      {
+        "date": "Maturation check",
+        "action": "2026-10-25 15:00",
+        "status": "2026-10-25 15:30"
+      },
+      {
+        "date": "Christmas-aging check",
+        "action": "2026-12-20 15:00",
+        "status": "2026-12-20 15:30"
       }
     ],
     "stages": [
       {
         "stage": "primary-fermentation",
         "started": "2026-08-16",
-        "ended": "",
-        "status": "active",
+        "ended": "2026-08-30",
+        "status": "completed",
         "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "",
+        "ended": "",
+        "status": "skipped",
+        "label": "Secondary"
       },
       {
         "stage": "clearing",
         "started": "",
         "ended": "",
-        "status": "planned",
+        "status": "skipped",
         "label": "Clearing"
       },
       {
         "stage": "bottled",
-        "started": "",
-        "ended": "",
-        "status": "planned",
+        "started": "2026-08-30",
+        "ended": "2026-08-30",
+        "status": "completed",
         "label": "Bottled"
+      },
+      {
+        "stage": "conditioning",
+        "started": "2026-08-30",
+        "ended": "",
+        "status": "active",
+        "label": "Conditioning"
       },
       {
         "stage": "aging",
@@ -270,16 +332,23 @@
         "ended": "",
         "status": "planned",
         "label": "Aging"
+      },
+      {
+        "stage": "finished",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Finished"
       }
     ],
-    "current_stage": "primary-fermentation",
-    "current_stage_label": "Primary Fermentation",
+    "current_stage": "conditioning",
+    "current_stage_label": "Conditioning",
     "days_elapsed": 17,
-    "target_days": 23,
-    "progress_percent": 74,
+    "target_days": 133,
+    "progress_percent": 13,
     "thumbnail": "",
-    "next_action_date": "2026-09-01",
-    "next_action": "Take a confirmation hydrometer reading before bottling",
-    "end_date": "2026-09-08"
+    "next_action_date": "2026-09-13",
+    "next_action": "First carbonation check: chill one bottle for ~24 h, then assess carbonation, aroma, flavour and sediment",
+    "end_date": "2026-12-27"
   }
 ]

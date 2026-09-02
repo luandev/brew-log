@@ -7,32 +7,18 @@
     "url": "/brews/2026-001/"
   },
   {
-    "date": "2026-09-01",
-    "action": "Confirm cinnamon sticks are removed before bottling",
-    "batch_id": "2026-003",
-    "name": "Whiskerwood Apple & Pear Cider",
-    "url": "/brews/2026-003/"
-  },
-  {
-    "date": "2026-09-01",
-    "action": "If gravity is stable, bottle and prime at 5 g/L",
-    "batch_id": "2026-003",
-    "name": "Whiskerwood Apple & Pear Cider",
-    "url": "/brews/2026-003/"
-  },
-  {
-    "date": "2026-09-01",
-    "action": "Take a confirmation hydrometer reading before bottling",
-    "batch_id": "2026-003",
-    "name": "Whiskerwood Apple & Pear Cider",
-    "url": "/brews/2026-003/"
-  },
-  {
     "date": "2026-09-07",
     "action": "Take hydrometer reading",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
     "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-09-13",
+    "action": "First carbonation check: chill one bottle for ~24 h, then assess carbonation, aroma, flavour and sediment",
+    "batch_id": "2026-003",
+    "name": "The Three Cats",
+    "url": "/brews/2026-003/"
   },
   {
     "date": "2026-09-14",
@@ -42,10 +28,31 @@
     "url": "/brews/2026-001/"
   },
   {
+    "date": "2026-09-27",
+    "action": "Early conditioned tasting and clarity/sediment check",
+    "batch_id": "2026-003",
+    "name": "The Three Cats",
+    "url": "/brews/2026-003/"
+  },
+  {
     "date": "2026-10-01",
     "action": "First tasting",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
     "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-10-25",
+    "action": "Maturation check; compare carbonation, aroma, flavour and clarity with the September sample",
+    "batch_id": "2026-003",
+    "name": "The Three Cats",
+    "url": "/brews/2026-003/"
+  },
+  {
+    "date": "2026-12-20",
+    "action": "Christmas-aging check; chill a bottle for the holiday period",
+    "batch_id": "2026-003",
+    "name": "The Three Cats",
+    "url": "/brews/2026-003/"
   }
 ]
