@@ -60,3 +60,32 @@ The original source conversation took place on 2026-08-31, so the brew must not 
 - Check current fermentation activity.
 - Take a hydrometer reading during primary fermentation.
 - Wait for stable gravity before racking or moving to clearing.
+
+## 2026-09-02 — Apple base correction
+
+**Time:** Not recorded  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- Fresh apple juice at the start of the batch: approximately 1 L.
+- Apple source: apples from the yard.
+- Prepared tea component: approximately 1 L.
+- Combined batch volume after the tea component: approximately 2 L.
+- Latest recorded potential-alcohol reading remains approximately 11%.
+
+### Actions
+
+- Brewer clarified that batch 2026-004 did not begin as tea alone.
+- Recorded approximately 1 L of fresh yard apple juice as the original base of the batch.
+- Recorded the approximately 1 L black-tea, mint, and plum-cinnamon tea component as an addition to that apple base.
+- Updated the recipe and batch summary to reflect the apple-and-tea composition.
+
+### Observation
+
+The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification.
+
+### Next
+
+- Continue primary fermentation.
+- Take a hydrometer reading and confirm gravity stability before racking or clearing.
