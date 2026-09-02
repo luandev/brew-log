@@ -42,7 +42,7 @@ The name evolved during label work. "Whiskerwood" was an intermediate concept; t
 
 {% include_relative recipe.md %}
 
-{% include_relative log.md %}
+{% include batch-log-reader.html %}
 
 {% include batch-schedule-calendar.html %}
 

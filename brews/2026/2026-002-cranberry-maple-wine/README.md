@@ -36,7 +36,7 @@ Small experimental cranberry and maple wine fermenting in a 2 L PET bottle.
 
 {% include_relative recipe.md %}
 
-{% include_relative log.md %}
+{% include batch-log-reader.html %}
 
 {% include batch-schedule-calendar.html %}
 

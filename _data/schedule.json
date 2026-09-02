@@ -7,11 +7,25 @@
     "url": "/brews/2026-001/"
   },
   {
+    "date": "2026-09-02",
+    "action": "Check fermentation activity",
+    "batch_id": "2026-004",
+    "name": "Plum, Cinnamon & Mint Tea Wine",
+    "url": "/brews/2026-004/"
+  },
+  {
     "date": "2026-09-07",
-    "action": "Take hydrometer reading",
+    "action": "Take hydrometer reading and check gravity stability",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
     "url": "/brews/2026-001/"
+  },
+  {
+    "date": "2026-09-07",
+    "action": "Take hydrometer reading and check fermentation progress",
+    "batch_id": "2026-004",
+    "name": "Plum, Cinnamon & Mint Tea Wine",
+    "url": "/brews/2026-004/"
   },
   {
     "date": "2026-09-13",
@@ -22,7 +36,7 @@
   },
   {
     "date": "2026-09-14",
-    "action": "Check whether ready to rack",
+    "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
     "url": "/brews/2026-001/"

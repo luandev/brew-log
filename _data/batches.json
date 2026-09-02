@@ -21,6 +21,19 @@
     "is_active": true,
     "last_log_date": "2026-09-01",
     "latest_log_excerpt": "The airlock provides a path for fermentation carbon dioxide. No gravity, temperature, exact batch volume, ingredient weights, or tasting observations were recorded.",
+    "log_entries": [
+      {
+        "date": "2026-09-01",
+        "day_label": "Day 1",
+        "heading": "2026-09-01 — Day 1",
+        "stage": "Primary fermentation",
+        "measurements": "- Target ABV: 14%\n- Vessel capacity: 2 L",
+        "actions": "- Used 2 packs of cranberry product with maple syrup.\n- Set up the batch in a PET bottle.\n- Fitted an airlock through the bottle cap using acrylate adhesive.\n- Added yeast; type and amount were not recorded.",
+        "observation": "The airlock provides a path for fermentation carbon dioxide. No gravity, temperature, exact batch volume, ingredient weights, or tasting observations were recorded.",
+        "next": "- Decide on any additions after primary fermentation.",
+        "excerpt": "The airlock provides a path for fermentation carbon dioxide. No gravity, temperature, exact batch volume, ingredient weights, or tasting observations were recorded."
+      }
+    ],
     "pending_schedule": [],
     "schedule": [],
     "stages": [
@@ -69,72 +82,105 @@
     "end_date": "2026-09-29"
   },
   {
-    "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
-    "title": "Apple & Golden Syrup Wine",
+    "batch_id": "2026-004",
+    "name": "Plum, Cinnamon & Mint Tea Wine",
+    "title": "Plum, Cinnamon & Mint Tea Wine",
     "type": "wine",
     "status": "primary-fermentation",
     "started": "2026-08-31",
-    "volume_l": 1.2,
-    "target_abv": 12,
+    "volume_l": 2.0,
+    "target_abv": null,
     "actual_abv": null,
     "tags": [
       "apple",
-      "golden-syrup"
+      "yard-apple",
+      "tea-wine",
+      "black-tea",
+      "mint",
+      "plum",
+      "cinnamon",
+      "pet"
     ],
-    "permalink": "/brews/2026-001/",
-    "folder": "brews/2026/2026-001-apple-golden-syrup-wine",
+    "permalink": "/brews/2026-004/",
+    "folder": "brews/2026/2026-004-plum-cinnamon-mint-tea-wine",
     "year": "2026",
-    "slug": "2026-001-apple-golden-syrup-wine",
-    "url": "/brews/2026-001/",
+    "slug": "2026-004-plum-cinnamon-mint-tea-wine",
+    "url": "/brews/2026-004/",
     "is_active": true,
-    "last_log_date": "2026-08-31",
-    "latest_log_excerpt": "Fermentation vessel prepared and placed away from direct sunlight.",
+    "last_log_date": "2026-09-02",
+    "latest_log_excerpt": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification.",
+    "log_entries": [
+      {
+        "date": "2026-08-31",
+        "day_label": "Day 1",
+        "heading": "2026-08-31 — Day 1",
+        "stage": "Preparing",
+        "measurements": "- Prepared tea volume: approximately 1 L\n- First hydrometer potential-alcohol reading: 10%\n- Adjusted hydrometer potential-alcohol reading: approximately 11%\n- Exact gravity values: not recorded\n- Final ABV: not measured",
+        "actions": "- Prepared a tea-wine must using black tea, mint, and Whittard Plum & Cinnamon instant tea.\n- Took a hydrometer potential-alcohol reading of 10%.\n- Increased the fermentable sugar concentration by an unrecorded amount (described as \"pumped it up a bit\").\n- Rechecked the must at approximately 11% potential alcohol.\n- Planned to use a PET bottle as the fermentation vessel.\n- Discussed keeping the clear PET vessel away from direct sunlight.",
+        "observation": "The source photos show a dark red/plum-coloured tea infusion containing tea and herb material, followed by hydrometer samples around the 10–11% potential-alcohol range. The Whittard product label records 95 g sugars per 100 g powder. The exact powder quantity, extra sugar quantity, yeast type, and yeast pitch were not explicitly recorded.",
+        "next": "- Confirm whether yeast was pitched and record its type and amount.\n- Once fermentation is active, monitor with hydrometer readings.\n- When gravity is stable, rack off sediment and proceed to clearing and aging.",
+        "excerpt": "The source photos show a dark red/plum-coloured tea infusion containing tea and herb material, followed by hydrometer samples around the 10–11% potential-alcohol range. The Whittard product label records 95 g sugars per "
+      },
+      {
+        "date": "2026-09-02",
+        "day_label": "Status correction",
+        "heading": "2026-09-02 — Status correction",
+        "stage": "Primary fermentation",
+        "measurements": "- Batch start date confirmed from the source conversation: 2026-08-31.\n- Volume remains recorded as approximately 1 L.\n- Latest recorded potential-alcohol reading: approximately 11%.\n- No new gravity or ABV measurement was provided.",
+        "actions": "- Brewer clarified that batch 2026-004 is already in fermentation and should not be shown as still preparing.\n- Corrected the active stage to `primary-fermentation` with a start date of 2026-08-31.\n- Preserved the original Day 1 log entry rather than rewriting historical notes.\n- Updated the recipe summary and schedule to match the corrected fermentation stage.",
+        "observation": "The original source conversation took place on 2026-08-31, so the brew must not be presented as starting on 2026-09-02. Yeast type and amount remain unrecorded.",
+        "next": "- Check current fermentation activity.\n- Take a hydrometer reading during primary fermentation.\n- Wait for stable gravity before racking or moving to clearing.",
+        "excerpt": "The original source conversation took place on 2026-08-31, so the brew must not be presented as starting on 2026-09-02. Yeast type and amount remain unrecorded."
+      },
+      {
+        "date": "2026-09-02",
+        "day_label": "Apple base correction",
+        "heading": "2026-09-02 — Apple base correction",
+        "stage": "Primary fermentation",
+        "measurements": "- Fresh apple juice at the start of the batch: approximately 1 L.\n- Apple source: apples from the yard.\n- Prepared tea component: approximately 1 L.\n- Combined batch volume after the tea component: approximately 2 L.\n- Latest recorded potential-alcohol reading remains approximately 11%.",
+        "actions": "- Brewer clarified that batch 2026-004 did not begin as tea alone.\n- Recorded approximately 1 L of fresh yard apple juice as the original base of the batch.\n- Recorded the approximately 1 L black-tea, mint, and plum-cinnamon tea component as an addition to that apple base.\n- Updated the recipe and batch summary to reflect the apple-and-tea composition.",
+        "observation": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification.",
+        "next": "- Continue primary fermentation.\n- Take a hydrometer reading and confirm gravity stability before racking or clearing.",
+        "excerpt": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification."
+      }
+    ],
     "pending_schedule": [
       {
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "action": "Check fermentation activity",
         "status": "Pending"
       },
       {
         "date": "2026-09-07",
-        "action": "Take hydrometer reading",
-        "status": "Pending"
-      },
-      {
-        "date": "2026-09-14",
-        "action": "Check whether ready to rack",
-        "status": "Pending"
-      },
-      {
-        "date": "2026-10-01",
-        "action": "First tasting",
+        "action": "Take hydrometer reading and check fermentation progress",
         "status": "Pending"
       }
     ],
     "schedule": [
       {
-        "date": "2026-09-01",
+        "date": "2026-08-31",
+        "action": "Prepare tea must and adjust sugar from 10% to ~11% potential alcohol",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-02",
         "action": "Check fermentation activity",
         "status": "Pending"
       },
       {
         "date": "2026-09-07",
-        "action": "Take hydrometer reading",
-        "status": "Pending"
-      },
-      {
-        "date": "2026-09-14",
-        "action": "Check whether ready to rack",
-        "status": "Pending"
-      },
-      {
-        "date": "2026-10-01",
-        "action": "First tasting",
+        "action": "Take hydrometer reading and check fermentation progress",
         "status": "Pending"
       }
     ],
     "stages": [
+      {
+        "stage": "preparing",
+        "started": "2026-08-31",
+        "ended": "2026-08-31",
+        "status": "completed",
+        "label": "Preparing"
+      },
       {
         "stage": "primary-fermentation",
         "started": "2026-08-31",
@@ -169,10 +215,161 @@
         "ended": "",
         "status": "planned",
         "label": "Bottled"
+      },
+      {
+        "stage": "aging",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Aging"
       }
     ],
     "current_stage": "primary-fermentation",
     "current_stage_label": "Primary Fermentation",
+    "days_elapsed": 2,
+    "target_days": 14,
+    "progress_percent": 14,
+    "thumbnail": "",
+    "next_action_date": "2026-09-02",
+    "next_action": "Check fermentation activity",
+    "end_date": "2026-09-14"
+  },
+  {
+    "batch_id": "2026-001",
+    "name": "Apple & Golden Syrup Wine",
+    "title": "Apple & Golden Syrup Wine",
+    "type": "wine",
+    "status": "secondary",
+    "started": "2026-08-31",
+    "volume_l": 1.75,
+    "target_abv": 12,
+    "actual_abv": null,
+    "tags": [
+      "apple",
+      "rapadura",
+      "berry-tea",
+      "maple"
+    ],
+    "permalink": "/brews/2026-001/",
+    "folder": "brews/2026/2026-001-apple-golden-syrup-wine",
+    "year": "2026",
+    "slug": "2026-001-apple-golden-syrup-wine",
+    "url": "/brews/2026-001/",
+    "is_active": true,
+    "last_log_date": "2026-09-02",
+    "latest_log_excerpt": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV.",
+    "log_entries": [
+      {
+        "date": "2026-08-31",
+        "day_label": "Day 1",
+        "heading": "2026-08-31 — Day 1",
+        "stage": "Primary fermentation",
+        "measurements": "- Volume: 1.2 L\n- Potential ABV: 10%\n- Temperature: 20 °C",
+        "actions": "- Added apple juice.\n- Added golden syrup.\n- Added yeast.",
+        "observation": "Fermentation vessel prepared and placed away from direct sunlight.",
+        "next": "- Check fermentation activity tomorrow.",
+        "excerpt": "Fermentation vessel prepared and placed away from direct sunlight."
+      },
+      {
+        "date": "2026-09-02",
+        "day_label": "Record correction and secondary update",
+        "heading": "2026-09-02 — Record correction and secondary update",
+        "stage": "Secondary",
+        "measurements": "- Recorded volume before maple addition: 1.75 L\n- Hydrometer potential-alcohol scale reading earlier in the batch: 11%\n- Brewer-reported strength before the maple secondary: ~12%\n- Maple syrup added: 90 g\n- Water used to dissolve maple syrup: 160 mL\n- Post-maple gravity: not recorded\n- Final ABV: not yet measured",
+        "actions": "- Preserved the original 2026-08-31 log entry and recorded updated recipe information as a correction, following the repository append-only rule.\n- Updated the pre-secondary sugar source to rapadura based on the brewer's later notes; the exact rapadura amount was not recorded.\n- Recorded the addition of 1 packet of Lidl Very Berry tea brewed with 3 heaped spoonfuls of sugar.\n- On 2026-08-31, racked the fermented apple wine off the sediment into a clean PET bottle.\n- Dissolved 90 g pure maple syrup in 160 mL hot water and added it to the racked wine for a secondary fermentation intended to increase strength.",
+        "observation": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV.",
+        "next": "- Allow secondary fermentation to finish.\n- Take a hydrometer reading and confirm gravity is stable before clearing.\n- Cold crash after fermentation is complete.\n- Rack into sanitized glass for clearing and aging.",
+        "excerpt": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV."
+      }
+    ],
+    "pending_schedule": [
+      {
+        "date": "2026-09-01",
+        "action": "Check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-07",
+        "action": "Take hydrometer reading and check gravity stability",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-14",
+        "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-10-01",
+        "action": "First tasting",
+        "status": "Pending"
+      }
+    ],
+    "schedule": [
+      {
+        "date": "2026-08-31",
+        "action": "Rack to clean PET bottle and add maple syrup for secondary fermentation",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "Check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-07",
+        "action": "Take hydrometer reading and check gravity stability",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-14",
+        "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-10-01",
+        "action": "First tasting",
+        "status": "Pending"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "primary-fermentation",
+        "started": "2026-08-31",
+        "ended": "2026-08-31",
+        "status": "completed",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "2026-08-31",
+        "ended": "",
+        "status": "active",
+        "label": "Secondary"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "conditioning",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Conditioning"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      }
+    ],
+    "current_stage": "secondary",
+    "current_stage_label": "Secondary",
     "days_elapsed": 2,
     "target_days": 38,
     "progress_percent": 5,
@@ -206,6 +403,41 @@
     "is_active": true,
     "last_log_date": "2026-09-01",
     "latest_log_excerpt": "The bottled cider was visibly cloudy on bottling day, with settling expected during conditioning. Material left in the fermenter was primarily lees/sediment together with the cinnamon sticks. Earlier ",
+    "log_entries": [
+      {
+        "date": "2026-08-16",
+        "day_label": "Day 1",
+        "heading": "2026-08-16 — Day 1",
+        "stage": "Preparing / primary fermentation",
+        "measurements": "- Plain water added: approximately 1–1.5 L.\n- Total volume after supermarket apple juice was added: approximately 6–7 L.\n- Cider temperature during hydrometer reading: about 20 °C.\n- Room temperature during setup: about 24 °C.\n- Starting gravity from hydrometer photo: approximately 1.038–1.040.",
+        "actions": "- Fresh apples and pears were juiced.\n- The fresh juice was pasteurised and allowed to cool.\n- Approximately 45–50 g Turkish apple-flavoured sugar was added.\n- Plain water was added during setup.\n- Supermarket apple juice containing added vitamin C was added to increase the batch volume.\n- A hydrometer reading was taken before fermentation.\n- Dry wine yeast was pitched into a 10 L bucket and the airlock was fitted.\n- Cinnamon sticks were present during primary fermentation; exact quantity was not recorded.",
+        "observation": "The final setup used a 10 L fermenter for approximately 6–7 L of cider. The hydrometer's potential-alcohol scale was also described during setup as reading just under 7%; the specific scale value was not recorded as a gravity measurement.",
+        "next": "- Monitor primary fermentation.\n- Keep the fermenter airlocked and out of direct sunlight.",
+        "excerpt": "The final setup used a 10 L fermenter for approximately 6–7 L of cider. The hydrometer's potential-alcohol scale was also described during setup as reading just under 7%; the specific scale value was not recorded as a gr"
+      },
+      {
+        "date": "2026-09-01",
+        "day_label": "Day 17",
+        "heading": "2026-09-01 — Day 17",
+        "stage": "Primary fermentation — near completion",
+        "measurements": "- On Day 3, airlock activity was described as very vigorous.\n- Around the end of the first week, airlock activity had slowed to about one bubble every 40 seconds.\n- A later hydrometer reading was 1.000.\n- A second stable gravity reading has not yet been recorded.",
+        "actions": "- The fermenter was shaken once daily during approximately the first three days, then left undisturbed.\n- The fermenter was opened once for roughly five minutes to take a hydrometer reading.\n- Beer bottles were collected for bottle conditioning.\n- NoRinze sanitiser and a bottle rinser/sprayer were acquired for bottling preparation.\n- The planned priming rate was updated to 5 g sugar per litre.",
+        "observation": "The cider aroma was described as strong but not foul, then clarified as wine-like and fruity. Cinnamon sticks had been forgotten in the fermenter during primary; their removal has not been confirmed. No bottling has been reported yet.",
+        "next": "- Take a confirmation hydrometer reading before bottling.\n- Confirm the cinnamon sticks are removed before bottling.\n- If gravity is stable, siphon gently into sanitised beer bottles, prime at 5 g/L, and crown-cap.\n- Bottle-condition, then continue aging toward Christmas.",
+        "excerpt": "The cider aroma was described as strong but not foul, then clarified as wine-like and fruity. Cinnamon sticks had been forgotten in the fermenter during primary; their removal has not been confirmed. No bottling has been"
+      },
+      {
+        "date": "2026-09-01",
+        "day_label": "Historical correction and bottling-day reconstruction",
+        "heading": "2026-09-01 — Historical correction and bottling-day reconstruction",
+        "stage": "Bottle conditioning",
+        "measurements": "- Bottling took place on 2026-08-30.\n- Priming target: 5 g/L.\n- Vanilla-infused sugar was used for priming.\n- One documented 620 mL bottle received approximately 3 g priming sugar.\n- Latest gravity available before/around this stage remained 1.000; a second matching stable reading was not recorded.",
+        "actions": "- Corrected the earlier record: the batch had already been bottled on 2026-08-30.\n- Bottles and bottling equipment were cleaned and sanitised with NoRinze no-rinse sanitiser.\n- A bottle rinser/sprayer was used to coat bottle interiors; bottles were drained and not water-rinsed afterward.\n- Cider was siphoned gently into crown-cap beer bottles, leaving the main yeast/apple sediment behind.\n- Bottles were individually primed with vanilla-infused sugar using the 5 g/L target.\n- Bottles were crown-capped promptly and moved into upright, dark storage for natural carbonation.\n- The display name was updated from the intermediate \"Whiskerwood\" concept to the final brew name, **The Three Cats**.",
+        "observation": "The bottled cider was visibly cloudy on bottling day, with settling expected during conditioning. Material left in the fermenter was primarily lees/sediment together with the cinnamon sticks. Earlier aroma notes were strong, wine-like and fruity rather than foul. Label development later described the intended profile with apple and pear character, dryness and gentle cinnamon warmth; these are retained as label/history notes rather than treated as a formal tasting result.",
+        "next": "- 2026-09-13: first carbonation check; chill one bottle for roughly 24 hours before opening.\n- 2026-09-27: early conditioned tasting and sediment/clarity check.\n- 2026-10-25: maturation check.\n- 2026-12-20: Christmas-aging check and chill a bottle for the holiday period.",
+        "excerpt": "The bottled cider was visibly cloudy on bottling day, with settling expected during conditioning. Material left in the fermenter was primarily lees/sediment together with the cinnamon sticks. Earlier aroma notes were str"
+      }
+    ],
     "pending_schedule": [
       {
         "date": "2026-09-13",

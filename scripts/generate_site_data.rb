@@ -173,6 +173,62 @@ def latest_log_excerpt(log_content)
   nil
 end
 
+def extract_log_section(body, heading)
+  pattern = /###\s+#{Regexp.escape(heading)}\s*\n+([\s\S]*?)(?=\n###\s+|\z)/i
+  match = body.match(pattern)
+  return nil unless match
+
+  text = match[1].strip
+  text.empty? ? nil : text
+end
+
+def parse_log_entries(log_content)
+  return [] if log_content.nil? || log_content.strip.empty?
+
+  entries = []
+  parts = log_content.split(/^##\s+/)
+  parts.each do |part|
+    next if part.strip.empty? || part.start_with?("#")
+
+    lines = part.lines
+    heading = lines.shift.to_s.strip
+    next if heading.empty?
+
+    date = nil
+    day_label = nil
+    if heading =~ /\A(\d{4}-\d{2}-\d{2})\s*[—–-]\s*(.+)\z/
+      date = Regexp.last_match(1)
+      day_label = Regexp.last_match(2).strip
+    elsif heading =~ /\A(\d{4}-\d{2}-\d{2})\z/
+      date = Regexp.last_match(1)
+    else
+      next
+    end
+
+    body = lines.join
+    stage = nil
+    if body =~ /\*\*Stage:\*\*\s*(.+?)(?:\n|\z)/
+      stage = Regexp.last_match(1).strip
+      stage = nil if stage.empty?
+    end
+
+    observation = extract_log_section(body, "Observation")
+    entries << {
+      "date" => date,
+      "day_label" => day_label,
+      "heading" => heading,
+      "stage" => stage,
+      "measurements" => extract_log_section(body, "Measurements"),
+      "actions" => extract_log_section(body, "Actions"),
+      "observation" => observation,
+      "next" => extract_log_section(body, "Next"),
+      "excerpt" => observation&.gsub(/\n+/, " ")&.slice(0, 220)
+    }
+  end
+
+  entries
+end
+
 def infer_target_days(started_date, pending_rows, explicit_target)
   return explicit_target.to_i if explicit_target && explicit_target.to_i.positive?
 
@@ -241,6 +297,7 @@ find_batch_readmes.each do |readme_path|
   entry["is_active"] = !INACTIVE_STATUSES.include?(status)
   entry["last_log_date"] = last_log_date(log_content)
   entry["latest_log_excerpt"] = latest_log_excerpt(log_content)
+  entry["log_entries"] = parse_log_entries(log_content)
   entry["pending_schedule"] = pending_rows
   entry["schedule"] = schedule_rows
   entry["stages"] = stage_rows.map do |row|

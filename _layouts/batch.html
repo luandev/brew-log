@@ -5,7 +5,8 @@ layout: default
 <article class="batch-page">
   <header class="batch-header lto-panel">
     <p class="batch-id-label">{{ page.batch_id }}</p>
-    <h1 class="batch-title">{{ page.name | default: page.title }}</h1>
+    {% assign batch_record = site.data.batches | where: "batch_id", page.batch_id | first %}
+    <h1 class="batch-title">{% if batch_record %}{{ batch_record.name }}{% elsif page.title and page.title != page.name %}{{ page.title }}{% else %}{{ page.batch_id }}{% endif %}</h1>
     <div class="batch-meta-row">
       <span class="status-badge status-{{ page.status }}">{{ page.status | replace: '-', ' ' }}</span>
       <span class="batch-type">{{ page.type }}</span>
@@ -25,4 +26,5 @@ layout: default
   <div class="batch-content post-content">
     {{ content }}
   </div>
+  <script src="{{ '/assets/js/batch-log-reader.js' | relative_url }}" defer></script>
 </article>

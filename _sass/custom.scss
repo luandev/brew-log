@@ -7,8 +7,8 @@
   --aged-brass: #AD9753;
   --panel-bg: #14161a;
   --panel-border: rgba(173, 151, 83, 0.45);
-  --text-muted: #a89f8c;
-  --text-dim: #7a7268;
+  --text-muted: #c4bba8;
+  --text-dim: #8f8779;
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 0.75rem;
@@ -17,11 +17,12 @@
   --space-2xl: 2rem;
   --panel-padding: 1.5rem;
   --panel-radius: 8px;
-  --icon-section: 32px;
-  --icon-thumb: 68px;
-  --icon-task: 22px;
-  --icon-nav: 44px;
+  --icon-section: 36px;
+  --icon-thumb: 72px;
+  --icon-task: 26px;
+  --icon-nav: 48px;
   --icon-hero-divider-h: 28px;
+  --page-gutter: clamp(1rem, 4vw, 1.75rem);
 }
 
 body {
@@ -31,11 +32,17 @@ body {
   background-size: auto;
   color: var(--text-bone);
   font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .wrapper {
   max-width: 1100px;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 // Header
@@ -52,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -72,14 +79,15 @@ body {
   height: var(--icon-nav);
   flex-shrink: 0;
   object-fit: contain;
+  object-position: center;
 }
 
 // Icon pack — override Minima img { max-width: 100% } for predictable sizing
 .lto-icon {
   display: block;
   max-width: none;
-  vertical-align: unset;
   object-fit: contain;
+  object-position: center;
   flex-shrink: 0;
 }
 
@@ -90,16 +98,41 @@ body {
 .lto-icon--xl { width: 44px; height: 44px; }
 .lto-icon--xxl { width: 56px; height: 56px; }
 
+// Contextual sizes must beat bare .lto-icon (same element often has both classes)
+.lto-icon.lto-seal {
+  width: var(--icon-nav);
+  height: var(--icon-nav);
+}
+
+.lto-icon.lto-section-icon {
+  width: var(--icon-section);
+  height: var(--icon-section);
+}
+
+.lto-icon.active-brew-thumb-icon {
+  width: var(--icon-thumb);
+  height: var(--icon-thumb);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lto-icon.schedule-task-icon-img {
+  width: var(--icon-task);
+  height: var(--icon-task);
+}
+
 .lto-section-title-text {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.55rem;
   line-height: 1;
 }
 
 .lto-section-icon {
   width: var(--icon-section);
   height: var(--icon-section);
+  object-fit: contain;
+  object-position: center;
   opacity: 0.95;
 }
 
@@ -132,7 +165,9 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.25rem;
+  justify-content: flex-end;
 
   .page-link {
     font-family: "Cinzel", serif;
@@ -144,8 +179,12 @@ body {
     border: none;
     border-bottom: 2px solid transparent;
     border-radius: 0;
-    padding: 0.35rem 0.55rem;
+    padding: 0.55rem 0.6rem;
     margin-left: 0;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
 
     &:hover {
       color: var(--text-bone);
@@ -299,7 +338,7 @@ a {
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(180deg, rgba(14, 15, 16, 0.15) 0%, rgba(14, 15, 16, 0.55) 100%),
+      linear-gradient(180deg, rgba(14, 15, 16, 0.2) 0%, rgba(14, 15, 16, 0.62) 100%),
       linear-gradient(
         90deg,
         var(--bg-charcoal) 0%,
@@ -330,21 +369,21 @@ a {
 .lto-hero-subtitle-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
   margin-bottom: var(--space-lg);
+  max-width: 22rem;
 }
 
 .lto-hero-branch {
   display: block;
-  flex: 1 1 6rem;
-  width: auto;
-  min-width: 4rem;
-  max-width: 10rem;
-  height: var(--icon-hero-divider-h);
-  max-height: var(--icon-hero-divider-h);
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 3rem;
+  max-width: 7rem;
+  height: 12px;
   object-fit: contain;
   object-position: center;
-  opacity: 0.88;
+  opacity: 0.75;
 
   &--flip {
     transform: scaleX(-1);
@@ -417,7 +456,8 @@ a {
   text-transform: uppercase;
   margin: 0 0 var(--space-md);
   color: var(--text-bone);
-  line-height: 1.1;
+  line-height: 1.15;
+  text-shadow: 0 2px 24px rgba(14, 15, 16, 0.85), 0 1px 2px rgba(14, 15, 16, 0.9);
 }
 
 .lto-hero-subtitle {
@@ -428,6 +468,7 @@ a {
   color: var(--aged-brass);
   margin: 0;
   flex-shrink: 0;
+  text-shadow: 0 1px 12px rgba(14, 15, 16, 0.9);
 
   &::before,
   &::after {
@@ -438,10 +479,12 @@ a {
 .lto-hero-tagline {
   font-family: "IM Fell English", serif;
   font-style: italic;
-  font-size: 1.05rem;
-  color: var(--text-muted);
+  font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+  color: #e6dcc6;
   margin: 0;
-  line-height: 1.65;
+  line-height: 1.7;
+  max-width: 36rem;
+  text-shadow: 0 2px 18px rgba(14, 15, 16, 0.95), 0 1px 2px rgba(14, 15, 16, 0.9);
 }
 
 // Dashboard grid
@@ -500,6 +543,7 @@ a {
   text-decoration: none;
   color: inherit;
   transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: rgba(173, 151, 83, 0.2);
 
   &:hover {
     border-color: var(--aged-brass);
@@ -644,10 +688,10 @@ a {
 
 .schedule-task-item {
   display: grid;
-  grid-template-columns: 3.5rem 1.5rem 1fr;
-  gap: 0.5rem;
+  grid-template-columns: 3.75rem var(--icon-task) 1fr;
+  gap: 0.55rem 0.65rem;
   align-items: center;
-  padding: 0.65rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid rgba(173, 151, 83, 0.15);
 
   &:last-child {
@@ -656,22 +700,25 @@ a {
 }
 
 .schedule-task-date {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--aged-brass);
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 
 .schedule-task-action {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-bone);
   margin: 0;
+  line-height: 1.4;
 }
 
 .schedule-task-batch {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
-  margin: 0.15rem 0 0;
+  margin: 0.2rem 0 0;
+  line-height: 1.35;
 }
 
 .lto-link-footer {
@@ -807,12 +854,13 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.15rem 0.5rem;
+  padding: 0.22rem 0.55rem;
   border-radius: 999px;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  line-height: 1.25;
   background: rgba(173, 151, 83, 0.1);
   color: var(--text-muted);
   border: 1px solid var(--panel-border);
@@ -922,6 +970,273 @@ a {
   display: none;
 }
 
+// Notes panel (Log / Details / Notes tabs)
+.batch-notes-panel {
+  margin: var(--space-xl) 0;
+  padding-top: var(--panel-padding);
+}
+
+.batch-notes-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.batch-notes-panel-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.batch-notes-panel-title {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--aged-brass);
+}
+
+.batch-notes-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0 0 var(--space-lg);
+  padding: 0.2rem;
+  border: 1px solid rgba(173, 151, 83, 0.22);
+  border-radius: 8px;
+  background: rgba(14, 15, 16, 0.35);
+}
+
+.batch-notes-tab {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-dim);
+  font-family: "Cinzel", serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.65rem 0.9rem;
+  min-height: 2.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    color: var(--text-bone);
+  }
+
+  &.is-active {
+    color: var(--text-bone);
+    background: rgba(108, 124, 68, 0.22);
+    border-color: rgba(108, 124, 68, 0.45);
+  }
+
+  &[hidden] {
+    display: none !important;
+  }
+}
+
+.batch-notes-panel-body {
+  &[hidden] {
+    display: none !important;
+  }
+}
+
+.batch-notes-empty {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.batch-notes-text-slot {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 42rem;
+
+  p {
+    margin: 0 0 0.75rem;
+  }
+}
+
+.batch-notes-details-slot {
+  .recipe-details-grid {
+    margin: 0;
+  }
+
+  .recipe-detail-panel {
+    background: rgba(14, 15, 16, 0.35);
+  }
+}
+
+// Brew log sequential reader
+.batch-log-reader {
+  margin: 0;
+}
+
+.batch-log-reader-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: var(--space-lg);
+}
+
+.batch-log-reader-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.batch-log-reader-count {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.batch-log-nav-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  background: rgba(173, 151, 83, 0.08);
+  color: var(--aged-brass);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover:not(:disabled) {
+    border-color: var(--aged-brass);
+    background: rgba(173, 151, 83, 0.16);
+  }
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+}
+
+.batch-log-card {
+  animation: batch-log-fade 0.25s ease;
+}
+
+.batch-log-card[hidden] {
+  display: none;
+}
+
+@keyframes batch-log-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.batch-log-card-header {
+  margin-bottom: var(--space-md);
+}
+
+.batch-log-card-date {
+  margin: 0;
+  font-family: "IM Fell English", serif;
+  font-size: 1.35rem;
+  color: var(--text-bone);
+}
+
+.batch-log-card-stage {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--orchard-green);
+}
+
+.batch-log-card-excerpt {
+  margin: 0 0 var(--space-lg);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 40rem;
+}
+
+.batch-log-card-sections {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.batch-log-section {
+  border: 1px solid rgba(173, 151, 83, 0.22);
+  border-radius: 6px;
+  background: rgba(14, 15, 16, 0.35);
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.65rem 0.85rem;
+    font-family: "Cinzel", serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--aged-brass);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+.batch-log-section-body {
+  padding: 0 0.85rem 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+
+  ul, ol {
+    margin: 0.35rem 0 0 1.1rem;
+  }
+
+  p {
+    margin: 0.35rem 0 0;
+  }
+}
+
+.batch-log-reader-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: var(--space-lg);
+}
+
+.batch-log-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  border: 1px solid var(--panel-border);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  &.is-active {
+    background: var(--orchard-green);
+    border-color: var(--orchard-green);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .batch-log-card {
+    animation: none;
+  }
+}
+
 .batch-current-status {
   margin: var(--space-md) 0 var(--space-lg);
 
@@ -931,8 +1246,70 @@ a {
   }
 }
 
+.batch-status-trail {
+  list-style: none;
+  margin: 0 0 var(--space-lg);
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+}
+
+.batch-status-trail-item {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+
+  &:not(:last-child)::after {
+    content: "";
+    width: 1.25rem;
+    height: 1px;
+    margin: 0 0.35rem;
+    background: linear-gradient(90deg, var(--aged-brass), transparent);
+    opacity: 0.55;
+    flex-shrink: 0;
+  }
+}
+
+.batch-status-trail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: rgba(14, 15, 16, 0.35);
+  min-width: 7.5rem;
+}
+
+.batch-status-trail-meta {
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+}
+
+.batch-status-trail-item--completed .batch-status-trail-card {
+  border-color: rgba(108, 124, 68, 0.35);
+}
+
+.batch-status-trail-item--active .batch-status-trail-card {
+  border-color: var(--orchard-green);
+  box-shadow: 0 0 0 1px rgba(108, 124, 68, 0.25);
+  background: rgba(108, 124, 68, 0.1);
+}
+
+.batch-status-trail-item--skipped {
+  opacity: 0.55;
+
+  .status-badge {
+    text-decoration: line-through;
+    opacity: 0.85;
+  }
+}
+
 .batch-status-description {
-  margin: var(--space-md) 0 var(--space-sm);
+  margin: 0 0 var(--space-sm);
   color: var(--text-muted);
   font-size: 0.95rem;
   max-width: 40rem;
@@ -1127,6 +1504,7 @@ a {
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 }
 
@@ -1157,6 +1535,59 @@ a {
 
   li + li {
     margin-top: 0.35rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+}
+
+.recipe-additions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0 var(--space-xl);
+
+  @media (min-width: 901px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+.recipe-addition-panel {
+  background: rgba(20, 22, 26, 0.72);
+  border: 1px solid rgba(173, 151, 83, 0.28);
+  border-radius: var(--panel-radius);
+  padding: 0.9rem 1rem;
+
+  h3 {
+    font-family: "Cinzel", serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--aged-brass);
+    margin: 0 0 var(--space-sm);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(173, 151, 83, 0.2);
+  }
+
+  ul, ol {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  li + li {
+    margin-top: 0.3rem;
   }
 
   p {
@@ -1670,7 +2101,7 @@ a {
   }
 
   .schedule-day {
-    min-height: 4rem;
+    min-height: 3.5rem;
   }
 
   .schedule-process-label {
@@ -1680,6 +2111,22 @@ a {
   .schedule-upcoming-item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
+  }
+
+  .schedule-calendar-title {
+    min-width: 0;
+    flex: 1 1 auto;
+    font-size: 0.95rem;
+  }
+
+  .schedule-nav-btn {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  .schedule-dow-header {
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1758,37 +2205,154 @@ a {
   color: var(--text-bone);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  :root {
+    --panel-padding: 1.15rem;
+    --icon-section: 40px;
+    --icon-task: 30px;
+  }
+
   .lto-masthead-hero {
-    min-height: 220px;
+    min-height: clamp(260px, 72vw, 380px);
+  }
+
+  .lto-masthead-hero-art::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(14, 15, 16, 0.55) 0%,
+        rgba(14, 15, 16, 0.72) 42%,
+        rgba(14, 15, 16, 0.88) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(14, 15, 16, 0.92) 0%,
+        rgba(14, 15, 16, 0.7) 45%,
+        rgba(14, 15, 16, 0.35) 100%
+      );
   }
 
   .lto-masthead-hero-img {
-    object-position: 58% 38%;
+    object-position: 55% 35%;
   }
 
-  .lto-masthead-hero .wrapper {
-    padding: 2rem 0 2.25rem;
+  .lto-hero-content--masthead {
+    max-width: none;
   }
 
-  .lto-hero-subtitle-row {
-    gap: 0.5rem;
+  .batch-status-trail {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45rem;
   }
 
-  .lto-hero-branch {
-    min-width: 2.5rem;
-    max-width: 5rem;
+  .batch-status-trail-item {
+    width: 100%;
+
+    &:not(:last-child)::after {
+      display: none;
+    }
   }
 
-  .lto-hero-title {
-    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  .batch-status-trail-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .batch-notes-tabs {
+    width: 100%;
+  }
+
+  .batch-notes-tab {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.7rem 0.65rem;
+  }
+
+  .batch-log-reader-header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .batch-log-reader-controls {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --panel-padding: 1rem;
+    --icon-nav: 40px;
+    --icon-thumb: 56px;
+  }
+
+  .lto-masthead-nav {
+    padding: 0.65rem 0;
+  }
+
+  .lto-header-inner {
+    gap: 0.65rem;
+  }
+
+  .lto-brand {
+    gap: 0.55rem;
+    min-width: 0;
   }
 
   .lto-wordmark {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     letter-spacing: 0.1em;
     white-space: normal;
-    max-width: 9rem;
+    max-width: 10.5rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0;
+
+    .page-link {
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      padding: 0.5rem 0.45rem;
+      min-height: 2.6rem;
+    }
+  }
+
+  .lto-masthead-hero {
+    min-height: 250px;
+  }
+
+  .lto-masthead-hero .wrapper {
+    padding: 1.75rem 0 2rem;
+  }
+
+  .lto-hero-subtitle-row {
+    gap: 0.55rem;
+    max-width: 18rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .lto-hero-branch {
+    min-width: 2.25rem;
+    max-width: 4.5rem;
+    height: 10px;
+    opacity: 0.85;
+  }
+
+  .lto-hero-title {
+    font-size: clamp(1.85rem, 8.5vw, 2.35rem);
+    margin-bottom: 0.65rem;
+  }
+
+  .lto-hero-subtitle {
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+  }
+
+  .lto-hero-tagline {
+    font-size: 1.05rem;
+    line-height: 1.65;
   }
 
   .lto-hero-tree {
@@ -1801,21 +2365,123 @@ a {
     display: none;
   }
 
+  .lto-section-title {
+    font-size: 0.78rem;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  .lto-panel {
+    margin-bottom: 1.15rem;
+  }
+
+  .dashboard-grid {
+    gap: 1.15rem;
+  }
+
   .active-brew-card {
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 64px 1fr;
     grid-template-rows: auto auto;
+    gap: 0.75rem 0.85rem;
+    padding: 0.9rem;
 
     .active-brew-progress {
       grid-column: 1 / -1;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
+      min-width: 0;
+      padding-top: 0.35rem;
+      border-top: 1px solid rgba(173, 151, 83, 0.18);
+      text-align: left;
     }
   }
 
   .active-brew-thumb {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .active-brew-name {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .active-brew-meta {
+    font-size: 0.85rem;
+    gap: 0.35rem 0.75rem;
+
+    span {
+      white-space: normal;
+    }
+  }
+
+  .active-brew-days {
+    font-size: 0.75rem;
+  }
+
+  .schedule-task-item {
+    grid-template-columns: 3.5rem var(--icon-task) 1fr;
+    align-items: start;
+    padding: 0.85rem 0;
+  }
+
+  .schedule-task-icon {
+    margin-top: 0.15rem;
+  }
+
+  .batch-log-card-date {
+    font-size: 1.25rem;
+  }
+
+  .batch-log-section-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .batch-status-description {
+    font-size: 1rem;
+  }
+
+  .batch-title {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+    line-height: 1.2;
+  }
+
+  .batch-meta-row {
+    gap: 0.45rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .page-content {
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 2rem 0 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .site-nav .page-link {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 0.45rem 0.35rem;
+  }
+
+  .lto-hero-subtitle-row {
+    max-width: 100%;
+  }
+
+  .lto-hero-branch {
+    max-width: 3.25rem;
+  }
+
+  .active-brew-meta .status-badge {
+    font-size: 0.68rem;
   }
 }
 

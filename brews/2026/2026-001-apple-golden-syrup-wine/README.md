@@ -41,7 +41,7 @@ Small-batch apple wine that completed its first fermentation, was racked off the
 
 {% include_relative recipe.md %}
 
-{% include_relative log.md %}
+{% include batch-log-reader.html %}
 
 {% include batch-schedule-calendar.html %}
 

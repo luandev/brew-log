@@ -114,7 +114,7 @@ The README body must include these Liquid includes (do not remove):
 
 ```liquid
 {% include_relative recipe.md %}
-{% include_relative log.md %}
+{% include batch-log-reader.html %}
 {% include batch-schedule-calendar.html %}
 {% include_relative tasting.md %}
 {% include_relative media.md %}

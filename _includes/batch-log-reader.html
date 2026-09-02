@@ -1,0 +1,135 @@
+{% assign batch_record = site.data.batches | where: "batch_id", page.batch_id | first %}
+{% assign log_entries = batch_record.log_entries %}
+
+<section class="batch-notes-panel lto-panel" data-batch-notes-panel aria-label="Batch notes">
+  <header class="batch-notes-panel-header">
+    <div class="batch-notes-panel-heading">
+      {% include icon.html id="tasting-notebook" class="lto-section-icon" decorative=true %}
+      <h2 class="batch-notes-panel-title">Notes</h2>
+    </div>
+  </header>
+
+  <div class="batch-notes-tabs" role="tablist" aria-label="Notes sections">
+    <button
+      type="button"
+      class="batch-notes-tab is-active"
+      role="tab"
+      id="batch-notes-tab-log"
+      aria-selected="true"
+      aria-controls="batch-notes-panel-log"
+      data-notes-tab="log"
+    >Log</button>
+    <button
+      type="button"
+      class="batch-notes-tab"
+      role="tab"
+      id="batch-notes-tab-details"
+      aria-selected="false"
+      aria-controls="batch-notes-panel-details"
+      data-notes-tab="details"
+      hidden
+    >Details</button>
+    <button
+      type="button"
+      class="batch-notes-tab"
+      role="tab"
+      id="batch-notes-tab-notes"
+      aria-selected="false"
+      aria-controls="batch-notes-panel-notes"
+      data-notes-tab="notes"
+      hidden
+    >Notes</button>
+  </div>
+
+  <div
+    class="batch-notes-panel-body is-active"
+    role="tabpanel"
+    id="batch-notes-panel-log"
+    aria-labelledby="batch-notes-tab-log"
+    data-notes-panel="log"
+  >
+    {% if log_entries and log_entries.size > 0 %}
+    <div class="batch-log-reader" data-batch-log-reader>
+      <header class="batch-log-reader-header">
+        <div class="batch-log-reader-controls">
+          <span class="batch-log-reader-count" data-log-count></span>
+          <button type="button" class="batch-log-nav-btn" data-log-prev aria-label="Previous log entry">‹</button>
+          <button type="button" class="batch-log-nav-btn" data-log-next aria-label="Next log entry">›</button>
+        </div>
+      </header>
+
+      <div class="batch-log-reader-track" data-log-track>
+        {% for entry in log_entries %}
+        <article class="batch-log-card{% if forloop.first %} is-active{% endif %}" data-log-card{% unless forloop.first %} hidden{% endunless %}>
+          <header class="batch-log-card-header">
+            <p class="batch-log-card-date">{{ entry.date }}{% if entry.day_label %} — {{ entry.day_label }}{% endif %}</p>
+            {% if entry.stage %}<p class="batch-log-card-stage">{{ entry.stage }}</p>{% endif %}
+          </header>
+
+          {% if entry.excerpt %}
+          <p class="batch-log-card-excerpt">{{ entry.excerpt }}</p>
+          {% endif %}
+
+          <div class="batch-log-card-sections">
+            {% if entry.observation %}
+            <details class="batch-log-section" open>
+              <summary>Observation</summary>
+              <div class="batch-log-section-body">{{ entry.observation | markdownify }}</div>
+            </details>
+            {% endif %}
+            {% if entry.measurements %}
+            <details class="batch-log-section">
+              <summary>Measurements</summary>
+              <div class="batch-log-section-body">{{ entry.measurements | markdownify }}</div>
+            </details>
+            {% endif %}
+            {% if entry.actions %}
+            <details class="batch-log-section">
+              <summary>Actions</summary>
+              <div class="batch-log-section-body">{{ entry.actions | markdownify }}</div>
+            </details>
+            {% endif %}
+            {% if entry.next %}
+            <details class="batch-log-section">
+              <summary>Next</summary>
+              <div class="batch-log-section-body">{{ entry.next | markdownify }}</div>
+            </details>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <nav class="batch-log-reader-dots" data-log-dots aria-label="Log entry position">
+        {% for entry in log_entries %}
+        <button type="button" class="batch-log-dot{% if forloop.first %} is-active{% endif %}" data-log-goto="{{ forloop.index0 }}" aria-label="Go to log entry {{ forloop.index }}"></button>
+        {% endfor %}
+      </nav>
+    </div>
+    {% else %}
+    <p class="batch-notes-empty">No log entries yet.</p>
+    {% endif %}
+  </div>
+
+  <div
+    class="batch-notes-panel-body"
+    role="tabpanel"
+    id="batch-notes-panel-details"
+    aria-labelledby="batch-notes-tab-details"
+    data-notes-panel="details"
+    hidden
+  >
+    <div class="batch-notes-details-slot" data-notes-details-slot></div>
+  </div>
+
+  <div
+    class="batch-notes-panel-body"
+    role="tabpanel"
+    id="batch-notes-panel-notes"
+    aria-labelledby="batch-notes-tab-notes"
+    data-notes-panel="notes"
+    hidden
+  >
+    <div class="batch-notes-text-slot" data-notes-text-slot></div>
+  </div>
+</section>

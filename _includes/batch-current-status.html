@@ -1,11 +1,44 @@
 {% assign status_info = site.data.statuses | where: "id", page.status | first %}
+{% assign batch_record = site.data.batches | where: "batch_id", page.batch_id | first %}
+{% assign stage_rows = batch_record.stages %}
 
 <div class="batch-current-status">
+  {% if stage_rows and stage_rows.size > 0 %}
+  <ol class="batch-status-trail" aria-label="Stage history">
+    {% for row in stage_rows %}
+      {% assign row_status = row.status | downcase %}
+      {% unless row_status == "planned" %}
+      <li class="batch-status-trail-item batch-status-trail-item--{{ row_status }}">
+        <div class="batch-status-trail-card">
+          <span class="status-badge status-{{ row.stage }}">{{ row.label }}</span>
+          <span class="batch-status-trail-meta">
+            {% if row_status == "skipped" %}
+              Skipped
+            {% elsif row.started and row.ended and row.started != row.ended %}
+              {{ row.started }} → {{ row.ended }}
+            {% elsif row.started and row.ended %}
+              {{ row.started }}
+            {% elsif row.started and row_status == "active" %}
+              Since {{ row.started }}
+            {% elsif row.started %}
+              {{ row.started }}
+            {% else %}
+              —
+            {% endif %}
+          </span>
+        </div>
+      </li>
+      {% endunless %}
+    {% endfor %}
+  </ol>
+  {% else %}
   <span class="status-badge status-{{ page.status }}">{{ page.status | replace: '-', ' ' }}</span>
+  {% endif %}
+
   {% if status_info %}
   <p class="batch-status-description">{{ status_info.description }}</p>
   <p class="batch-status-links">
-  <a href="{{ '/pages/status-guide/' | relative_url }}#{{ page.status }}">What this status means</a>
+    <a href="{{ '/pages/status-guide/' | relative_url }}#{{ page.status }}">What this status means</a>
   </p>
   {% endif %}
 </div>
