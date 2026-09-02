@@ -1,0 +1,8 @@
+{% assign batches = site.data.batches | where: "type", include.type %}
+{% if batches.size > 0 %}
+{% for batch in batches %}
+{% include batch-card.html batch=batch %}
+{% endfor %}
+{% else %}
+<p class="lto-empty-state">{{ include.empty_message }}</p>
+{% endif %}

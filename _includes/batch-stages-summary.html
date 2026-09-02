@@ -1,0 +1,27 @@
+{% if include.batch.stages.size > 0 %}
+<div class="batch-stages-summary">
+  <h3 class="batch-stages-title">Fermentation stages</h3>
+  <table class="batch-stages-table">
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Started</th>
+        <th>Ended</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in include.batch.stages %}
+      <tr class="batch-stage-row batch-stage-row--{{ row.status | downcase }}">
+        <td>
+          <span class="status-badge status-{{ row.stage }}">{{ row.label }}</span>
+        </td>
+        <td>{% if row.started %}{{ row.started }}{% else %}—{% endif %}</td>
+        <td>{% if row.ended %}{{ row.ended }}{% elsif row.status == "active" %}<em>ongoing</em>{% else %}—{% endif %}</td>
+        <td>{{ row.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}

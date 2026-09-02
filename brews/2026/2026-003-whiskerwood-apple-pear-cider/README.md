@@ -1,6 +1,7 @@
 ---
 batch_id: 2026-003
 name: The Three Cats
+title: The Three Cats
 type: cider
 status: conditioning
 started: 2026-08-16
@@ -25,7 +26,7 @@ The name evolved during label work. "Whiskerwood" was an intermediate concept; t
 
 ## Current Status
 
-`conditioning`
+{% include batch-current-status.html %}
 
 ## Key Measurements
 
@@ -43,7 +44,7 @@ The name evolved during label work. "Whiskerwood" was an intermediate concept; t
 
 {% include_relative log.md %}
 
-{% include_relative schedule.md %}
+{% include batch-schedule-calendar.html %}
 
 {% include_relative tasting.md %}
 

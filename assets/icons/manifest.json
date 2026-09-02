@@ -1,0 +1,322 @@
+[
+  {
+    "id": "lone-tree-seal",
+    "label": "Lone-tree seal",
+    "file": "lone-tree-seal.png"
+  },
+  {
+    "id": "apple-tree",
+    "label": "Apple tree",
+    "file": "apple-tree.png"
+  },
+  {
+    "id": "pear-tree",
+    "label": "Pear tree",
+    "file": "pear-tree.png"
+  },
+  {
+    "id": "mayhem-tabby",
+    "label": "Mayhem \u2014 tabby",
+    "file": "mayhem-tabby.png"
+  },
+  {
+    "id": "george-black-cat",
+    "label": "George \u2014 black cat",
+    "file": "george-black-cat.png"
+  },
+  {
+    "id": "mingau-tuxedo-cat",
+    "label": "Mingau \u2014 tuxedo cat",
+    "file": "mingau-tuxedo-cat.png"
+  },
+  {
+    "id": "fox",
+    "label": "Fox",
+    "file": "fox.png"
+  },
+  {
+    "id": "orchard-fence",
+    "label": "Orchard fence",
+    "file": "orchard-fence.png"
+  },
+  {
+    "id": "green-apple",
+    "label": "Green apple",
+    "file": "green-apple.png"
+  },
+  {
+    "id": "pear",
+    "label": "Pear",
+    "file": "pear.png"
+  },
+  {
+    "id": "cranberry",
+    "label": "Cranberry",
+    "file": "cranberry.png"
+  },
+  {
+    "id": "maple-leaf",
+    "label": "Maple leaf",
+    "file": "maple-leaf.png"
+  },
+  {
+    "id": "blackberry",
+    "label": "Blackberry",
+    "file": "blackberry.png"
+  },
+  {
+    "id": "elderflower",
+    "label": "Elderflower",
+    "file": "elderflower.png"
+  },
+  {
+    "id": "quince",
+    "label": "Quince",
+    "file": "quince.png"
+  },
+  {
+    "id": "damson-plum",
+    "label": "Damson plum",
+    "file": "damson-plum.png"
+  },
+  {
+    "id": "wine-bottle",
+    "label": "Wine bottle",
+    "file": "wine-bottle.png"
+  },
+  {
+    "id": "cider-bottle",
+    "label": "Cider bottle",
+    "file": "cider-bottle.png"
+  },
+  {
+    "id": "demijohn",
+    "label": "Demijohn",
+    "file": "demijohn.png"
+  },
+  {
+    "id": "pet-fermenter",
+    "label": "PET fermenter",
+    "file": "pet-fermenter.png"
+  },
+  {
+    "id": "brewing-bucket",
+    "label": "Brewing bucket",
+    "file": "brewing-bucket.png"
+  },
+  {
+    "id": "crown-cap",
+    "label": "Crown cap",
+    "file": "crown-cap.png"
+  },
+  {
+    "id": "cork",
+    "label": "Cork",
+    "file": "cork.png"
+  },
+  {
+    "id": "wine-glass",
+    "label": "Wine glass",
+    "file": "wine-glass.png"
+  },
+  {
+    "id": "hydrometer",
+    "label": "Hydrometer",
+    "file": "hydrometer.png"
+  },
+  {
+    "id": "thermometer",
+    "label": "Thermometer",
+    "file": "thermometer.png"
+  },
+  {
+    "id": "siphon",
+    "label": "Siphon",
+    "file": "siphon.png"
+  },
+  {
+    "id": "funnel",
+    "label": "Funnel",
+    "file": "funnel.png"
+  },
+  {
+    "id": "measuring-spoon",
+    "label": "Measuring spoon",
+    "file": "measuring-spoon.png"
+  },
+  {
+    "id": "scale",
+    "label": "Scale",
+    "file": "scale.png"
+  },
+  {
+    "id": "sanitizer-spray",
+    "label": "Sanitizer spray",
+    "file": "sanitizer-spray.png"
+  },
+  {
+    "id": "tasting-notebook",
+    "label": "Tasting notebook",
+    "file": "tasting-notebook.png"
+  },
+  {
+    "id": "active-fermentation",
+    "label": "Active fermentation",
+    "file": "active-fermentation.png"
+  },
+  {
+    "id": "secondary-fermentation",
+    "label": "Secondary fermentation",
+    "file": "secondary-fermentation.png"
+  },
+  {
+    "id": "racking",
+    "label": "Racking",
+    "file": "racking.png"
+  },
+  {
+    "id": "cold-crash",
+    "label": "Cold crash",
+    "file": "cold-crash.png"
+  },
+  {
+    "id": "clearing",
+    "label": "Clearing",
+    "file": "clearing.png"
+  },
+  {
+    "id": "bottling",
+    "label": "Bottling",
+    "file": "bottling.png"
+  },
+  {
+    "id": "bottle-conditioning",
+    "label": "Bottle conditioning",
+    "file": "bottle-conditioning.png"
+  },
+  {
+    "id": "finished-batch-medal",
+    "label": "Finished-batch medal",
+    "file": "finished-batch-medal.png"
+  },
+  {
+    "id": "calendar",
+    "label": "Calendar",
+    "file": "calendar.png"
+  },
+  {
+    "id": "clock",
+    "label": "Clock",
+    "file": "clock.png"
+  },
+  {
+    "id": "clipboard",
+    "label": "Clipboard",
+    "file": "clipboard.png"
+  },
+  {
+    "id": "note",
+    "label": "Note",
+    "file": "note.png"
+  },
+  {
+    "id": "rating-star",
+    "label": "Rating star",
+    "file": "rating-star.png"
+  },
+  {
+    "id": "family-review",
+    "label": "Family review",
+    "file": "family-review.png"
+  },
+  {
+    "id": "chevron",
+    "label": "Chevron",
+    "file": "chevron.png"
+  },
+  {
+    "id": "moon",
+    "label": "Moon",
+    "file": "moon.png"
+  },
+  {
+    "id": "short-divider",
+    "label": "Short divider",
+    "file": "short-divider.png"
+  },
+  {
+    "id": "long-divider",
+    "label": "Long divider",
+    "file": "long-divider.png"
+  },
+  {
+    "id": "symmetrical-divider",
+    "label": "Symmetrical divider",
+    "file": "symmetrical-divider.png"
+  },
+  {
+    "id": "botanical-corner",
+    "label": "Botanical corner",
+    "file": "botanical-corner.png"
+  },
+  {
+    "id": "panel-corner",
+    "label": "Panel corner",
+    "file": "panel-corner.png"
+  },
+  {
+    "id": "progress-ring",
+    "label": "Progress ring",
+    "file": "progress-ring.png"
+  },
+  {
+    "id": "status-dot",
+    "label": "Status dot",
+    "file": "status-dot.png"
+  },
+  {
+    "id": "paw-print-seal",
+    "label": "Paw-print seal",
+    "file": "paw-print-seal.png"
+  },
+  {
+    "id": "merton-mill-waterwheel",
+    "label": "Merton mill waterwheel",
+    "file": "merton-mill-waterwheel.png"
+  },
+  {
+    "id": "river-wandle-waves",
+    "label": "River Wandle waves",
+    "file": "river-wandle-waves.png"
+  },
+  {
+    "id": "mill-building",
+    "label": "Mill building",
+    "file": "mill-building.png"
+  },
+  {
+    "id": "apple-blossom",
+    "label": "Apple blossom",
+    "file": "apple-blossom.png"
+  },
+  {
+    "id": "orchard-grass",
+    "label": "Orchard grass",
+    "file": "orchard-grass.png"
+  },
+  {
+    "id": "distant-birds",
+    "label": "Distant birds",
+    "file": "distant-birds.png"
+  },
+  {
+    "id": "cloud",
+    "label": "Cloud",
+    "file": "cloud.png"
+  },
+  {
+    "id": "batch-number-tag",
+    "label": "Batch-number tag",
+    "file": "batch-number-tag.png"
+  }
+]

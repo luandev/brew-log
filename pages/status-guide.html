@@ -1,0 +1,90 @@
+---
+layout: page
+title: Status Guide
+permalink: /pages/status-guide/
+---
+
+<div class="status-guide-page">
+  <p class="status-guide-intro">
+    Batch status is set in each brew's <code>README.md</code> front matter.
+    It drives badges, active brew lists, schedule visibility, and progress tracking.
+  </p>
+
+  <section class="status-guide-lifecycle lto-panel">
+    <h2 class="lto-section-title">
+      <span class="lto-section-title-text">
+        {% include icon.html section_id="lifecycle" class="lto-section-icon" decorative=true %}
+        Lifecycle
+      </span>
+    </h2>
+    <div class="status-flow">
+      {% assign active_statuses = site.data.statuses | where: "active", true %}
+      {% for status in active_statuses %}
+      <a class="status-flow-step" href="#{{ status.id }}">
+        <span class="status-badge status-{{ status.id }}">{{ status.label }}</span>
+      </a>
+      {% unless forloop.last %}
+      <span class="status-flow-arrow" aria-hidden="true">→</span>
+      {% endunless %}
+      {% endfor %}
+    </div>
+    <p class="status-flow-note">Stages can be skipped. Terminal paths: <span class="status-badge status-finished">finished</span> <span class="status-badge status-failed">failed</span> <span class="status-badge status-archived">archived</span></p>
+  </section>
+
+  <section class="status-guide-grid">
+    {% for status in site.data.statuses %}
+    {% assign batches_in_status = site.data.batches | where: "status", status.id %}
+    <article class="status-guide-card lto-panel" id="{{ status.id }}">
+      <header class="status-guide-card-header">
+        <span class="status-badge status-{{ status.id }}">{{ status.label }}</span>
+        <span class="status-guide-phase">{{ status.phase }}</span>
+      </header>
+
+      <p class="status-guide-description">{{ status.description }}</p>
+
+      <dl class="status-guide-links">
+        <div>
+          <dt>Recipe section</dt>
+          <dd>{{ status.recipe_section }}</dd>
+        </div>
+        <div>
+          <dt>Log focus</dt>
+          <dd>{{ status.log_focus }}</dd>
+        </div>
+        <div>
+          <dt>Schedule focus</dt>
+          <dd>{{ status.schedule_focus }}</dd>
+        </div>
+        <div>
+          <dt>Typically next</dt>
+          <dd>
+            {% if status.next.size > 0 %}
+            {% for next_id in status.next %}
+            {% assign next_status = site.data.statuses | where: "id", next_id | first %}
+            <a class="status-badge status-{{ next_id }}" href="#{{ next_id }}">{{ next_status.label }}</a>
+            {% endfor %}
+            {% else %}
+            —
+            {% endif %}
+          </dd>
+        </div>
+        <div>
+          <dt>Active batch list</dt>
+          <dd>{% if status.active %}Shown{% else %}Hidden{% endif %}</dd>
+        </div>
+      </dl>
+
+      {% if batches_in_status.size > 0 %}
+      <div class="status-guide-batches">
+        <h3>Current batches</h3>
+        <ul>
+          {% for batch in batches_in_status %}
+          <li><a href="{{ batch.url | relative_url }}">{{ batch.name }}</a> <span class="status-guide-batch-id">{{ batch.batch_id }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+</div>

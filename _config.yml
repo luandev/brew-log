@@ -54,6 +54,10 @@ defaults:
     values:
       published: false
   - scope:
+      path: "brews/**/stages.md"
+    values:
+      published: false
+  - scope:
       path: "brews/**/tasting.md"
     values:
       published: false

@@ -3,14 +3,16 @@
     <img class="active-brew-thumb" src="{{ include.batch.thumbnail | relative_url }}" alt="" loading="lazy" width="80" height="80">
   {% else %}
     <div class="active-brew-thumb active-brew-thumb--{{ include.batch.type | default: 'experimental' }}" aria-hidden="true">
-      <span class="active-brew-thumb-label">{{ include.batch.type | slice: 0 | upcase }}</span>
+      {% include icon.html brew_type=include.batch.type class="active-brew-thumb-icon" decorative=true %}
     </div>
   {% endif %}
   <div class="active-brew-info">
     <h3 class="active-brew-name">{{ include.batch.name }}</h3>
     <div class="active-brew-meta">
       <span class="active-brew-id">{{ include.batch.batch_id }}</span>
-      <span class="status-badge status-{{ include.batch.status }}">{{ include.batch.status }}</span>
+      <span class="status-badge status-{{ include.batch.status }}">
+        {% if include.batch.current_stage_label %}{{ include.batch.current_stage_label }}{% else %}{{ include.batch.status }}{% endif %}
+      </span>
       {% if include.batch.started %}<span>Started {{ include.batch.started }}</span>{% endif %}
       {% if include.batch.target_abv %}<span>Est. {{ include.batch.target_abv }}% ABV</span>{% endif %}
     </div>
@@ -18,6 +20,5 @@
   <div class="active-brew-progress">
     {% include progress-ring.html percent=include.batch.progress_percent %}
     <span class="active-brew-days">Day {{ include.batch.days_elapsed }} / {{ include.batch.target_days }}</span>
-    <span class="active-brew-chevron" aria-hidden="true">›</span>
   </div>
 </a>

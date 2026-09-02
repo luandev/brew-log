@@ -1,7 +1,76 @@
 [
   {
+    "batch_id": "2026-002",
+    "name": "Cranberry & Maple Wine",
+    "type": "wine",
+    "status": "primary-fermentation",
+    "started": "2026-09-01",
+    "volume_l": null,
+    "target_abv": 14,
+    "actual_abv": null,
+    "tags": [
+      "cranberry",
+      "maple"
+    ],
+    "permalink": "/brews/2026-002/",
+    "folder": "brews/2026/2026-002-cranberry-maple-wine",
+    "year": "2026",
+    "slug": "2026-002-cranberry-maple-wine",
+    "url": "/brews/2026-002/",
+    "is_active": true,
+    "last_log_date": "2026-09-01",
+    "latest_log_excerpt": "The airlock provides a path for fermentation carbon dioxide. No gravity, temperature, exact batch volume, ingredient weights, or tasting observations were recorded.",
+    "pending_schedule": [],
+    "schedule": [],
+    "stages": [
+      {
+        "stage": "primary-fermentation",
+        "started": "2026-09-01",
+        "ended": "",
+        "status": "active",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Secondary"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "conditioning",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Conditioning"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      }
+    ],
+    "current_stage": "primary-fermentation",
+    "current_stage_label": "Primary Fermentation",
+    "days_elapsed": 1,
+    "target_days": 28,
+    "progress_percent": 4,
+    "thumbnail": "",
+    "end_date": "2026-09-29"
+  },
+  {
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
+    "title": "Apple & Golden Syrup Wine",
     "type": "wine",
     "status": "primary-fermentation",
     "started": "2026-08-31",
@@ -42,11 +111,175 @@
         "status": "Pending"
       }
     ],
-    "days_elapsed": 1,
+    "schedule": [
+      {
+        "date": "2026-09-01",
+        "action": "Check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-07",
+        "action": "Take hydrometer reading",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-14",
+        "action": "Check whether ready to rack",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-10-01",
+        "action": "First tasting",
+        "status": "Pending"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "primary-fermentation",
+        "started": "2026-08-31",
+        "ended": "",
+        "status": "active",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Secondary"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "conditioning",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Conditioning"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      }
+    ],
+    "current_stage": "primary-fermentation",
+    "current_stage_label": "Primary Fermentation",
+    "days_elapsed": 2,
     "target_days": 38,
-    "progress_percent": 3,
+    "progress_percent": 5,
     "thumbnail": "",
     "next_action_date": "2026-09-01",
-    "next_action": "Check fermentation activity"
+    "next_action": "Check fermentation activity",
+    "end_date": "2026-10-08"
+  },
+  {
+    "batch_id": "2026-003",
+    "name": "Whiskerwood Apple & Pear Cider",
+    "type": "cider",
+    "status": "primary-fermentation",
+    "started": "2026-08-16",
+    "volume_l": null,
+    "target_abv": null,
+    "actual_abv": null,
+    "tags": [
+      "apple",
+      "pear",
+      "cinnamon",
+      "bottle-conditioned"
+    ],
+    "permalink": "/brews/2026-003/",
+    "folder": "brews/2026/2026-003-whiskerwood-apple-pear-cider",
+    "year": "2026",
+    "slug": "2026-003-whiskerwood-apple-pear-cider",
+    "url": "/brews/2026-003/",
+    "is_active": true,
+    "last_log_date": "2026-09-01",
+    "latest_log_excerpt": "The cider aroma was described as strong but not foul, then clarified as wine-like and fruity. Cinnamon sticks had been forgotten in the fermenter during primary; their removal has not been confirmed. ",
+    "pending_schedule": [
+      {
+        "date": "2026-09-01",
+        "action": "Take a confirmation hydrometer reading before bottling",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "Confirm cinnamon sticks are removed before bottling",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "If gravity is stable, bottle and prime at 5 g/L",
+        "status": "Pending"
+      }
+    ],
+    "schedule": [
+      {
+        "date": "2026-08-16",
+        "action": "Start primary fermentation in the 10 L airlocked bucket",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "Take a confirmation hydrometer reading before bottling",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "Confirm cinnamon sticks are removed before bottling",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-01",
+        "action": "If gravity is stable, bottle and prime at 5 g/L",
+        "status": "Pending"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "primary-fermentation",
+        "started": "2026-08-16",
+        "ended": "",
+        "status": "active",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      },
+      {
+        "stage": "aging",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Aging"
+      }
+    ],
+    "current_stage": "primary-fermentation",
+    "current_stage_label": "Primary Fermentation",
+    "days_elapsed": 17,
+    "target_days": 23,
+    "progress_percent": 74,
+    "thumbnail": "",
+    "next_action_date": "2026-09-01",
+    "next_action": "Take a confirmation hydrometer reading before bottling",
+    "end_date": "2026-09-08"
   }
 ]

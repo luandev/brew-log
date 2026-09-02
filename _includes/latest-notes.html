@@ -1,5 +1,10 @@
 <div class="lto-panel">
-  <h2 class="lto-section-title">Latest Notes</h2>
+  <h2 class="lto-section-title">
+    <span class="lto-section-title-text">
+      {% include icon.html section_id="notes" class="lto-section-icon" decorative=true %}
+      Latest Notes
+    </span>
+  </h2>
   {% assign noted = site.data.batches | where_exp: "b", "b.latest_log_excerpt" | sort: "last_log_date" | reverse %}
   {% if noted.size > 0 %}
     {% for batch in noted limit:3 %}

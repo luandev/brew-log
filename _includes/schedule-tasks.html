@@ -1,11 +1,18 @@
 <div class="lto-panel">
-  <h2 class="lto-section-title">Next Tasks</h2>
+  <h2 class="lto-section-title">
+    <span class="lto-section-title-text">
+      {% include icon.html section_id="schedule" class="lto-section-icon" decorative=true %}
+      Next Tasks
+    </span>
+  </h2>
   {% if site.data.schedule.size > 0 %}
     <ul class="schedule-task-list">
       {% for task in site.data.schedule limit:6 %}
       <li class="schedule-task-item">
         <span class="schedule-task-date">{{ task.date | date: "%b %d" }}</span>
-        <span class="schedule-task-icon" aria-hidden="true"></span>
+        <span class="schedule-task-icon" aria-hidden="true">
+          {% include icon.html id="clock" class="schedule-task-icon-img" decorative=true %}
+        </span>
         <div>
           <p class="schedule-task-action">{{ task.action }}</p>
           <p class="schedule-task-batch"><a href="{{ task.url | relative_url }}">{{ task.name }}</a></p>

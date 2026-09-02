@@ -1,5 +1,10 @@
 <div class="lto-panel">
-  <h2 class="lto-section-title">Past Batches</h2>
+  <h2 class="lto-section-title">
+    <span class="lto-section-title-text">
+      {% include icon.html section_id="past-batches" class="lto-section-icon" decorative=true %}
+      Past Batches
+    </span>
+  </h2>
   {% assign finished = site.data.batches | where: "status", "finished" %}
   {% if finished.size > 0 %}
   <table class="past-batches-table">

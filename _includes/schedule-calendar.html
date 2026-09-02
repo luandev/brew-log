@@ -1,0 +1,34 @@
+<div class="schedule-calendar-page">
+  <p class="schedule-calendar-intro">Stage timelines with start/end dates, plus upcoming actions.</p>
+
+  <div class="schedule-calendar lto-panel" data-schedule-calendar data-baseurl="{{ site.baseurl }}">
+    <div class="schedule-calendar-toolbar">
+      <button type="button" class="schedule-nav-btn" data-dir="-1" aria-label="Previous month">‹</button>
+      <h2 class="schedule-calendar-title"></h2>
+      <button type="button" class="schedule-nav-btn" data-dir="1" aria-label="Next month">›</button>
+      <button type="button" class="schedule-nav-btn schedule-nav-today" data-today>Today</button>
+    </div>
+
+    <div class="schedule-legend" aria-label="Active batches"></div>
+
+    <div class="schedule-dow-header" aria-hidden="true">
+      <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+    </div>
+
+    <div class="schedule-calendar-body"></div>
+
+    <script type="application/json" class="schedule-calendar-data">{{ site.data.calendar | jsonify }}</script>
+  </div>
+
+  <aside class="schedule-upcoming lto-panel">
+    <h2 class="lto-section-title">
+      <span class="lto-section-title-text">
+        {% include icon.html section_id="upcoming" class="lto-section-icon" decorative=true %}
+        Upcoming Actions
+      </span>
+    </h2>
+    <ul class="schedule-upcoming-list"></ul>
+  </aside>
+
+  <script src="{{ '/assets/js/schedule-calendar.js' | relative_url }}" defer></script>
+</div>

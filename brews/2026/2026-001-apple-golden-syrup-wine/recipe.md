@@ -38,6 +38,10 @@
 
 -
 
+<div class="recipe-details-grid">
+
+<div class="recipe-detail-panel" markdown="1">
+
 ## Target
 
 - Volume: 1.2 L
@@ -46,11 +50,29 @@
 - Target ABV: 12%
 - Fermentation temperature: 20 °C
 
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
+## Bottling
+
+- Method:
+- Priming sugar:
+- Bottle type:
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
 ## Process
 
 1. Combine apple juice and golden syrup.
 2. Pitch yeast.
 3. Ferment in primary.
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
 
 ## Fermentation Stages
 
@@ -58,11 +80,9 @@
 2. Secondary:
 3. Conditioning:
 
-## Bottling
+</div>
 
-- Method:
-- Priming sugar:
-- Bottle type:
+</div>
 
 ## Notes
 

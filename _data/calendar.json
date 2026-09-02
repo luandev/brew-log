@@ -1,0 +1,127 @@
+{
+  "today": "2026-09-02",
+  "batches": [
+    {
+      "batch_id": "2026-002",
+      "name": "Cranberry & Maple Wine",
+      "url": "/brews/2026-002/",
+      "type": "wine",
+      "status": "primary-fermentation",
+      "current_stage": "primary-fermentation",
+      "current_stage_label": "Primary Fermentation",
+      "started": "2026-09-01",
+      "end_date": "2026-09-29",
+      "target_days": 28
+    },
+    {
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/",
+      "type": "wine",
+      "status": "primary-fermentation",
+      "current_stage": "primary-fermentation",
+      "current_stage_label": "Primary Fermentation",
+      "started": "2026-08-31",
+      "end_date": "2026-10-08",
+      "target_days": 38
+    },
+    {
+      "batch_id": "2026-003",
+      "name": "Whiskerwood Apple & Pear Cider",
+      "url": "/brews/2026-003/",
+      "type": "cider",
+      "status": "primary-fermentation",
+      "current_stage": "primary-fermentation",
+      "current_stage_label": "Primary Fermentation",
+      "started": "2026-08-16",
+      "end_date": "2026-09-08",
+      "target_days": 23
+    }
+  ],
+  "stages": [
+    {
+      "batch_id": "2026-003",
+      "name": "Whiskerwood Apple & Pear Cider",
+      "url": "/brews/2026-003/",
+      "type": "cider",
+      "stage": "primary-fermentation",
+      "label": "Primary Fermentation",
+      "started": "2026-08-16",
+      "ended": null,
+      "status": "active"
+    },
+    {
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/",
+      "type": "wine",
+      "stage": "primary-fermentation",
+      "label": "Primary Fermentation",
+      "started": "2026-08-31",
+      "ended": null,
+      "status": "active"
+    },
+    {
+      "batch_id": "2026-002",
+      "name": "Cranberry & Maple Wine",
+      "url": "/brews/2026-002/",
+      "type": "wine",
+      "stage": "primary-fermentation",
+      "label": "Primary Fermentation",
+      "started": "2026-09-01",
+      "ended": null,
+      "status": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "date": "2026-09-01",
+      "action": "Check fermentation activity",
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/"
+    },
+    {
+      "date": "2026-09-01",
+      "action": "Confirm cinnamon sticks are removed before bottling",
+      "batch_id": "2026-003",
+      "name": "Whiskerwood Apple & Pear Cider",
+      "url": "/brews/2026-003/"
+    },
+    {
+      "date": "2026-09-01",
+      "action": "If gravity is stable, bottle and prime at 5 g/L",
+      "batch_id": "2026-003",
+      "name": "Whiskerwood Apple & Pear Cider",
+      "url": "/brews/2026-003/"
+    },
+    {
+      "date": "2026-09-01",
+      "action": "Take a confirmation hydrometer reading before bottling",
+      "batch_id": "2026-003",
+      "name": "Whiskerwood Apple & Pear Cider",
+      "url": "/brews/2026-003/"
+    },
+    {
+      "date": "2026-09-07",
+      "action": "Take hydrometer reading",
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/"
+    },
+    {
+      "date": "2026-09-14",
+      "action": "Check whether ready to rack",
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/"
+    },
+    {
+      "date": "2026-10-01",
+      "action": "First tasting",
+      "batch_id": "2026-001",
+      "name": "Apple & Golden Syrup Wine",
+      "url": "/brews/2026-001/"
+    }
+  ]
+}

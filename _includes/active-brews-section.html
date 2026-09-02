@@ -1,14 +1,10 @@
 <div class="lto-panel">
   <h2 class="lto-section-title">
-    Active Brews
+    <span class="lto-section-title-text">
+      {% include icon.html section_id="active-brews" class="lto-section-icon" decorative=true %}
+      Active Brews
+    </span>
     <a class="lto-btn" href="{{ '/pages/active/' | relative_url }}">View all</a>
   </h2>
-  {% assign active = site.data.batches | where_exp: "b", "b.is_active" %}
-  {% if active.size > 0 %}
-    {% for batch in active %}
-      {% include active-brew-card.html batch=batch %}
-    {% endfor %}
-  {% else %}
-    <p style="color:var(--text-muted);">No active batches. Start a new brew to see it here.</p>
-  {% endif %}
+  {% include active-brews-list.html %}
 </div>

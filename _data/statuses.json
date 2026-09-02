@@ -1,0 +1,123 @@
+[
+  {
+    "id": "planned",
+    "label": "Planned",
+    "phase": "Planning",
+    "description": "Recipe and schedule are documented; brewing has not started.",
+    "recipe_section": "Target, Process",
+    "log_focus": "Planning notes and ingredient decisions",
+    "schedule_focus": "Brew-day and first-week actions",
+    "next": ["preparing", "archived"],
+    "active": true
+  },
+  {
+    "id": "preparing",
+    "label": "Preparing",
+    "phase": "Planning",
+    "description": "Ingredients and equipment are being gathered before pitch.",
+    "recipe_section": "Ingredients, Yeast, Additions",
+    "log_focus": "Prep work, sanitising, must/juice preparation",
+    "schedule_focus": "Brew-day tasks",
+    "next": ["primary-fermentation", "planned", "failed"],
+    "active": true
+  },
+  {
+    "id": "primary-fermentation",
+    "label": "Primary Fermentation",
+    "phase": "Fermentation",
+    "description": "Active ferment in primary vessel; yeast is converting sugars.",
+    "recipe_section": "Fermentation Stages — Primary",
+    "log_focus": "Daily activity, gravity readings, temperature",
+    "schedule_focus": "Fermentation checks, hydrometer readings",
+    "next": ["secondary", "clearing", "failed"],
+    "active": true
+  },
+  {
+    "id": "secondary",
+    "label": "Secondary",
+    "phase": "Fermentation",
+    "description": "Transferred off primary lees; slower fermentation or maturation.",
+    "recipe_section": "Fermentation Stages — Secondary",
+    "log_focus": "Racking notes, airlock activity, clarity",
+    "schedule_focus": "Rack dates, gravity stability checks",
+    "next": ["clearing", "conditioning", "failed"],
+    "active": true
+  },
+  {
+    "id": "clearing",
+    "label": "Clearing",
+    "phase": "Maturation",
+    "description": "Sediment is settling; batch is clarifying before packaging.",
+    "recipe_section": "Fermentation Stages — Conditioning (early)",
+    "log_focus": "Clarity observations, finings if used",
+    "schedule_focus": "Stability checks before bottling",
+    "next": ["conditioning", "bottled", "failed"],
+    "active": true
+  },
+  {
+    "id": "conditioning",
+    "label": "Conditioning",
+    "phase": "Maturation",
+    "description": "Flavor is integrating; batch may be bulk-aging before bottles.",
+    "recipe_section": "Fermentation Stages — Conditioning",
+    "log_focus": "Tasting notes, aroma development",
+    "schedule_focus": "Tasting dates, bottling prep",
+    "next": ["bottled", "aging", "failed"],
+    "active": true
+  },
+  {
+    "id": "bottled",
+    "label": "Bottled",
+    "phase": "Packaging",
+    "description": "Packaged with priming or still; carbonation or rest in bottle.",
+    "recipe_section": "Bottling",
+    "log_focus": "Bottling day, bottle counts, priming details",
+    "schedule_focus": "Carbonation checks, first bottle tastings",
+    "next": ["aging", "finished", "failed"],
+    "active": true
+  },
+  {
+    "id": "aging",
+    "label": "Aging",
+    "phase": "Packaging",
+    "description": "Stored after bottling to develop character before drinking.",
+    "recipe_section": "Bottling, Notes",
+    "log_focus": "Cellar conditions, periodic tastings",
+    "schedule_focus": "Tasting milestones",
+    "next": ["finished", "failed"],
+    "active": true
+  },
+  {
+    "id": "finished",
+    "label": "Finished",
+    "phase": "Complete",
+    "description": "Batch is complete; final notes and ABV recorded.",
+    "recipe_section": "Notes (final process)",
+    "log_focus": "Final summary entry",
+    "schedule_focus": "No pending actions",
+    "next": ["archived"],
+    "active": false
+  },
+  {
+    "id": "failed",
+    "label": "Failed",
+    "phase": "Complete",
+    "description": "Batch was abandoned or spoiled; document why in the log.",
+    "recipe_section": "Notes",
+    "log_focus": "Failure reason and lessons learned",
+    "schedule_focus": "No pending actions",
+    "next": ["archived"],
+    "active": false
+  },
+  {
+    "id": "archived",
+    "label": "Archived",
+    "phase": "Complete",
+    "description": "Kept for reference only; hidden from active brew lists.",
+    "recipe_section": "All sections (read-only record)",
+    "log_focus": "Historical record",
+    "schedule_focus": "No pending actions",
+    "next": [],
+    "active": false
+  }
+]

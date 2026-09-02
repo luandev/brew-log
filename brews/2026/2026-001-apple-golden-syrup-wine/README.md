@@ -22,7 +22,7 @@ Small-batch apple and golden syrup wine in primary fermentation.
 
 ## Current Status
 
-`primary-fermentation`
+{% include batch-current-status.html %}
 
 ## Key Measurements
 
@@ -38,7 +38,7 @@ Small-batch apple and golden syrup wine in primary fermentation.
 
 {% include_relative log.md %}
 
-{% include_relative schedule.md %}
+{% include batch-schedule-calendar.html %}
 
 {% include_relative tasting.md %}
 

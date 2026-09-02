@@ -1,0 +1,11 @@
+{% assign status_info = site.data.statuses | where: "id", page.status | first %}
+
+<div class="batch-current-status">
+  <span class="status-badge status-{{ page.status }}">{{ page.status | replace: '-', ' ' }}</span>
+  {% if status_info %}
+  <p class="batch-status-description">{{ status_info.description }}</p>
+  <p class="batch-status-links">
+  <a href="{{ '/pages/status-guide/' | relative_url }}#{{ page.status }}">What this status means</a>
+  </p>
+  {% endif %}
+</div>

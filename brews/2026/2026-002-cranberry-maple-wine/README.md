@@ -1,6 +1,7 @@
 ---
 batch_id: 2026-002
 name: Cranberry & Maple Wine
+title: Cranberry & Maple Wine
 type: wine
 status: primary-fermentation
 started: 2026-09-01
@@ -21,7 +22,7 @@ Small experimental cranberry and maple wine fermenting in a 2 L PET bottle.
 
 ## Current Status
 
-`primary-fermentation`
+{% include batch-current-status.html %}
 
 ## Key Measurements
 
@@ -37,7 +38,7 @@ Small experimental cranberry and maple wine fermenting in a 2 L PET bottle.
 
 {% include_relative log.md %}
 
-{% include_relative schedule.md %}
+{% include batch-schedule-calendar.html %}
 
 {% include_relative tasting.md %}
 

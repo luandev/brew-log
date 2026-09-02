@@ -31,6 +31,7 @@ brews/<year>/<YYYY-NNN-short-kebab-case-name>/
   recipe.md
   log.md
   schedule.md
+  stages.md
   tasting.md
   media.md
 ```
@@ -50,7 +51,7 @@ Copy structure from [templates/batch/](../templates/batch/). Ask the user for an
 - ingredients, volume, yeast, target ABV
 - planned process and initial schedule
 
-Output all six files. Each file must be a complete, ready-to-save document.
+Output all seven files. Each file must be a complete, ready-to-save document.
 
 ### 2. Log update (most common)
 
@@ -68,8 +69,9 @@ Then output:
 
 1. **New section to append** to `log.md`
 2. **Updated `README.md` front matter** if `status` changed
-3. **Updated `schedule.md`** if actions were completed or new ones added
-4. **Updated `recipe.md`** only if the actual process diverged from the plan
+3. **Updated `stages.md`** if a stage started, ended, or became active
+4. **Updated `schedule.md`** if actions were completed or new ones added
+5. **Updated `recipe.md`** only if the actual process diverged from the plan
 
 ### 3. Tasting note
 
@@ -113,7 +115,7 @@ The README body must include these Liquid includes (do not remove):
 ```liquid
 {% include_relative recipe.md %}
 {% include_relative log.md %}
-{% include_relative schedule.md %}
+{% include batch-schedule-calendar.html %}
 {% include_relative tasting.md %}
 {% include_relative media.md %}
 ```
@@ -160,6 +162,36 @@ Use `### Observation` (singular), not "Observations".
 ```
 
 When the user completes an action, change its status to `Done` and add new `Pending` rows as needed.
+
+### Stages (stages.md)
+
+```markdown
+# Stages
+
+<!-- Stage IDs match the Status Guide. Row status: active, completed, planned, skipped -->
+
+| Stage | Started | Ended | Status |
+|---|---|---|
+| primary-fermentation | 2026-08-31 | 2026-09-14 | completed |
+| conditioning | 2026-09-14 | | active |
+| bottled | | | planned |
+```
+
+- Set `Started` when a stage begins.
+- Set `Ended` when the stage finishes.
+- Mark exactly one row `active` for the current stage.
+- Use stage IDs from the Status Guide (`primary-fermentation`, `bottled`, `conditioning`, etc.).
+- When a stage ends, set its row to `completed`, fill `Ended`, and start the next stage row.
+
+### Stage transition checklist
+
+When moving to a new fermentation stage:
+
+1. In `stages.md`: set current row to `completed` with `Ended` date; set next row to `active` with `Started` date.
+2. In `README.md`: update `status` to match the new active stage ID; update `started` if appropriate.
+3. In `schedule.md`: mark completed actions `Done`; add new `Pending` rows for the new stage (see Status Guide `schedule_focus`).
+4. Append a log entry describing the transition.
+5. Run `ruby scripts/generate_site_data.rb` and fix any validation warnings.
 
 ### Tasting note (append to tasting.md)
 

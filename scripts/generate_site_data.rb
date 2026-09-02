@@ -12,6 +12,7 @@ BREWS_DIR = File.join(ROOT, "brews")
 DATA_DIR = File.join(ROOT, "_data")
 BATCHES_OUTPUT = File.join(DATA_DIR, "batches.json")
 SCHEDULE_OUTPUT = File.join(DATA_DIR, "schedule.json")
+CALENDAR_OUTPUT = File.join(DATA_DIR, "calendar.json")
 
 INACTIVE_STATUSES = %w[finished failed archived].freeze
 DEFAULT_TARGET_DAYS = 28
@@ -56,6 +57,94 @@ def parse_schedule_rows(schedule_content)
     rows << { "date" => date, "action" => action, "status" => status }
   end
   rows
+end
+
+def parse_stage_rows(stages_content)
+  rows = []
+  stages_content.each_line do |line|
+    next unless line.strip.start_with?("|")
+    next if line.match?(/\A\|\s*-+\s*\|/) || line.include?("Stage")
+
+    cells = line.split("|").map(&:strip)
+    cells = cells[1..-2] if cells.first&.empty?
+    next if cells.nil? || cells.length < 4
+
+    stage, started, ended, status = cells[0], cells[1], cells[2], cells[3]
+    next if stage.empty?
+
+    rows << { "stage" => stage, "started" => started, "ended" => ended, "status" => status }
+  end
+  rows
+end
+
+def load_status_catalog
+  path = File.join(DATA_DIR, "statuses.json")
+  return { "ids" => {}, "entries" => [] } unless File.exist?(path)
+
+  entries = JSON.parse(File.read(path))
+  labels = entries.each_with_object({}) { |entry, lookup| lookup[entry["id"]] = entry["label"] }
+  { "ids" => labels, "entries" => entries }
+rescue StandardError
+  { "ids" => {}, "entries" => [] }
+end
+
+def load_status_labels
+  load_status_catalog["ids"]
+end
+
+def validate_batch(batch_id, metadata, stage_rows, schedule_rows, status_catalog)
+  status_ids = status_catalog["ids"].keys
+  status_entries = status_catalog["entries"].each_with_object({}) { |entry, lookup| lookup[entry["id"]] = entry }
+  batch_status = metadata["status"].to_s
+  is_active = !INACTIVE_STATUSES.include?(batch_status)
+
+  stage_rows.each do |row|
+    unless status_ids.include?(row["stage"])
+      warn "#{batch_id}: unknown stage ID '#{row["stage"]}' in stages.md"
+    end
+  end
+
+  active_rows = stage_rows.select { |row| row["status"]&.casecmp("active")&.zero? }
+  if active_rows.length > 1
+    warn "#{batch_id}: stages.md has #{active_rows.length} active rows; expected at most one"
+  end
+
+  if is_active
+    if active_rows.empty?
+      warn "#{batch_id}: active batch has no active stage row in stages.md"
+    elsif active_rows.length == 1
+      active = active_rows.first
+      if batch_status != active["stage"]
+        warn "#{batch_id}: README status '#{batch_status}' does not match active stage '#{active["stage"]}'"
+      end
+      if active["started"].to_s.strip.empty?
+        warn "#{batch_id}: active stage '#{active["stage"]}' is missing Started date in stages.md"
+      end
+
+      next_ids = status_entries[active["stage"]]&.fetch("next", []) || []
+      planned_stages = stage_rows.select { |row| row["status"]&.casecmp("planned")&.zero? }.map { |row| row["stage"] }
+      unless (planned_stages & next_ids).any?
+        warn "#{batch_id}: no planned next stage from Status Guide (expected one of: #{next_ids.join(', ')})"
+      end
+
+      pending_count = schedule_rows.count { |row| row["status"]&.casecmp("pending")&.zero? }
+      if pending_count.zero?
+        warn "#{batch_id}: no Pending schedule rows for active stage '#{active["stage"]}'"
+      end
+    end
+  end
+
+  stage_rows.each do |row|
+    next unless row["status"]&.casecmp("completed")&.zero?
+
+    if row["started"].to_s.strip.empty? || row["ended"].to_s.strip.empty?
+      warn "#{batch_id}: completed stage '#{row["stage"]}' must have both Started and Ended dates"
+    end
+  end
+end
+
+def stage_label(stage_id, status_lookup)
+  status_lookup[stage_id] || stage_id.tr("-", " ").split.map(&:capitalize).join(" ")
 end
 
 def next_pending_action(rows)
@@ -110,8 +199,11 @@ def find_batch_readmes
 end
 
 today = Date.today
+status_catalog = load_status_catalog
+status_lookup = status_catalog["ids"]
 batches = []
 schedule_entries = []
+calendar_stages = []
 
 find_batch_readmes.each do |readme_path|
   folder = File.dirname(readme_path)
@@ -125,8 +217,11 @@ find_batch_readmes.each do |readme_path|
   next if batch_id.nil? || batch_id.empty?
 
   schedule_content = read_file(File.join(folder, "schedule.md"))
+  stages_content = read_file(File.join(folder, "stages.md"))
   log_content = read_file(File.join(folder, "log.md"))
   schedule_rows = parse_schedule_rows(schedule_content)
+  stage_rows = parse_stage_rows(stages_content)
+  validate_batch(batch_id, metadata, stage_rows, schedule_rows, status_catalog)
   pending = next_pending_action(schedule_rows)
   pending_rows = pending_schedule_rows(schedule_rows)
 
@@ -147,6 +242,15 @@ find_batch_readmes.each do |readme_path|
   entry["last_log_date"] = last_log_date(log_content)
   entry["latest_log_excerpt"] = latest_log_excerpt(log_content)
   entry["pending_schedule"] = pending_rows
+  entry["schedule"] = schedule_rows
+  entry["stages"] = stage_rows.map do |row|
+    row.merge("label" => stage_label(row["stage"], status_lookup))
+  end
+  active_stage_row = stage_rows.find { |row| row["status"]&.casecmp("active")&.zero? }
+  if active_stage_row
+    entry["current_stage"] = active_stage_row["stage"]
+    entry["current_stage_label"] = stage_label(active_stage_row["stage"], status_lookup)
+  end
   entry["days_elapsed"] = days_elapsed
   entry["target_days"] = target_days
   entry["progress_percent"] = progress_percent
@@ -155,6 +259,10 @@ find_batch_readmes.each do |readme_path|
   if pending
     entry["next_action_date"] = pending["date"]
     entry["next_action"] = pending["action"]
+  end
+
+  if started_date && target_days.positive?
+    entry["end_date"] = (started_date + target_days).strftime("%Y-%m-%d")
   end
 
   if entry["is_active"]
@@ -167,6 +275,23 @@ find_batch_readmes.each do |readme_path|
         "url" => entry["url"]
       }
     end
+
+    stage_rows.each do |row|
+      start_date = parse_date(row["started"])
+      next unless start_date
+
+      calendar_stages << {
+        "batch_id" => batch_id,
+        "name" => entry["name"],
+        "url" => entry["url"],
+        "type" => entry["type"],
+        "stage" => row["stage"],
+        "label" => stage_label(row["stage"], status_lookup),
+        "started" => start_date.strftime("%Y-%m-%d"),
+        "ended" => parse_date(row["ended"])&.strftime("%Y-%m-%d"),
+        "status" => row["status"]
+      }
+    end
   end
 
   batches << entry
@@ -175,9 +300,35 @@ end
 batches.sort_by! { |b| [b["started"].to_s, b["batch_id"].to_s] }.reverse!
 schedule_entries.sort_by! { |e| [e["date"].to_s, e["batch_id"].to_s] }
 
+active_batches = batches.select { |b| b["is_active"] }.map do |b|
+  {
+    "batch_id" => b["batch_id"],
+    "name" => b["name"],
+    "url" => b["url"],
+    "type" => b["type"],
+    "status" => b["status"],
+    "current_stage" => b["current_stage"],
+    "current_stage_label" => b["current_stage_label"],
+    "started" => b["started"],
+    "end_date" => b["end_date"],
+    "target_days" => b["target_days"]
+  }
+end
+
+calendar_stages.sort_by! { |s| [s["started"], s["batch_id"], s["stage"]] }
+
+calendar_data = {
+  "today" => today.strftime("%Y-%m-%d"),
+  "batches" => active_batches,
+  "stages" => calendar_stages,
+  "tasks" => schedule_entries
+}
+
 FileUtils.mkdir_p(DATA_DIR)
 File.write(BATCHES_OUTPUT, JSON.pretty_generate(batches))
 File.write(SCHEDULE_OUTPUT, JSON.pretty_generate(schedule_entries))
+File.write(CALENDAR_OUTPUT, JSON.pretty_generate(calendar_data))
 
 puts "Generated #{BATCHES_OUTPUT} with #{batches.length} batch(es)."
 puts "Generated #{SCHEDULE_OUTPUT} with #{schedule_entries.length} pending task(s)."
+puts "Generated #{CALENDAR_OUTPUT} with #{calendar_stages.length} stage span(s)."

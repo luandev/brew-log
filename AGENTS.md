@@ -29,15 +29,17 @@ This repository is a brewing journal and static website.
 3. Fill `recipe.md` with ingredients and planned process.
 4. Add log entries to `log.md` in chronological order (append only).
 5. Maintain `schedule.md` with upcoming actions (`Pending`, `Done`, `Skipped`).
-6. Add tasting notes to `tasting.md` when sampling.
-7. Reference photos in `media.md`; store files in `assets/brews/<batch_id>/`.
+6. Maintain `stages.md` with start/end dates for each fermentation stage (`active`, `completed`, `planned`, `skipped`).
+7. Add tasting notes to `tasting.md` when sampling.
+8. Reference photos in `media.md`; store files in `assets/brews/<batch_id>/`.
 
 ## Updating an active batch
 
 1. Append a new dated section to `log.md` — do not rewrite past entries.
 2. Update `status` in `README.md` front matter when the stage changes.
-3. Mark completed schedule rows as `Done` and add new `Pending` rows as needed.
-4. Update `recipe.md` if the actual process diverged from the plan.
+3. Update `stages.md`: end the previous stage, set dates, and mark the new stage `active`.
+4. Mark completed schedule rows as `Done` and add new `Pending` rows as needed.
+5. Update `recipe.md` if the actual process diverged from the plan.
 
 ## Public batch URL (for QR labels)
 
@@ -59,4 +61,4 @@ ruby scripts/generate_site_data.rb
 bundle exec jekyll serve
 ```
 
-The build script regenerates `_data/batches.json` from batch folders.
+The build script regenerates `_data/batches.json` from batch folders and prints validation warnings when `README.md`, `stages.md`, and `schedule.md` are out of sync.

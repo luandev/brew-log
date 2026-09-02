@@ -10,8 +10,9 @@ Canonical brewing records live here. Each batch is a folder with Markdown files.
    - `batch_id` — must match the folder number
    - `permalink` — must be `/brews/<batch_id>/`
    - `name`, `type`, `status`, `started`, and optional fields
-4. Fill `recipe.md`, `log.md`, `schedule.md`, and other files.
-5. Run `ruby scripts/generate_site_data.rb` to regenerate the site index.
+   - `status` must match the `active` row in `stages.md`
+4. Fill all seven template files: `recipe.md`, `log.md`, `schedule.md`, `stages.md`, `tasting.md`, `media.md`, plus `README.md`.
+5. Run `ruby scripts/generate_site_data.rb` to regenerate the site index and check validation warnings.
 6. Commit and push.
 
 ## Folder naming

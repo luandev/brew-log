@@ -1,6 +1,7 @@
 # Schedule
 
 <!-- Status values: Pending, Done, Skipped -->
+<!-- Pending rows apply to the active stage in stages.md (conditioning) -->
 
 | Date | Action | Status |
 |---|---|---|

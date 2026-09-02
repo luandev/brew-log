@@ -1,5 +1,10 @@
 <div class="lto-panel mini-calendar">
-  <h2 class="lto-section-title">Calendar</h2>
+  <h2 class="lto-section-title">
+    <span class="lto-section-title-text">
+      {% include icon.html section_id="calendar" class="lto-section-icon" decorative=true %}
+      Calendar
+    </span>
+  </h2>
   {% assign now = site.time %}
   <p class="mini-calendar-header">{{ now | date: "%B %Y" }}</p>
   <div class="mini-calendar-grid">

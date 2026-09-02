@@ -1,0 +1,32 @@
+{
+  "status": [
+    { "id": "planned", "file": "clipboard" },
+    { "id": "preparing", "file": "brewing-bucket" },
+    { "id": "primary-fermentation", "file": "active-fermentation" },
+    { "id": "secondary", "file": "secondary-fermentation" },
+    { "id": "clearing", "file": "clearing" },
+    { "id": "conditioning", "file": "bottle-conditioning" },
+    { "id": "bottled", "file": "bottling" },
+    { "id": "aging", "file": "wine-glass" },
+    { "id": "finished", "file": "finished-batch-medal" },
+    { "id": "failed", "file": "status-dot" },
+    { "id": "archived", "file": "batch-number-tag" }
+  ],
+  "type": [
+    { "id": "wine", "file": "wine-bottle" },
+    { "id": "cider", "file": "cider-bottle" },
+    { "id": "beer", "file": "crown-cap" },
+    { "id": "vinegar", "file": "demijohn" },
+    { "id": "mead", "file": "wine-glass" },
+    { "id": "experimental", "file": "pet-fermenter" }
+  ],
+  "section": [
+    { "id": "active-brews", "file": "pet-fermenter" },
+    { "id": "calendar", "file": "calendar" },
+    { "id": "notes", "file": "tasting-notebook" },
+    { "id": "schedule", "file": "clock" },
+    { "id": "past-batches", "file": "finished-batch-medal" },
+    { "id": "lifecycle", "file": "progress-ring" },
+    { "id": "upcoming", "file": "clipboard" }
+  ]
+}

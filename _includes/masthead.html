@@ -9,11 +9,13 @@
   <div class="lto-masthead-hero">
     <div class="lto-masthead-hero-art" aria-hidden="true">
       <img
-        class="lto-masthead-tree"
-        src="{{ '/assets/brand/tree.svg' | relative_url }}"
+        class="lto-masthead-hero-img"
+        src="{{ '/assets/brand/hero.png' | relative_url }}"
         alt=""
-        width="320"
-        height="448"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+        decoding="async"
       >
     </div>
     <div class="wrapper">
@@ -22,18 +24,20 @@
         <div class="lto-hero-subtitle-row">
           <img
             class="lto-hero-branch"
-            src="{{ '/assets/brand/branch-divider.svg' | relative_url }}"
+            src="{{ '/assets/icons/symmetrical-divider.png' | relative_url }}"
             alt=""
-            width="120"
-            height="12"
+            width="160"
+            height="28"
+            decoding="async"
           >
           <p class="lto-hero-subtitle">Brew Log</p>
           <img
             class="lto-hero-branch lto-hero-branch--flip"
-            src="{{ '/assets/brand/branch-divider.svg' | relative_url }}"
+            src="{{ '/assets/icons/symmetrical-divider.png' | relative_url }}"
             alt=""
-            width="120"
-            height="12"
+            width="160"
+            height="28"
+            decoding="async"
           >
         </div>
         <p class="lto-hero-tagline">

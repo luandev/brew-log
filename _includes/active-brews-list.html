@@ -1,0 +1,8 @@
+{% assign active = site.data.batches | where_exp: "b", "b.is_active" %}
+{% if active.size > 0 %}
+{% for batch in active %}
+{% include active-brew-card.html batch=batch %}
+{% endfor %}
+{% else %}
+<p class="lto-empty-state">No active batches. Start a new brew to see it here.</p>
+{% endif %}

@@ -46,7 +46,11 @@
 - No separate acid addition was confirmed.
 - The supermarket apple juice contained added vitamin C.
 
-## Target / Recorded Measurements
+<div class="recipe-details-grid">
+
+<div class="recipe-detail-panel" markdown="1">
+
+## Target
 
 - Fermenter volume: ~6–7 L
 - Starting gravity: ~1.038–1.040 at about 20 °C, interpreted from hydrometer photo
@@ -54,6 +58,28 @@
 - Confirmed final gravity: not recorded
 - Confirmed actual ABV: not recorded
 - Fermentation temperature during setup: cider around 20 °C; room around 24 °C
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
+## Bottling
+
+- Bottling date: 2026-08-30.
+- Method: gentle siphon directly into sanitised beer bottles, leaving yeast/apple lees behind.
+- Priming: vanilla-infused sugar, target 5 g/L.
+- Example actually measured during bottling: approximately 3 g for a 620 mL bottle.
+- Working priming guide at 5 g/L:
+  - 330 mL: 1.65 g
+  - 500 mL: 2.5 g
+  - 620 mL: 3.1 g
+- Bottle type: crown-cap beer bottles, including 330 mL, 500 mL and 620 mL sizes.
+- Headspace: approximately 2–3 cm below the cap was the working target.
+- Sanitising: NoRinze no-rinse sanitiser used with a bottle rinser/sprayer; bottles were drained without a final water rinse.
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
 
 ## Process
 
@@ -71,6 +97,10 @@
 12. Prime crown-cap bottles individually with vanilla-infused sugar at a 5 g/L target rate and cap promptly.
 13. Store the bottles upright and dark at conditioning temperature, then chill test bottles before opening.
 
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
 ## Fermentation Stages
 
 1. Primary: 10 L airlocked bucket from 2026-08-16; vigorous activity by about Day 3, later slowing considerably.
@@ -78,19 +108,9 @@
 3. Bottle conditioning: began 2026-08-30 in crown-cap beer bottles.
 4. Aging: staged checks planned through Christmas 2026.
 
-## Bottling
+</div>
 
-- Bottling date: 2026-08-30.
-- Method: gentle siphon directly into sanitised beer bottles, leaving yeast/apple lees behind.
-- Priming: vanilla-infused sugar, target 5 g/L.
-- Example actually measured during bottling: approximately 3 g for a 620 mL bottle.
-- Working priming guide at 5 g/L:
-  - 330 mL: 1.65 g
-  - 500 mL: 2.5 g
-  - 620 mL: 3.1 g
-- Bottle type: crown-cap beer bottles.
-- Headspace: approximately 2–3 cm below the cap was the working target.
-- Sanitising: NoRinze no-rinse sanitiser used with a bottle rinser/sprayer; bottles were drained without a final water rinse.
+</div>
 
 ## Notes
 

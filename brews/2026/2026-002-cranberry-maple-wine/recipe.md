@@ -38,6 +38,10 @@
 
 - None recorded.
 
+<div class="recipe-details-grid">
+
+<div class="recipe-detail-panel" markdown="1">
+
 ## Target
 
 - Volume: not recorded; constrained to a 2 L PET bottle
@@ -46,11 +50,29 @@
 - Target ABV: 14%
 - Fermentation temperature:
 
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
+## Bottling
+
+- Method:
+- Priming sugar:
+- Bottle type:
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
+
 ## Process
 
 1. Prepare the cranberry and maple must in a 2 L PET bottle.
 2. Add yeast.
 3. Ferment under an airlock fitted through the bottle cap.
+
+</div>
+
+<div class="recipe-detail-panel" markdown="1">
 
 ## Fermentation Stages
 
@@ -58,11 +80,9 @@
 2. Secondary: additions were being considered, but none were confirmed
 3. Conditioning:
 
-## Bottling
+</div>
 
-- Method:
-- Priming sugar:
-- Bottle type:
+</div>
 
 ## Notes
 

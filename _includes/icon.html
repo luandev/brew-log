@@ -1,0 +1,30 @@
+{% comment %}
+  Renders a PNG from assets/icons/.
+  Pass id directly, or status_id/brew_type/section_id for lookup via _data/icon_lookup.json.
+  Optional icon_size: xs | sm | md | lg | xl | xxl (use contextual CSS class when omitted)
+  Note: never use include.size — in Jekyll that returns the parameter count.
+{% endcomment %}
+{% assign icon_id = include.id %}
+{% if include.status_id %}
+  {% assign status_match = site.data.icon_lookup.status | where: "id", include.status_id | first %}
+  {% if status_match %}{% assign icon_id = status_match.file %}{% endif %}
+{% elsif include.brew_type %}
+  {% assign type_match = site.data.icon_lookup.type | where: "id", include.brew_type | first %}
+  {% if type_match %}{% assign icon_id = type_match.file %}{% endif %}
+{% elsif include.section_id %}
+  {% assign section_match = site.data.icon_lookup.section | where: "id", include.section_id | first %}
+  {% if section_match %}{% assign icon_id = section_match.file %}{% endif %}
+{% endif %}
+{% if icon_id %}
+{% assign size_token = include.icon_size %}
+<img
+  class="lto-icon{% if size_token %} lto-icon--{{ size_token }}{% endif %}{% if include.class %} {{ include.class }}{% endif %}"
+  src="{{ '/assets/icons/' | append: icon_id | append: '.png' | relative_url }}"
+  alt="{% if include.alt %}{{ include.alt }}{% endif %}"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+  {% if include.decorative %}aria-hidden="true"{% endif %}
+  loading="lazy"
+  decoding="async"
+>
+{% endif %}
