@@ -9,12 +9,12 @@
 | Mint | Amount not recorded | Used in the tea base |
 | Whittard Plum & Cinnamon instant tea | Amount not recorded | Product is sugar-based; actual quantity used was not recorded |
 | Additional fermentable sugar | Amount not recorded | Added after the 10% potential-alcohol reading to increase the reading to ~11% |
-| Yeast | Not recorded | Type, amount, and pitch confirmation not recorded |
+| Yeast | Not recorded | Type and amount were not recorded |
 
 ## Yeast
 
-- Type and amount not recorded.
-- Pitching was discussed, but the source conversation does not explicitly confirm that yeast had been added.
+- Fermentation is active / underway according to the brewer's correction.
+- Yeast type and amount were not recorded in the source notes.
 
 ## Yeast Nutrient
 
@@ -50,14 +50,16 @@
 
 <div class="recipe-detail-panel" markdown="1">
 
-## Target
+## Target / Measurements
 
+- Batch started: 2026-08-31
 - Volume: approximately 1 L
 - Starting gravity: not recorded
 - First potential-alcohol reading: 10%
 - Adjusted potential-alcohol reading: approximately 11%
 - Target final gravity: stable final hydrometer reading before clearing
 - Target ABV: not explicitly recorded
+- Actual ABV: not yet measured
 - Fermentation temperature: not recorded
 
 </div>
@@ -76,15 +78,14 @@
 
 ## Process
 
-1. Prepare approximately 1 L of tea using black tea, mint, and Whittard Plum & Cinnamon instant tea.
-2. Cool the must before fermentation.
-3. Take a hydrometer potential-alcohol reading; the first recorded reading was 10%.
-4. Increase fermentable sugar by an unrecorded amount; the subsequent reading was approximately 11% potential alcohol.
-5. Transfer / keep the must in a PET fermentation bottle away from direct sunlight.
-6. Confirm yeast details and pitch if not already pitched.
-7. Ferment until hydrometer readings are stable rather than relying on airlock activity alone.
-8. Rack off sediment with minimal splashing, allow the wine to clear, and cold crash if useful.
-9. Age before final bottling to allow the tea, mint, plum, and cinnamon flavours to integrate.
+1. On 2026-08-31, prepare approximately 1 L of tea using black tea, mint, and Whittard Plum & Cinnamon instant tea.
+2. Take a hydrometer potential-alcohol reading; the first recorded reading was 10%.
+3. Increase fermentable sugar by an unrecorded amount; the subsequent reading was approximately 11% potential alcohol.
+4. Keep the must in a PET fermentation bottle away from direct sunlight.
+5. Primary fermentation is the current active stage. Yeast type and amount were not recorded.
+6. Monitor fermentation with hydrometer readings and wait for stable gravity before moving on.
+7. Rack off sediment with minimal splashing, allow the wine to clear, and cold crash if useful.
+8. Age before final bottling to allow the tea, mint, plum, and cinnamon flavours to integrate.
 
 </div>
 
@@ -94,8 +95,8 @@
 
 <!-- Narrative plan only. Dated stage timelines live in stages.md. -->
 
-1. Preparing: must prepared and sugar adjusted; yeast pitch not explicitly confirmed in the source record.
-2. Primary fermentation: planned once yeast pitch is confirmed.
+1. Preparing: completed on 2026-08-31.
+2. Primary fermentation: active from 2026-08-31.
 3. Secondary / clearing: planned after fermentation is complete and gravity is stable.
 4. Conditioning / aging: planned before final still-wine bottling.
 
@@ -105,7 +106,7 @@
 
 ## Quality Plan
 
-The quality-focused plan discussed for this wine was to keep the fermentation cool and controlled, protect the clear PET vessel from direct sunlight, ferment to a stable hydrometer reading, rack carefully away from sediment and oxygen, allow several weeks for clearing, and give the finished wine time to mature. Mint and cinnamon should remain background notes rather than being allowed to extract indefinitely.
+The quality-focused plan discussed for this wine was to keep fermentation controlled, protect the clear PET vessel from direct sunlight, ferment to a stable hydrometer reading, rack carefully away from sediment and oxygen, allow several weeks for clearing, and give the finished wine time to mature. Mint and cinnamon should remain background notes rather than being allowed to extract indefinitely.
 
 ## Notes
 
