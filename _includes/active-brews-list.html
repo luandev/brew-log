@@ -3,6 +3,7 @@
 {% for batch in active %}
 {% include active-brew-card.html batch=batch %}
 {% endfor %}
+<script src="{{ '/assets/js/brew-progress.js' | relative_url }}" defer></script>
 {% else %}
 <p class="lto-empty-state">No active batches. Start a new brew to see it here.</p>
 {% endif %}

@@ -1,20 +1,56 @@
-<div class="lto-panel">
-  <h2 class="lto-section-title">
+{% assign noted = site.data.batches | where_exp: "b", "b.latest_log_excerpt" | sort: "last_log_date" | reverse %}
+{% assign notes = noted | slice: 0, 6 %}
+
+<section class="latest-notes-carousel lto-panel" data-notes-carousel aria-label="Latest notes">
+  <header class="lto-section-title latest-notes-carousel-header">
     <span class="lto-section-title-text">
       {% include icon.html section_id="notes" class="lto-section-icon" decorative=true %}
       Latest Notes
     </span>
-  </h2>
-  {% assign noted = site.data.batches | where_exp: "b", "b.latest_log_excerpt" | sort: "last_log_date" | reverse %}
-  {% if noted.size > 0 %}
-    {% for batch in noted limit:3 %}
-    <div class="note-item">
-      <p class="note-date">{{ batch.last_log_date | date: "%B %d, %Y" }}</p>
-      <p class="note-batch"><a href="{{ batch.url | relative_url }}">{{ batch.name }}</a></p>
-      <p class="note-excerpt">{{ batch.latest_log_excerpt }}</p>
+    {% if notes.size > 1 %}
+    <div class="latest-notes-carousel-controls">
+      <span class="latest-notes-carousel-count" data-notes-count></span>
+      <button type="button" class="batch-log-nav-btn" data-notes-prev aria-label="Previous note">‹</button>
+      <button type="button" class="batch-log-nav-btn" data-notes-next aria-label="Next note">›</button>
     </div>
+    {% endif %}
+  </header>
+
+  {% if notes.size > 0 %}
+  <div class="latest-notes-carousel-track" data-notes-track>
+    {% for batch in notes %}
+    <article
+      class="note-card{% if forloop.first %} is-active{% endif %}"
+      data-notes-card
+      {% unless forloop.first %}hidden{% endunless %}
+      {% if batch.accent %}style="--brew-accent: {{ batch.accent }};"{% endif %}
+    >
+      <p class="note-date">{{ batch.last_log_date | date: "%B %d, %Y" }}</p>
+      <p class="note-batch">
+        <a href="{{ batch.url | relative_url }}">{{ batch.name }}</a>
+      </p>
+      <p class="note-excerpt">{{ batch.latest_log_excerpt }}</p>
+    </article>
     {% endfor %}
-  {% else %}
-    <p style="color:var(--text-muted);font-size:0.9rem;">No log notes yet.</p>
+  </div>
+
+  {% if notes.size > 1 %}
+  <nav class="latest-notes-carousel-dots" data-notes-dots aria-label="Note position">
+    {% for batch in notes %}
+    <button
+      type="button"
+      class="batch-log-dot{% if forloop.first %} is-active{% endif %}"
+      data-notes-goto="{{ forloop.index0 }}"
+      aria-label="Go to note {{ forloop.index }}"
+    ></button>
+    {% endfor %}
+  </nav>
   {% endif %}
-</div>
+  {% else %}
+  <p class="lto-empty-state">No log notes yet.</p>
+  {% endif %}
+</section>
+
+{% if notes.size > 1 %}
+<script src="{{ '/assets/js/latest-notes-carousel.js' | relative_url }}" defer></script>
+{% endif %}

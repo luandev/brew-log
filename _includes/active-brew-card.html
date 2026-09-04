@@ -1,4 +1,8 @@
-<a class="active-brew-card" href="{{ include.batch.url | relative_url }}">
+<a
+  class="active-brew-card"
+  href="{{ include.batch.url | relative_url }}"
+  {% if include.batch.accent %}style="--brew-accent: {{ include.batch.accent }};"{% endif %}
+>
   {% if include.batch.thumbnail and include.batch.thumbnail != "" %}
     <img class="active-brew-thumb" src="{{ include.batch.thumbnail | relative_url }}" alt="" loading="lazy" width="80" height="80">
   {% else %}
@@ -17,8 +21,17 @@
       {% if include.batch.target_abv %}<span>Est. {{ include.batch.target_abv }}% ABV</span>{% endif %}
     </div>
   </div>
-  <div class="active-brew-progress">
+  {% if include.batch.started and include.batch.target_days %}
+  <div
+    class="active-brew-progress"
+    data-brew-progress
+    data-started="{{ include.batch.started }}"
+    data-target-days="{{ include.batch.target_days }}"
+    data-days-elapsed="{{ include.batch.days_elapsed }}"
+    data-progress-percent="{{ include.batch.progress_percent }}"
+  >
     {% include progress-ring.html percent=include.batch.progress_percent %}
-    <span class="active-brew-days">Day {{ include.batch.days_elapsed }} / {{ include.batch.target_days }}</span>
+    <span class="active-brew-days" data-progress-days>Day {{ include.batch.days_elapsed }} / {{ include.batch.target_days }}</span>
   </div>
+  {% endif %}
 </a>

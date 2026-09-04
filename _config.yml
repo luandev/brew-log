@@ -2,7 +2,7 @@ title: The Lone Tree Orchard
 description: Small batches. Seasonal ingredients. Thoughtful experiments.
 tagline: Record the process. Refine the craft.
 hero_tagline: They didn't expect we'd vibecode alcohol as well.
-hero_subtagline: LLMs took over the orchard — prompts, primary, and bottle conditioning.
+hero_subtagline: Personal blog about the journey of learning how to brew.
 url: "https://luandev.github.io"
 baseurl: "/brew-log"
 theme: minima

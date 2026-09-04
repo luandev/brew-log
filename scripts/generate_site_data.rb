@@ -17,6 +17,23 @@ CALENDAR_OUTPUT = File.join(DATA_DIR, "calendar.json")
 INACTIVE_STATUSES = %w[finished failed archived].freeze
 DEFAULT_TARGET_DAYS = 28
 
+# Stable orchard-toned palette for concurrent calendar / batch accents
+BREW_ACCENTS = [
+  "#6C7C44", # orchard green
+  "#AD9753", # aged brass
+  "#8B5E4B", # cinnamon
+  "#5B7C8D", # slate blue
+  "#9A6B3F", # amber maple
+  "#7A6B8A", # muted plum
+  "#6B8F71", # sage
+  "#A67C52"  # copper
+].freeze
+
+def accent_for(batch_id)
+  digest = batch_id.to_s.bytes.reduce(0) { |sum, byte| (sum * 33 + byte) % 2_147_483_647 }
+  BREW_ACCENTS[digest % BREW_ACCENTS.length]
+end
+
 def parse_front_matter(path)
   content = File.read(path, encoding: "UTF-8")
   return {} unless content.start_with?("---")
@@ -312,6 +329,7 @@ find_batch_readmes.each do |readme_path|
   entry["target_days"] = target_days
   entry["progress_percent"] = progress_percent
   entry["thumbnail"] = thumbnail
+  entry["accent"] = accent_for(batch_id)
 
   if pending
     entry["next_action_date"] = pending["date"]
@@ -329,7 +347,8 @@ find_batch_readmes.each do |readme_path|
         "action" => row["action"],
         "batch_id" => batch_id,
         "name" => entry["name"],
-        "url" => entry["url"]
+        "url" => entry["url"],
+        "accent" => entry["accent"]
       }
     end
 
@@ -346,7 +365,8 @@ find_batch_readmes.each do |readme_path|
         "label" => stage_label(row["stage"], status_lookup),
         "started" => start_date.strftime("%Y-%m-%d"),
         "ended" => parse_date(row["ended"])&.strftime("%Y-%m-%d"),
-        "status" => row["status"]
+        "status" => row["status"],
+        "accent" => entry["accent"]
       }
     end
   end
@@ -368,7 +388,8 @@ active_batches = batches.select { |b| b["is_active"] }.map do |b|
     "current_stage_label" => b["current_stage_label"],
     "started" => b["started"],
     "end_date" => b["end_date"],
-    "target_days" => b["target_days"]
+    "target_days" => b["target_days"],
+    "accent" => b["accent"]
   }
 end
 

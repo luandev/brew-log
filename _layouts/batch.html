@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<article class="batch-page">
+{% assign batch_record = site.data.batches | where: "batch_id", page.batch_id | first %}
+{% assign brew_accent = batch_record.accent | default: "#AD9753" %}
+
+<article class="batch-page" style="--brew-accent: {{ brew_accent }};">
   <header class="batch-header lto-panel">
     <p class="batch-id-label">{{ page.batch_id }}</p>
-    {% assign batch_record = site.data.batches | where: "batch_id", page.batch_id | first %}
     <h1 class="batch-title">{% if batch_record %}{{ batch_record.name }}{% elsif page.title and page.title != page.name %}{{ page.title }}{% else %}{{ page.batch_id }}{% endif %}</h1>
     <div class="batch-meta-row">
       <span class="status-badge status-{{ page.status }}">{{ page.status | replace: '-', ' ' }}</span>

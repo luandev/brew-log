@@ -4,69 +4,79 @@
     "action": "Check fermentation activity",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/"
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
   },
   {
     "date": "2026-09-02",
     "action": "Check fermentation activity",
     "batch_id": "2026-004",
     "name": "Plum, Cinnamon & Mint Tea Wine",
-    "url": "/brews/2026-004/"
+    "url": "/brews/2026-004/",
+    "accent": "#AD9753"
   },
   {
     "date": "2026-09-07",
     "action": "Take hydrometer reading and check gravity stability",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/"
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
   },
   {
     "date": "2026-09-07",
     "action": "Take hydrometer reading and check fermentation progress",
     "batch_id": "2026-004",
     "name": "Plum, Cinnamon & Mint Tea Wine",
-    "url": "/brews/2026-004/"
+    "url": "/brews/2026-004/",
+    "accent": "#AD9753"
   },
   {
     "date": "2026-09-13",
     "action": "First carbonation check: chill one bottle for ~24 h, then assess carbonation, aroma, flavour and sediment",
     "batch_id": "2026-003",
     "name": "The Three Cats",
-    "url": "/brews/2026-003/"
+    "url": "/brews/2026-003/",
+    "accent": "#6C7C44"
   },
   {
     "date": "2026-09-14",
     "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/"
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
   },
   {
     "date": "2026-09-27",
     "action": "Early conditioned tasting and clarity/sediment check",
     "batch_id": "2026-003",
     "name": "The Three Cats",
-    "url": "/brews/2026-003/"
+    "url": "/brews/2026-003/",
+    "accent": "#6C7C44"
   },
   {
     "date": "2026-10-01",
     "action": "First tasting",
     "batch_id": "2026-001",
     "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/"
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
   },
   {
     "date": "2026-10-25",
     "action": "Maturation check; compare carbonation, aroma, flavour and clarity with the September sample",
     "batch_id": "2026-003",
     "name": "The Three Cats",
-    "url": "/brews/2026-003/"
+    "url": "/brews/2026-003/",
+    "accent": "#6C7C44"
   },
   {
     "date": "2026-12-20",
     "action": "Christmas-aging check; chill a bottle for the holiday period",
     "batch_id": "2026-003",
     "name": "The Three Cats",
-    "url": "/brews/2026-003/"
+    "url": "/brews/2026-003/",
+    "accent": "#6C7C44"
   }
 ]
