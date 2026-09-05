@@ -4,13 +4,13 @@ name: Pure Orchard Cyser
 title: Pure Orchard Cyser
 type: mead
 # status must match the `active` row in stages.md (see Status Guide for valid IDs)
-status: planned
+status: preparing
 # started should match the active stage Started date in stages.md
 started: 2026-09-05
 volume_l:
 target_abv:
 actual_abv:
-tags: [cyser, apple, honey]
+tags: [cyser, apple, pear, cranberry, honey, cinnamon, pectic-enzyme]
 permalink: /brews/2026-005/
 ---
 
@@ -18,7 +18,9 @@ permalink: /brews/2026-005/
 
 ## Summary
 
-Planned fresh-pressed apple and honey cyser for the 10 L primary fermenter. The baseline recipe keeps the first batch focused on apple and honey, uses a high-alcohol-tolerance wine yeast, and reserves part of the honey for gravity-led step feeding rather than assuming the full 3.7 kg will be used. Cranberry juice and spices remain optional secondary additions after tasting. Pears and maple syrup are excluded from this batch.
+The planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. The exact water addition and final gravity were not recorded. Two cinnamon sticks were added in a tea bag, and pectic enzyme was used during both juice-extraction steps.
+
+The next measurement is planned for 2026-09-06. If gravity is still excessively high, the must will be diluted further and remeasured before the recipe is considered settled.
 
 ## Current Status
 
@@ -28,11 +30,17 @@ Planned fresh-pressed apple and honey cyser for the 10 L primary fermenter. The 
 
 | Measurement | Value |
 |---|---|
-| Starting gravity | |
+| Apple juice | ~3 L |
+| Pear juice | ~1.5 L |
+| Cranberry juice | ~0.5 L |
+| Honey used | 2 kg |
+| Water | Added; amount not recorded |
+| Initial hydrometer result | Above useful/readable range; exact value not recorded |
+| Final brew-day gravity | Not recorded |
 | Final gravity | |
-| Potential ABV | |
+| Potential ABV | Not established |
 | Actual ABV | |
-| Volume | |
+| Final volume | Not recorded |
 
 {% include_relative recipe.md %}
 
