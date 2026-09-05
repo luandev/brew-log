@@ -19,6 +19,30 @@ This repository is a brewing journal and static website.
 - Keep GitHub Pages compatibility.
 - Avoid adding a database or backend unless explicitly requested.
 
+## Mandatory change workflow: review before main
+
+All coding agents and LLMs working in this repository must use a pull-request workflow for repository changes.
+
+- **Never commit or write changes directly to `main`.** This includes small edits, brew-log updates, documentation changes, generated-file updates, and one-off fixes.
+- Before making any repository change, inspect the relevant current files and present the user with a concise summary of the proposed changes.
+- **Wait for explicit user confirmation before creating commits.** The summary/review step must happen before writing repository changes.
+- After confirmation, create a dedicated branch from the current `main` and open a pull request targeting `main`.
+- Put the confirmed changes on that branch. If the user requests follow-up changes for the same piece of work, add them as additional commits to the **same open pull request** rather than creating a new PR or writing to `main`.
+- Keep the pull request open for user review unless the user explicitly instructs the agent to merge it.
+- Merge a pull request only after an explicit user command to merge. If the user says they will merge manually, leave the PR open and do not merge it.
+- If an existing open PR already represents the requested work, reuse that PR and its branch for subsequent related changes.
+- If a tool or environment cannot create a branch or PR, do not fall back to direct-to-`main` writes. Present the proposed change or patch and explain the limitation instead.
+
+### Required sequence for repository changes
+
+1. Inspect the current repository state and relevant files.
+2. Present a concise proposed-change summary to the user.
+3. Wait for explicit confirmation.
+4. Create or reuse a task branch and pull request targeting `main`.
+5. Commit the confirmed changes to the PR branch.
+6. Add subsequent related changes as commits to that same PR.
+7. Leave the PR open for review until the user explicitly requests a merge, or the user merges it manually.
+
 ## Creating a new batch
 
 1. Copy `templates/batch/` to `brews/<year>/<YYYY-NNN-short-kebab-case-name>/`.
