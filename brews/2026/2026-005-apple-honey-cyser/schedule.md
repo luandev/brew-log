@@ -13,15 +13,13 @@ Rules:
 - Do not leave Pending rows for stages that are completed or not yet active.
 -->
 
-<!-- Active stage: planned (brew-day and first-week actions) -->
+<!-- Active stage: primary-fermentation -->
 
 | Date | Action | Status |
 |---|---|---|
-| TBD | Weigh and record the apples selected for the batch | Pending |
-| TBD | Juice apples and record juice yield | Pending |
-| TBD | Take pre-honey hydrometer reading | Pending |
-| TBD | Choose target strength and calculate the initial honey addition | Pending |
-| TBD | Record exact yeast strain and prepare the pitch | Pending |
-| TBD | Start primary fermentation and update the batch stage | Pending |
+| 2026-09-05 | Prepare apple, pear, cranberry, honey and water must; use pectic enzyme during juice extraction | Done |
+| 2026-09-05 | Add two cinnamon sticks and pitch yeast; start primary fermentation | Done |
+| 2026-09-06 | Add yeast nutrient according to product instructions and record product/dose | Pending |
+| 2026-09-06 | Take hydrometer reading; if still excessively high, dilute with water or cranberry juice and remeasure | Pending |
 
-<!-- Future primary schedule should be added after brew day, using measured gravity and the actual start date. -->
+<!-- Future primary checks should be scheduled after the 2026-09-06 gravity reading. -->
