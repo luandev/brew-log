@@ -4,7 +4,7 @@ name: Pure Orchard Cyser
 title: Pure Orchard Cyser
 type: mead
 # status must match the `active` row in stages.md (see Status Guide for valid IDs)
-status: preparing
+status: primary-fermentation
 # started should match the active stage Started date in stages.md
 started: 2026-09-05
 volume_l:
@@ -20,7 +20,7 @@ permalink: /brews/2026-005/
 
 The planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. The exact water addition and final gravity were not recorded. Two cinnamon sticks were added in a tea bag, and pectic enzyme was used during both juice-extraction steps.
 
-The next measurement is planned for 2026-09-06. If gravity is still excessively high, the must will be diluted further and remeasured before the recipe is considered settled.
+Yeast was pitched on 2026-09-05 and primary fermentation is now active. Yeast nutrient and a new hydrometer reading are planned for 2026-09-06. If the reading is still excessively high, the must will be diluted with water or cranberry juice and remeasured.
 
 ## Current Status
 
