@@ -12,7 +12,7 @@ Rules:
 |---|---|---|
 | 2026-09-04 | Tasting sample with friends; confirm secondary remains actively bubbly | Done |
 | 2026-09-05 | Rack carefully to clean PET and return to airlock | Done |
-| 2026-09-05 | Confirm whether pectic enzyme was added during the rack; if not, add per product instructions | Pending |
+| 2026-09-05 | Add pectic enzyme during the rack per product instructions | Done |
 | 2026-09-08 | Take hydrometer reading after rack and record fermentation progress | Pending |
 | 2026-09-11 | Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete | Pending |
 
