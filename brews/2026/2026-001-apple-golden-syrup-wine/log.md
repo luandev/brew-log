@@ -58,3 +58,33 @@ The wine was kept in PET with indirect light before racking. The batch is now in
 - Take a hydrometer reading and confirm gravity is stable before clearing.
 - Cold crash after fermentation is complete.
 - Rack into sanitized glass for clearing and aging.
+
+## 2026-09-05 — Secondary progress and finishing plan
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- No new gravity reading reported.
+- Final ABV not yet measured.
+
+### Actions
+
+- Reported that an airlock was fitted and the PET bottle was moved to a dark closet around Monday 2026-08-31; date is approximate.
+- Took a tasting sample on 2026-09-04.
+- Obtained sodium benzoate, pectic enzyme, and liquid finished-wine sweetener for possible finishing work.
+- Considering an orange-zest addition for floral citrus aroma; not yet added.
+
+### Observation
+
+Wine is clear but not yet fully brilliant. Taste is distinctly wine-like, crisp and pleasant, with alcohol currently prominent. Tannin level is satisfactory, but the wine is relatively neutral and lacks a strong defining aromatic character.
+
+### Next
+
+- Take hydrometer readings several days apart to confirm secondary fermentation is complete.
+- If gravity is stable, rack to sanitized glass with minimal headspace and retain an airlock while finishing.
+- Use pectic enzyme only if haze persists, following the product dosage instructions.
+- Trial orange zest cautiously after fermentation has finished, avoiding white pith.
+- Do not use sodium benzoate as a clearing agent.
+- Decide on final sweetness after clarification; confirm whether the liquid wine sweetener is fermentable before bottling.
