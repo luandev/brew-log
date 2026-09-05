@@ -123,3 +123,31 @@ The wine remained plenty bubbly on 2026-09-04, indicating that fermentation acti
 - When gravity is stable, allow 1–3+ weeks for clarification.
 - Rack once more after clarification.
 - Bottle only after the wine remains stable; age in bottle.
+
+## 2026-09-05 — Racking completed
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- No hydrometer reading was provided with this update.
+- Final gravity: not yet recorded.
+- Actual ABV: not yet measured.
+
+### Actions
+
+- Racked the wine into a clean PET vessel.
+- Continued the batch under airlock after racking.
+- Added a post-racking photo to the batch record.
+
+### Observation
+
+The attached post-racking photo shows the wine in a clean PET vessel under airlock. It appears amber-gold and still visibly hazy. Pectic-enzyme addition was part of the plan but was not explicitly confirmed in this update.
+
+### Next
+
+- Confirm whether pectic enzyme was added during this rack.
+- Take a hydrometer reading on 2026-09-08 and record fermentation progress.
+- Repeat the hydrometer reading on 2026-09-11; if unchanged for roughly 3 days, confirm secondary fermentation is complete.
+- After stable gravity, allow the wine to clarify before the final rack and bottling.
