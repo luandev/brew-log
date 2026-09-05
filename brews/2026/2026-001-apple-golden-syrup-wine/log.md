@@ -119,3 +119,30 @@ No new tasting sample was taken for this entry. The most recent recorded sample 
 - Check clarity and sediment formation after several days.
 - Take a hydrometer reading before sweetening or bottling.
 - Rack off clarification sediment, then decide on orange zest and final sweetness.
+
+## 2026-09-05 — Evening cellar checkpoint
+
+**Time:** Evening  
+**Stage:** Secondary
+
+### Measurements
+
+- No new hydrometer reading taken.
+- Pectic-enzyme dose: not recorded.
+
+### Actions
+
+- Completed the planned rack into a clean PET bottle.
+- Added pectic enzyme during the rack.
+- Returned the batch to an airlock.
+- Began using correctly diluted no-rinse sanitiser solution in the airlock instead of plain water.
+
+### Observation
+
+The wine was already showing noticeable clarification during the evening cellar check after the pectic-enzyme addition.
+
+### Next
+
+- Continue under airlock while clarification progresses.
+- Check clarity and sediment formation on 2026-09-10.
+- Take a hydrometer reading before sweetening or bottling.
