@@ -3,10 +3,8 @@
 <!--
 Rules:
 - Action status values: Pending, Done, Skipped.
-- Pending rows should apply to the current active stage in stages.md.
+- Pending rows below apply to the active stage in stages.md (secondary).
 -->
-
-<!-- Active stage: secondary -->
 
 | Date | Action | Status |
 |---|---|---|
@@ -16,11 +14,14 @@ Rules:
 | 2026-09-08 | Take hydrometer reading after rack and record fermentation progress | Pending |
 | 2026-09-11 | Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete | Pending |
 
-<!--
-Planned after secondary completes:
-- Clearing: allow roughly 1–3+ weeks for sediment to settle and pectin haze to improve.
-- Final rack: transfer once more off the clarified sediment.
-- Stabilization/rest: confirm no renewed fermentation before packaging.
-- Bottling: bottle as still wine with no priming sugar only after gravity remains stable.
-- Aging: mature in bottle and record tasting milestones.
--->
+## Forward plan to bottling
+
+These are planning checkpoints. If gravity is still changing, keep the wine in secondary and push later dates forward rather than forcing the next stage.
+
+| Planned date | Stage | Action / decision |
+|---|---|---|
+| 2026-09-12 | Clearing | If gravity is stable, begin formal clearing under airlock and allow pectic-enzyme sediment to settle. |
+| 2026-09-19 | Clearing | Check clarity and sediment formation; leave longer if still hazy or releasing substantial CO2. |
+| 2026-09-22 | Conditioning | Rack off settled clarification sediment if sufficiently clear. |
+| 2026-09-25 | Conditioning | Take final stability hydrometer reading after the rack. |
+| 2026-09-28 | Bottling | If gravity remains stable and fermentation is complete, bottle as still wine with no priming sugar. Otherwise postpone bottling. |
