@@ -89,3 +89,37 @@ The earlier record understated the batch volume and omitted its apple base. This
 
 - Continue primary fermentation.
 - Take a hydrometer reading and confirm gravity stability before racking or clearing.
+
+## 2026-09-05 — Secondary fermentation update and clarification plan
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- No hydrometer reading was taken with this update.
+- Final gravity: not yet recorded.
+- Actual ABV: not yet measured.
+
+### Actions
+
+- Recorded that a tasting sample was shared with friends on 2026-09-04.
+- Brewer confirmed that the batch is now in active secondary fermentation.
+- Recorded the plan to rack into a clean PET vessel and add pectic enzyme at the manufacturer's instructed dose.
+- Planned to return the wine to an airlock and allow fermentation to continue after racking.
+- Planned to confirm stable gravity with repeated hydrometer readings before moving to clearing.
+- Planned to allow the wine to clarify, rack once more off the settled sediment, confirm stability, then bottle as still wine for aging.
+
+### Observation
+
+The wine remained plenty bubbly on 2026-09-04, indicating that fermentation activity was still obvious. Some fermentation foam had dried on the inside of the PET bottle. No detailed sensory tasting descriptors were recorded from the sample shared with friends.
+
+### Next
+
+- Rack carefully into a clean PET vessel with minimal splashing and headspace.
+- Add pectic enzyme according to the product instructions.
+- Keep under airlock and allow secondary fermentation to continue.
+- Take a hydrometer reading after the rack, then repeat after roughly 3 days.
+- When gravity is stable, allow 1–3+ weeks for clarification.
+- Rack once more after clarification.
+- Bottle only after the wine remains stable; age in bottle.
