@@ -4,7 +4,7 @@
 Rules:
 - Stage IDs must match the Status Guide (_data/statuses.json).
 - README.md front matter `status` must equal the one row marked `active`.
-- README.md `started` should match the active row's Started date.
+- README.md `started` should match the active row Started date.
 - Exactly one row must be `active` while the batch is in progress.
 - Set Started when a stage begins; set Ended when it finishes (leave Ended blank while active).
 - Row status values: active, completed, planned, skipped.
@@ -14,9 +14,9 @@ Rules:
 
 | Stage | Started | Ended | Status |
 |---|---|---|---|
-| planned | 2026-09-05 | | active |
-| preparing | | | planned |
-| primary-fermentation | | | planned |
+| planned | 2026-09-05 | 2026-09-05 | completed |
+| preparing | 2026-09-05 | 2026-09-05 | completed |
+| primary-fermentation | 2026-09-05 | | active |
 | secondary | | | planned |
 | clearing | | | planned |
 | conditioning | | | planned |

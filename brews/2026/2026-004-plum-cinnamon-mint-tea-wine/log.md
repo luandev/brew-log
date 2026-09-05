@@ -151,3 +151,28 @@ The attached post-racking photo shows the wine in a clean PET vessel under airlo
 - Take a hydrometer reading on 2026-09-08 and record fermentation progress.
 - Repeat the hydrometer reading on 2026-09-11; if unchanged for roughly 3 days, confirm secondary fermentation is complete.
 - After stable gravity, allow the wine to clarify before the final rack and bottling.
+
+## 2026-09-05 — Evening cellar checkpoint
+
+**Time:** Evening  
+**Stage:** Secondary
+
+### Measurements
+
+- No new hydrometer reading taken.
+- Pectic-enzyme dose: not recorded.
+
+### Actions
+
+- Confirmed that pectic enzyme was added during the completed rack.
+- Kept the batch under airlock.
+- Began using correctly diluted no-rinse sanitiser solution in the airlock instead of plain water.
+
+### Observation
+
+Visible clarification was already noticeable during the evening cellar check after the pectic-enzyme addition.
+
+### Next
+
+- Take a hydrometer reading on 2026-09-08.
+- Repeat the hydrometer reading on 2026-09-11 and confirm stability before moving on from secondary.

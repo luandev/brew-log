@@ -13,6 +13,7 @@ tags:
   - rapadura
   - berry-tea
   - maple
+  - pectic-enzyme
 permalink: /brews/2026-001/
 ---
 
@@ -20,7 +21,9 @@ permalink: /brews/2026-001/
 
 ## Summary
 
-Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. It is currently in secondary under airlock, with the next planned action to rack into a clean PET bottle, add pectic enzyme, and let it clarify before final aroma and sweetness decisions.
+Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. On 2026-09-05 it was racked into a clean PET vessel, pectic enzyme was added according to the product instructions, and the wine was returned to an airlock. Visible clarification was already noticeable during the evening cellar check.
+
+The batch remains in secondary until repeated hydrometer readings show stable gravity. After stability is confirmed, the working plan is to let it clear, rack off the clarification sediment, make any restrained orange-zest or sweetness adjustment, confirm stability again, then bottle as a still wine.
 
 ## Current Status
 
@@ -30,18 +33,19 @@ Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, 
 
 | Measurement | Value |
 |---|---|
-| Starting gravity | |
-| Final gravity | |
+| Starting gravity | Not recorded |
+| Final gravity | Not yet recorded |
 | Initial potential alcohol reading | 11% |
 | Reported strength before maple secondary | ~12% |
-| Actual ABV | |
+| Actual ABV | Not yet confirmed |
 | Volume before maple addition | 1.75 L |
 | Maple syrup added in secondary | 90 g |
 | Water used to dissolve maple syrup | 160 mL |
+| Pectic enzyme | Added 2026-09-05; exact dose not recorded |
 
 ## Latest Note
 
-2026-09-04 tasting: clear but not fully brilliant; crisp and distinctly wine-like, with alcohol prominent, satisfactory tannin, and relatively little defining aroma. Orange zest remains a possible finishing aroma addition after clarification.
+2026-09-05 evening cellar check: pectic enzyme was confirmed added during the rack and visible clarification was already noticeable. The airlock is being topped with correctly diluted no-rinse sanitiser solution. The most recent tasting remains the 2026-09-04 sample: crisp, distinctly wine-like and alcohol-forward, with satisfactory tannin and relatively little defining aroma.
 
 {% include_relative recipe.md %}
 
