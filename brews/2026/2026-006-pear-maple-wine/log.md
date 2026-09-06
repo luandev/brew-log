@@ -34,3 +34,28 @@ The fresh pear juice was described as very sweet before maple syrup was added. N
 - Check fermentation activity and take a hydrometer reading during primary.
 - Repeat the hydrometer reading; rack only after gravity is stable for roughly three days.
 - At secondary racking, choose a restrained flavour addition such as orange zest/peel or another spice and record exactly what is used.
+
+## 2026-09-05 — Evening cellar checkpoint
+
+**Time:** Evening  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- No additional gravity reading taken.
+- Yeast nutrient not yet added.
+
+### Actions
+
+- Confirmed the new pear-and-maple wine is in primary fermentation in the cupboard.
+- Kept yeast nutrient scheduled for 2026-09-06.
+- Began using correctly diluted no-rinse sanitiser solution in the airlock instead of plain water.
+
+### Observation
+
+No new sensory or gravity measurement was recorded during the evening check.
+
+### Next
+
+- Add yeast nutrient on 2026-09-06 according to the product instructions and record the product/dose.
+- Continue with the planned primary-fermentation hydrometer checks.
