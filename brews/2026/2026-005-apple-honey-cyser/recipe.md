@@ -8,11 +8,11 @@
 | Fresh pear juice | ~1.5 L | Added on brew day |
 | Cranberry juice | ~0.5 L | Added on brew day; more may be used only if needed for gravity-led dilution |
 | Honey | 2 kg | Added on brew day |
-| Water | Amount not recorded | Added after the first hydrometer sample read above the useful range; more may be used only if gravity remains excessively high |
+| Water | Amount not recorded | Added on 2026-09-05 and again on 2026-09-06 to reduce gravity |
 | High-alcohol-tolerance wine yeast | Amount not recorded | Pitched on 2026-09-05; exact strain not recorded |
 | Pectic enzyme | Dose not recorded | Used during apple and pear juice extraction |
 | Cinnamon sticks | 2 | Added in a tea bag |
-| Yeast nutrient | Product/dose TBD | Planned for 2026-09-06 according to the product instructions |
+| Yeast nutrient | 2 spoonfuls | BrewBitz nutrient added on 2026-09-06 |
 
 ## Yeast
 
@@ -23,7 +23,7 @@
 ## Yeast Nutrient
 
 - Nutrient was omitted on brew day.
-- Add on 2026-09-06 according to the actual product instructions and record the product and dose when used.
+- 2 spoonfuls of BrewBitz yeast nutrient were added on 2026-09-06.
 - Do not invent later nutrient additions; schedule them only if the product instructions or fermentation progress justify them.
 
 ## Additions
@@ -32,7 +32,7 @@
 
 - Apple juice is the dominant fruit component.
 - Pear juice and cranberry juice were both added on brew day.
-- Cranberry juice is also the preferred fruit-based dilution option if the next gravity reading remains excessively high.
+- Cranberry juice remains an optional later adjustment only if deliberately chosen and recorded.
 
 ### Sugar Sources
 
@@ -66,7 +66,7 @@
 
 - Primary vessel: 10 L fermenter
 - Final volume: not yet recorded
-- Starting gravity: not yet established; first sample was above the useful/readable range and no final brew-day reading was taken after dilution
+- Working starting gravity: approximately 1.115 on 2026-09-06 after additional water and thorough stirring
 - Working target ABV: approximately 20%, with 20%+ desired if the yeast and fermentation health permit
 - Target final gravity: determined by fermentation performance and desired balance; stable repeated readings required before stage changes
 - Fermentation temperature: not recorded
@@ -97,8 +97,8 @@
 6. Add water to reduce the gravity; exact amount was not recorded.
 7. Add two cinnamon sticks in a tea bag.
 8. Pitch the high-alcohol-tolerance wine yeast and begin primary fermentation on 2026-09-05.
-9. On 2026-09-06, add yeast nutrient according to the product instructions and record product/dose.
-10. Take a hydrometer reading on 2026-09-06. If still excessively high, dilute with measured water or cranberry juice, mix thoroughly, and remeasure. Record the resulting volume and gravity.
+9. On 2026-09-06, add 2 spoonfuls of BrewBitz yeast nutrient.
+10. On 2026-09-06, add additional water, stir thoroughly and record a working gravity of approximately 1.115. Stop further dilution at this point.
 11. Continue primary fermentation with scheduled gravity checks. Do not add more honey merely to chase the 20% target while the must is already very high gravity.
 12. If fermentation is healthy and gravity has dropped substantially, decide whether any later honey step-feed is justified; record every actual addition and post-addition gravity.
 13. Taste the cinnamon contribution during primary/early secondary and remove the sticks if the spice becomes sufficiently strong.
@@ -115,7 +115,7 @@
 
 ## Fermentation Stages
 
-1. Primary: active from 2026-09-05; establish a readable working gravity, correct the nutrient omission, and monitor a high-gravity fermentation closely.
+1. Primary: active from 2026-09-05; working gravity established at approximately 1.115 on 2026-09-06 after dilution, nutrient added, and fermentation now being monitored.
 2. Secondary: rack only after primary is sufficiently complete/stable; taste and remove cinnamon if still present and strong enough.
 3. Clearing: allow sediment to settle under airlock; pectic enzyme used during extraction may assist fruit-haze reduction.
 4. Conditioning: final rack if needed, then allow a stability/rest period.
@@ -130,6 +130,7 @@
 
 - The original pure apple-and-honey cyser plan changed materially on brew day; this file records the actual apple/pear/cranberry/honey batch.
 - The first hydrometer sample was above the useful/readable range. No numeric gravity is inferred from that sample.
-- The exact initial water addition, final brew-day gravity, final volume, yeast strain, pectic-enzyme dose and nutrient dose remain unrecorded until measured or confirmed.
+- A working gravity of approximately 1.115 was recorded on 2026-09-06 after additional water and thorough stirring.
+- The exact total water addition, final volume, yeast strain and pectic-enzyme dose remain unrecorded.
 - The ~20% target is a brewer goal, not a measured or guaranteed result.
 - Future schedule dates are checkpoints. If gravity is still changing or fermentation is stressed, stage transitions and bottling must move later.
