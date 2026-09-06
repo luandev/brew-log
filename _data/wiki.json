@@ -1,0 +1,20 @@
+{
+  "intro_markdown": "# Wiki\n\nReusable brewing knowhow for The Lone Tree Orchard.\n\nThis section holds techniques, terms, and lessons that apply across batches. Individual brew records stay in the brew log.\n\nNew articles are written from notes you provide. Agents must not invent measurements or orchard-specific results.\n\n- [Status Guide](/pages/status-guide/) — batch lifecycle and which brews are in each stage\n- [Glossary](/wiki/glossary/) — common brewing terms used in this journal",
+  "articles": [
+    {
+      "slug": "glossary",
+      "title": "Glossary",
+      "category": "glossary",
+      "summary": "Common brewing terms used in this journal.",
+      "updated": "2026-09-06",
+      "related_batches": [],
+      "tags": [
+        "terms"
+      ],
+      "permalink": "/wiki/glossary/",
+      "url": "/wiki/glossary/",
+      "status": "published",
+      "body_markdown": "# Glossary\n\n## ABV\n\nAlcohol by volume.\n\n## SG\n\nSpecific gravity.\n\n## OG\n\nOriginal gravity.\n\n## FG\n\nFinal gravity.\n\n## Racking\n\nTransferring liquid away from sediment into another sanitized vessel."
+    }
+  ]
+}

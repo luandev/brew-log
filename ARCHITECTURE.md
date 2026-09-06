@@ -4,17 +4,18 @@ The project is a Markdown-first GitHub Pages site. The public UI is an Expo Rout
 
 ## Source of truth
 
-`brews/` contains the canonical brewing records. Each batch is a folder with Markdown files — no database.
+`brews/` contains the canonical brewing records. `wiki/` contains reusable brewing knowhow. Each is Markdown — no database.
 
 ## Build pipeline
 
 ```text
 brews/*/*/README.md  →  scripts/generate_site_data.rb|.mjs  →  _data/*.json and src/data/*.json
+wiki/*.md            ↗
 src/ + app/          →  expo export --platform web          →  dist/
 dist/                →  Playwright e2e, then GitHub Actions →  GitHub Pages
 ```
 
-1. **`scripts/generate_site_data.rb`** (Ruby, when available) or **`scripts/generate_site_data.mjs`** scans batch folders, parses YAML front matter, and writes derived schedule/log/recipe fields into `_data/` and `src/data/`.
+1. **`scripts/generate_site_data.rb`** (Ruby, when available) or **`scripts/generate_site_data.mjs`** scans batch folders and wiki articles, parses YAML front matter, and writes derived fields into `_data/` and `src/data/`.
 2. **Expo Router** statically renders journal routes from that JSON.
 3. **`scripts/prepare_dist.mjs`** copies brew photos, turns `.html` files into trailing-slash folders, and writes `.nojekyll`.
 4. **Playwright** serves `dist/` under `/brew-log/` and must pass before the Pages artifact is uploaded.
@@ -23,8 +24,9 @@ dist/                →  Playwright e2e, then GitHub Actions →  GitHub Pages
 ## Data
 
 - Batch metadata lives in YAML front matter (`README.md`).
+- Wiki article metadata lives in YAML front matter (`wiki/<slug>.md`).
 - Detailed information lives in sibling Markdown files.
-- Aggregated index data lives in `_data/batches.json` (generated, not hand-edited). The Expo app imports the copy in `src/data/`.
+- Aggregated index data lives in `_data/batches.json` and `_data/wiki.json` (generated, not hand-edited). The Expo app imports the copies in `src/data/`.
 
 ## URLs
 
@@ -32,6 +34,8 @@ dist/                →  Playwright e2e, then GitHub Actions →  GitHub Pages
 |---|---|
 | Home | `/brew-log/` |
 | Batch page | `/brew-log/brews/<batch_id>/` |
+| Wiki index | `/brew-log/wiki/` |
+| Wiki article | `/brew-log/wiki/<slug>/` |
 | Active brews | `/brew-log/pages/active/` |
 | Schedule | `/brew-log/pages/schedule/` |
 
@@ -69,3 +73,4 @@ Open `http://127.0.0.1:4173/brew-log/`.
 - Shared UI lives in `src/components/`
 - Theme tokens live in `src/theme.ts`
 - Batch pages are generated with `generateStaticParams` from `src/data/batches.json`
+- Wiki pages are generated with `generateStaticParams` from `src/data/wiki.json`

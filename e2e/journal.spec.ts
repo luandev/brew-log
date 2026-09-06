@@ -56,3 +56,18 @@ test("schedule page loads", async ({ page }) => {
   await expect(page.getByTestId("schedule-page")).toBeVisible();
   await expect(page.getByText("Upcoming Actions", { exact: true })).toBeVisible();
 });
+
+test("Wiki nav from home shows the wiki index", async ({ page }) => {
+  await page.goto("/brew-log/");
+  await page.getByRole("navigation").getByRole("link", { name: "Wiki", exact: true }).click();
+  await expect(page).toHaveURL(/\/wiki\/?$/);
+  await expect(page.getByTestId("wiki-page")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Glossary" }).first()).toBeVisible();
+});
+
+test("glossary wiki article permalink loads", async ({ page }) => {
+  await page.goto("/brew-log/wiki/glossary/");
+  await expect(page.getByTestId("wiki-article")).toBeVisible();
+  await expect(page.getByText("Glossary", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("Racking")).toBeVisible();
+});

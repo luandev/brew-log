@@ -8,16 +8,20 @@ require "date"
 require "json"
 require "yaml"
 require "fileutils"
-require "date"
+require "set"
 
 ROOT = File.expand_path("..", __dir__)
 BREWS_DIR = File.join(ROOT, "brews")
+WIKI_DIR = File.join(ROOT, "wiki")
 DATA_DIR = File.join(ROOT, "_data")
 APP_DATA_DIR = File.join(ROOT, "src", "data")
 BATCHES_OUTPUT = File.join(DATA_DIR, "batches.json")
 SCHEDULE_OUTPUT = File.join(DATA_DIR, "schedule.json")
 CALENDAR_OUTPUT = File.join(DATA_DIR, "calendar.json")
+WIKI_OUTPUT = File.join(DATA_DIR, "wiki.json")
 STATUSES_SOURCE = File.join(DATA_DIR, "statuses.json")
+WIKI_CATEGORIES = %w[process ingredients equipment measurements troubleshooting styles cellar glossary].freeze
+WIKI_STATUSES = %w[published draft].freeze
 
 INACTIVE_STATUSES = %w[finished failed archived].freeze
 DEFAULT_TARGET_DAYS = 28
@@ -298,6 +302,101 @@ def find_batch_readmes
   Dir.glob(File.join(BREWS_DIR, "*", "*", "README.md")).sort
 end
 
+def find_wiki_articles
+  return [] unless File.directory?(WIKI_DIR)
+
+  Dir.entries(WIKI_DIR)
+     .select { |name| name.downcase.end_with?(".md") && name.downcase != "readme.md" }
+     .map { |name| File.join(WIKI_DIR, name) }
+     .sort
+end
+
+def normalize_list(value)
+  case value
+  when Array
+    value.map(&:to_s).reject(&:empty?)
+  when String
+    value.gsub(/[\[\]]/, "").split(",").map { |item| item.strip.gsub(/\A['"]|['"]\z/, "") }.reject(&:empty?)
+  else
+    []
+  end
+end
+
+def wiki_date(value)
+  return nil if value.nil? || value.to_s.strip.empty?
+  return value.strftime("%Y-%m-%d") if value.respond_to?(:strftime)
+
+  value.to_s.slice(0, 10)
+end
+
+def validate_wiki_article(file_name, metadata, batch_ids)
+  expected_slug = file_name.sub(/\.md\z/i, "")
+  slug = metadata["slug"].to_s
+  if slug.empty?
+    warn "wiki/#{file_name}: missing slug"
+  elsif slug != expected_slug
+    warn "wiki/#{file_name}: slug '#{slug}' does not match filename '#{expected_slug}'"
+  end
+  warn "wiki/#{file_name}: missing title" if metadata["title"].to_s.strip.empty?
+
+  category = metadata["category"].to_s
+  unless WIKI_CATEGORIES.include?(category)
+    warn "wiki/#{file_name}: unknown category '#{category}'"
+  end
+
+  permalink = metadata["permalink"].to_s
+  expected_permalink = "/wiki/#{slug.empty? ? expected_slug : slug}/"
+  if !permalink.empty? && permalink != expected_permalink
+    warn "wiki/#{file_name}: permalink '#{permalink}' should be '#{expected_permalink}'"
+  end
+
+  status = metadata["status"].to_s
+  status = "published" if status.empty?
+  unless WIKI_STATUSES.include?(status)
+    warn "wiki/#{file_name}: unknown status '#{status}'"
+  end
+
+  normalize_list(metadata["related_batches"]).each do |batch_id|
+    unless batch_ids.include?(batch_id.to_s)
+      warn "wiki/#{file_name}: related batch '#{batch_id}' does not exist"
+    end
+  end
+end
+
+def load_wiki(batch_ids)
+  intro_path = File.join(WIKI_DIR, "README.md")
+  intro_markdown = File.exist?(intro_path) ? markdown_document(intro_path) : ""
+  articles = []
+  slugs = {}
+
+  find_wiki_articles.each do |file_path|
+    file_name = File.basename(file_path)
+    metadata = parse_front_matter(file_path)
+    expected_slug = file_name.sub(/\.md\z/i, "")
+    validate_wiki_article(file_name, metadata, batch_ids)
+    slug = metadata["slug"].to_s
+    slug = expected_slug if slug.empty?
+    warn "wiki/#{file_name}: duplicate slug '#{slug}'" if slugs[slug]
+    slugs[slug] = true
+    articles << {
+      "slug" => slug,
+      "title" => metadata["title"].to_s.empty? ? slug : metadata["title"].to_s,
+      "category" => metadata["category"].to_s,
+      "summary" => metadata["summary"].to_s,
+      "updated" => wiki_date(metadata["updated"]),
+      "related_batches" => normalize_list(metadata["related_batches"]),
+      "tags" => normalize_list(metadata["tags"]),
+      "permalink" => "/wiki/#{slug}/",
+      "url" => "/wiki/#{slug}/",
+      "status" => metadata["status"].to_s.empty? ? "published" : metadata["status"].to_s,
+      "body_markdown" => markdown_document(file_path)
+    }
+  end
+
+  articles.sort_by! { |article| article["title"] }
+  { "intro_markdown" => intro_markdown, "articles" => articles }
+end
+
 today = Date.today
 status_catalog = load_status_catalog
 status_lookup = status_catalog["ids"]
@@ -437,15 +536,20 @@ calendar_data = {
   "tasks" => schedule_entries
 }
 
+batch_ids = batches.map { |batch| batch["batch_id"].to_s }.to_set
+wiki = load_wiki(batch_ids)
+
 FileUtils.mkdir_p(DATA_DIR)
 FileUtils.mkdir_p(APP_DATA_DIR)
 File.write(BATCHES_OUTPUT, JSON.pretty_generate(batches))
 File.write(SCHEDULE_OUTPUT, JSON.pretty_generate(schedule_entries))
 File.write(CALENDAR_OUTPUT, JSON.pretty_generate(calendar_data))
+File.write(WIKI_OUTPUT, JSON.pretty_generate(wiki))
 
 FileUtils.cp(BATCHES_OUTPUT, File.join(APP_DATA_DIR, "batches.json"))
 FileUtils.cp(SCHEDULE_OUTPUT, File.join(APP_DATA_DIR, "schedule.json"))
 FileUtils.cp(CALENDAR_OUTPUT, File.join(APP_DATA_DIR, "calendar.json"))
+FileUtils.cp(WIKI_OUTPUT, File.join(APP_DATA_DIR, "wiki.json"))
 FileUtils.cp(STATUSES_SOURCE, File.join(APP_DATA_DIR, "statuses.json")) if File.exist?(STATUSES_SOURCE)
 icon_lookup = File.join(DATA_DIR, "icon_lookup.json")
 FileUtils.cp(icon_lookup, File.join(APP_DATA_DIR, "icon_lookup.json")) if File.exist?(icon_lookup)
@@ -464,4 +568,5 @@ end
 puts "Generated #{BATCHES_OUTPUT} with #{batches.length} batch(es)."
 puts "Generated #{SCHEDULE_OUTPUT} with #{schedule_entries.length} pending task(s)."
 puts "Generated #{CALENDAR_OUTPUT} with #{calendar_stages.length} stage span(s)."
+puts "Generated #{WIKI_OUTPUT} with #{wiki["articles"].length} wiki article(s)."
 puts "Copied JSON into #{APP_DATA_DIR}."

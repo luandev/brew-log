@@ -103,6 +103,25 @@ export type CalendarData = {
   tasks: ScheduleTask[];
 };
 
+export type WikiArticle = {
+  slug: string;
+  title: string;
+  category: string;
+  summary?: string;
+  updated?: string | null;
+  related_batches: string[];
+  tags: string[];
+  permalink: string;
+  url: string;
+  status: string;
+  body_markdown: string;
+};
+
+export type WikiData = {
+  intro_markdown: string;
+  articles: WikiArticle[];
+};
+
 export type StatusInfo = {
   id: string;
   label: string;

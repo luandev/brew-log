@@ -105,6 +105,7 @@ export function SiteFooter() {
           <FooterLink href="/pages/ciders" label="Ciders" />
           <FooterLink href="/pages/wines" label="Wines" />
           <FooterLink href="/pages/status-guide" label="Status Guide" />
+          <FooterLink href="/wiki" label="Wiki" />
           <FooterLink href="/docs/brewing-notes" label="About" />
         </View>
       </View>

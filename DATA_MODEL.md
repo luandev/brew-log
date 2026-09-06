@@ -134,3 +134,51 @@ The folder name must not change after the batch starts. The display name in fron
 ## Photos
 
 Store images at `assets/brews/<batch_id>/` and reference paths in `media.md`.
+
+## Wiki article
+
+Public knowhow articles live in `wiki/<slug>.md`. `wiki/README.md` is the index intro, not an article.
+
+Required metadata (YAML front matter):
+
+| Field | Description |
+|---|---|
+| `slug` | Stable URL id; must match the filename (`racking` → `wiki/racking.md`) |
+| `title` | Display title |
+| `category` | One of: `process`, `ingredients`, `equipment`, `measurements`, `troubleshooting`, `styles`, `cellar`, `glossary` |
+| `permalink` | Site URL path, must match `/wiki/<slug>/` |
+| `status` | `published` or `draft` |
+
+Optional metadata:
+
+| Field | Description |
+|---|---|
+| `summary` | One-line description for the wiki index |
+| `updated` | Last revised date (`YYYY-MM-DD`) |
+| `related_batches` | List of existing `batch_id` values to link from the article |
+| `tags` | List of tags for grouping |
+
+Wiki articles are living documents: they may be edited in place. Do not rename `slug` after publish.
+
+### Wiki build validation
+
+`ruby scripts/generate_site_data.rb` (or `npm run data`) prints **warnings** (non-blocking) when:
+
+- `slug` does not match the filename
+- `permalink` is not `/wiki/<slug>/`
+- `category` is not in the closed list above
+- `status` is not `published` or `draft`
+- `related_batches` lists a `batch_id` that does not exist
+- `title` or `slug` is missing
+- two articles share the same slug
+
+### Wiki index (`_data/wiki.json`)
+
+Generated at build time; do not hand-edit.
+
+| Field | Source |
+|---|---|
+| `intro_markdown` | Body of `wiki/README.md` |
+| `articles` | One object per `wiki/*.md` file except `README.md` |
+
+Each article object includes `body_markdown` (front matter stripped) plus the front-matter fields, with `url` set to `/wiki/<slug>/`. Draft articles are included in JSON but omitted from public wiki routes.
