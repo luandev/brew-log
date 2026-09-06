@@ -50,6 +50,11 @@ const css = `
     text-transform: uppercase;
     letter-spacing: 0.04em;
   }
+  time.lto-date {
+    color: inherit;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
   .md-body { color: #c4bba8; line-height: 1.65; }
   .md-body h1, .md-body h2, .md-body h3, .md-body h4 { color: #F2EBD9; }
   .md-body table { border-collapse: collapse; width: 100%; margin: 1rem 0; }

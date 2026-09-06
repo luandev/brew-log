@@ -1,5 +1,323 @@
 [
   {
+    "batch_id": "2026-006",
+    "name": "Pear & Maple Wine",
+    "title": "Pear & Maple Wine",
+    "type": "wine",
+    "status": "primary-fermentation",
+    "started": "2026-09-05",
+    "volume_l": 1.7,
+    "target_abv": null,
+    "actual_abv": null,
+    "tags": [
+      "pear",
+      "maple",
+      "cinnamon",
+      "pet",
+      "pectic-enzyme"
+    ],
+    "permalink": "/brews/2026-006/",
+    "folder": "brews/2026/2026-006-pear-maple-wine",
+    "year": "2026",
+    "slug": "2026-006-pear-maple-wine",
+    "url": "/brews/2026-006/",
+    "is_active": true,
+    "last_log_date": "2026-09-05",
+    "latest_log_excerpt": "The fresh pear juice was described as very sweet before maple syrup was added. No separate hydrometer reading was recorded for the pear juice alone, so its original gravity is unknown.",
+    "log_entries": [
+      {
+        "date": "2026-09-05",
+        "day_label": "Day 1",
+        "heading": "2026-09-05 — Day 1",
+        "stage": "Primary fermentation",
+        "measurements": "- Final batch volume: 1.7 L exact.\n- Hydrometer potential-alcohol reading after maple addition: 12%.\n- Exact specific gravity: not recorded.\n- Pre-maple pear-juice gravity: not recorded.\n- Maple syrup used: approximately 100 mL, estimated rather than precisely measured.",
+        "actions": "- Used fresh pear juice produced during the same juice-extraction session as batch 2026-005.\n- Used pectic enzyme during juice extraction; exact dose was not recorded.\n- Added approximately 100 mL maple syrup until the hydrometer showed 12% potential alcohol.\n- Added two cinnamon sticks.\n- Transferred the 1.7 L batch to a PET fermentation vessel.\n- Pitched yeast; exact strain and amount were not recorded.\n- Placed the fermenting PET in the cupboard.\n- Planned to add yeast nutrient on 2026-09-06.",
+        "observation": "The fresh pear juice was described as very sweet before maple syrup was added. No separate hydrometer reading was recorded for the pear juice alone, so its original gravity is unknown.",
+        "next": "- Add yeast nutrient on 2026-09-06 according to the product instructions and record the exact product/dose.\n- Check fermentation activity and take a hydrometer reading during primary.\n- Repeat the hydrometer reading; rack only after gravity is stable for roughly three days.\n- At secondary racking, choose a restrained flavour addition such as orange zest/peel or another spice and record exactly what is used.",
+        "excerpt": "The fresh pear juice was described as very sweet before maple syrup was added. No separate hydrometer reading was recorded for the pear juice alone, so its original gravity is unknown."
+      }
+    ],
+    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Fresh pear juice | Amount not separately measured | Produced during the same juice-extraction session as batch 2026-005; notably sweet before maple addition |\n| Maple syrup | ~100 mL | Estimated, not precisely measured; added until the hydrometer showed 12% potential alcohol |\n| Cinnamon sticks | 2 | Added to the PET fermentation vessel |\n| Yeast | Amount/type not recorded | Already pitched on 2026-09-05 |\n| Pectic enzyme | Dose not recorded | Used during juice extraction |\n| Yeast nutrient | Planned | To be added on 2026-09-06 according to the product label; exact product and dose to be recorded when used |\n\n## Yeast\n\n- Yeast was pitched on 2026-09-05.\n- Exact strain and pitch amount were not recorded.\n\n## Yeast Nutrient\n\n- Forgotten at pitch time.\n- Planned for 2026-09-06 according to the product label.\n- Record the exact product and dose when added.\n\n## Additions\n\n### Fruit\n\n- Fresh pear juice from the same extraction session as batch 2026-005.\n\n### Sugar Sources\n\n- Natural pear sugars.\n- Approximately 100 mL maple syrup, estimated rather than precisely measured.\n\n### Tea / Tannins\n\n-\n\n### Herbs / Spices\n\n- Two cinnamon sticks in primary fermentation.\n- Secondary flavour addition is not yet chosen. Orange zest/peel or another spice is being considered after primary fermentation.\n\n### Acids\n\n-\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target\n\n- Volume: 1.7 L exact\n- Starting gravity: not recorded\n- Recorded potential alcohol: 12%\n- Target final gravity: stable hydrometer reading before racking/bottling\n- Target ABV: not separately specified\n- Fermentation temperature: not recorded\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: still wine unless later changed and recorded\n- Priming sugar: none planned\n- Bottle type: TBD\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. Extract fresh pear juice; pectic enzyme was used during juice extraction.\n2. Add approximately 100 mL maple syrup, estimated rather than precisely measured, until the hydrometer shows 12% potential alcohol.\n3. Transfer to a PET fermentation vessel with two cinnamon sticks and pitch yeast.\n4. Add yeast nutrient on 2026-09-06 according to its product instructions and record the exact dose/product.\n5. Monitor fermentation activity and take hydrometer readings during primary.\n6. Continue primary until gravity is stable for roughly three days.\n7. Rack carefully into a sanitised secondary vessel, leaving gross lees behind.\n8. At or shortly after racking, choose a restrained secondary flavour addition such as orange zest/peel or another spice; record the exact addition and duration.\n9. Taste the secondary addition after a few days and remove it when the desired intensity is reached.\n10. Allow the wine to finish fermenting/clearing under airlock, then rack again if significant sediment forms.\n11. Bottle only after gravity is stable and fermentation is complete.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n<!-- Narrative plan only. Dated stage timelines live in stages.md. -->\n\n1. Primary: Pear juice, maple syrup, two cinnamon sticks, yeast; add nutrient early and monitor gravity.\n2. Secondary: Rack after stable gravity; choose orange peel/zest or another spice, with exact addition still TBD.\n3. Conditioning: Remove flavour addition when appropriate, allow clearing, rack again if needed, and confirm stability before bottling.\n\n</div>\n\n</div>\n\n## Notes\n\nThe pear juice was described as very sweet before the maple syrup was added. No pre-maple hydrometer reading was taken, so its original gravity or potential alcohol is not inferred. The approximately 100 mL maple syrup quantity is an estimate. Record what actually happened, not just the original plan. If the recipe changes during fermentation, log the change in `log.md` and update this file.",
+    "tasting_markdown": "# Tasting Notes\n\nNo tasting notes recorded yet. The batch is in primary fermentation.",
+    "media_markdown": "# Media\n\nRecord photos associated with this batch.\n\nStore image files in `assets/brews/2026-006/` and reference them here.\n\nNo media recorded yet.",
+    "summary_markdown": "# Pear & Maple Wine\n\n## Summary\n\nSmall-batch pear and maple wine started on 2026-09-05 from fresh pear juice produced during the same juice-extraction session as batch 2026-005. The pear juice was notably sweet before adjustment. Approximately 100 mL of maple syrup was added, producing a hydrometer reading of 12% potential alcohol. The exact specific gravity was not recorded. The batch volume is exactly 1.7 L, with two cinnamon sticks in the PET fermentation vessel. Pectic enzyme was used during juice extraction. Yeast has been pitched and primary fermentation is active; yeast nutrient is planned for 2026-09-06.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Starting gravity | Not recorded |\n| Potential alcohol | 12% |\n| Final gravity | |\n| Actual ABV | |\n| Volume | 1.7 L exact |",
+    "pending_schedule": [
+      {
+        "date": "2026-09-06",
+        "action": "Add yeast nutrient according to product instructions; record product/dose and check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-09",
+        "action": "Take first post-start hydrometer reading and record fermentation progress",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-12",
+        "action": "Repeat hydrometer reading; if still falling, continue primary fermentation",
+        "status": "Pending"
+      },
+      {
+        "date": "After gravity is stable for ~3 days",
+        "action": "Rack carefully into a sanitised secondary vessel and update the active stage",
+        "status": "Pending"
+      }
+    ],
+    "schedule": [
+      {
+        "date": "2026-09-06",
+        "action": "Add yeast nutrient according to product instructions; record product/dose and check fermentation activity",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-09",
+        "action": "Take first post-start hydrometer reading and record fermentation progress",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-12",
+        "action": "Repeat hydrometer reading; if still falling, continue primary fermentation",
+        "status": "Pending"
+      },
+      {
+        "date": "After gravity is stable for ~3 days",
+        "action": "Rack carefully into a sanitised secondary vessel and update the active stage",
+        "status": "Pending"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "primary-fermentation",
+        "started": "2026-09-05",
+        "ended": "",
+        "status": "active",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Secondary"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "conditioning",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Conditioning"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      },
+      {
+        "stage": "aging",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Aging"
+      }
+    ],
+    "days_elapsed": 1,
+    "target_days": 14,
+    "progress_percent": 7,
+    "thumbnail": "",
+    "accent": "#5B7C8D",
+    "current_stage": "primary-fermentation",
+    "current_stage_label": "Primary Fermentation",
+    "next_action_date": "2026-09-06",
+    "next_action": "Add yeast nutrient according to product instructions; record product/dose and check fermentation activity",
+    "end_date": "2026-09-19"
+  },
+  {
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "title": "Pure Orchard Cyser",
+    "type": "mead",
+    "status": "preparing",
+    "started": "2026-09-05",
+    "volume_l": null,
+    "target_abv": null,
+    "actual_abv": null,
+    "tags": [
+      "cyser",
+      "apple",
+      "pear",
+      "cranberry",
+      "honey",
+      "cinnamon",
+      "pectic-enzyme"
+    ],
+    "permalink": "/brews/2026-005/",
+    "folder": "brews/2026/2026-005-apple-honey-cyser",
+    "year": "2026",
+    "slug": "2026-005-apple-honey-cyser",
+    "url": "/brews/2026-005/",
+    "is_active": true,
+    "last_log_date": "2026-09-05",
+    "latest_log_excerpt": "The batch has not been brewed yet; quantities, gravity, volume, target ABV, and final honey usage remain to be measured or chosen.",
+    "log_entries": [
+      {
+        "date": "2026-09-05",
+        "day_label": "Planning",
+        "heading": "2026-09-05 — Planning",
+        "stage": "Planned",
+        "measurements": "- No brewing measurements taken yet.",
+        "actions": "- Defined a new cyser batch built around fresh apple juice and honey.\n- Chose a pure apple-and-honey baseline for primary fermentation.\n- Reserved cranberry juice and spices as optional secondary additions after tasting.\n- Reserved pears and maple syrup for a separate future batch.",
+        "observation": "The batch has not been brewed yet; quantities, gravity, volume, target ABV, and final honey usage remain to be measured or chosen.",
+        "next": "- Weigh/record the apples used.\n- Juice the apples and record juice yield.\n- Take a hydrometer reading before adding honey.\n- Choose a target strength and calculate the initial honey addition.\n- Record the exact yeast strain before pitching.",
+        "excerpt": "The batch has not been brewed yet; quantities, gravity, volume, target ABV, and final honey usage remain to be measured or chosen."
+      }
+    ],
+    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Fresh apples | TBD | Juice for the primary liquid base |\n| Honey | Up to 3.7 kg available | Actual amount used is TBD; reserve honey for gravity-led step feeding rather than assuming all will be used |\n| High-alcohol-tolerance wine yeast | TBD | Exact strain and pitch amount not yet recorded |\n| Cranberry juice | TBD, optional | Consider only after primary/early secondary tasting; verify the label for fermentation-inhibiting preservatives before use |\n\n## Yeast\n\n- High-alcohol-tolerance wine yeast; exact strain and amount TBD.\n\n## Yeast Nutrient\n\n- Nutrient plan TBD. If nutrient is used, record the exact product, dose, and timing before adding it.\n\n## Additions\n\n### Fruit\n\n- Fresh apple juice is the baseline fruit component.\n- Cranberry juice is optional after primary fermentation, depending on tasting.\n- Pears are intentionally reserved for a separate future batch.\n\n### Sugar Sources\n\n- Honey is the primary additional fermentable.\n- 3.7 kg is available inventory, not a committed addition quantity.\n- Maple syrup is intentionally reserved for a separate future batch.\n\n### Tea / Tannins\n\n-\n\n### Herbs / Spices\n\n- Optional after primary fermentation; exact spice choices and amounts TBD after tasting.\n- Cinnamon is a possible direction, but no addition is committed yet.\n\n### Acids\n\n-\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target\n\n- Volume: TBD; primary vessel capacity is 10 L\n- Starting gravity: TBD after measuring the pressed apple juice\n- Target final gravity: TBD\n- Target ABV: TBD\n- Fermentation temperature: TBD\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: TBD\n- Priming sugar: TBD\n- Bottle type: TBD\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. Sanitise the fermenter, tools, juicer, and anything that will contact the must.\n2. Juice the apples and record the juice volume and gravity before adding honey.\n3. Decide the target strength from the measured juice gravity before calculating the initial honey addition.\n4. Add only the initial portion of honey needed for the chosen starting gravity; keep the remaining honey in reserve.\n5. Pitch the high-alcohol-tolerance wine yeast. If a nutrient schedule is used, record the product, amounts, and timing.\n6. Monitor fermentation activity and gravity. Add reserved honey only if fermentation is healthy and further alcohol/sweetness is still desired.\n7. Do not assume the entire 3.7 kg honey supply must be used.\n8. Rack from primary once fermentation is sufficiently complete/stable and the batch is ready to come off the gross lees.\n9. Taste before making secondary additions. Cranberry juice and/or spices may be added in measured amounts if desired, with each actual addition logged.\n10. Allow the cyser to clear and condition before deciding the final bottling method and aging period.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n<!-- Narrative plan only. Dated stage timelines live in stages.md. -->\n\n1. Primary: Fresh apple juice, initial honey addition, wine yeast; monitor gravity and use honey step-feeding only if warranted.\n2. Secondary: Rack off primary lees; taste and decide whether cranberry and/or restrained spice additions are wanted.\n3. Conditioning: Clear, mature, and reassess balance before bottling.\n\n</div>\n\n</div>\n\n## Notes\n\n- Prefer pressed/juiced apples over filling the fermenter with grated fruit pulp. If any solids are used later, record their amount and manage the fruit cap during active fermentation.\n- Pectic enzyme may be considered for fresh apple juice if available; record the exact product and label-directed dose if used.\n- The recipe deliberately leaves volume, gravity, ABV, nutrient dose, spice additions, and final honey usage unset until they are actually measured or chosen.\n- Record what actually happened, not just the original plan. If the recipe changes during fermentation, log the change in `log.md` and update this file.",
+    "tasting_markdown": "# Tasting Notes\n\nNo tasting notes yet. The batch is still in planning.",
+    "media_markdown": "# Media\n\nRecord photos associated with this batch.\n\nStore image files in `assets/brews/2026-005/` and reference them here.\n\nNo media recorded yet.",
+    "summary_markdown": "# Pure Orchard Cyser\n\n## Summary\n\nThe planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. The exact water addition and final gravity were not recorded. Two cinnamon sticks were added in a tea bag, and pectic enzyme was used during both juice-extraction steps.\n\nThe next measurement is planned for 2026-09-06. If gravity is still excessively high, the must will be diluted further and remeasured before the recipe is considered settled.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Apple juice | ~3 L |\n| Pear juice | ~1.5 L |\n| Cranberry juice | ~0.5 L |\n| Honey used | 2 kg |\n| Water | Added; amount not recorded |\n| Initial hydrometer result | Above useful/readable range; exact value not recorded |\n| Final brew-day gravity | Not recorded |\n| Final gravity | |\n| Potential ABV | Not established |\n| Actual ABV | |\n| Final volume | Not recorded |",
+    "pending_schedule": [
+      {
+        "date": "TBD",
+        "action": "Weigh and record the apples selected for the batch",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Juice apples and record juice yield",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Take pre-honey hydrometer reading",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Choose target strength and calculate the initial honey addition",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Record exact yeast strain and prepare the pitch",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Start primary fermentation and update the batch stage",
+        "status": "Pending"
+      }
+    ],
+    "schedule": [
+      {
+        "date": "TBD",
+        "action": "Weigh and record the apples selected for the batch",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Juice apples and record juice yield",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Take pre-honey hydrometer reading",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Choose target strength and calculate the initial honey addition",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Record exact yeast strain and prepare the pitch",
+        "status": "Pending"
+      },
+      {
+        "date": "TBD",
+        "action": "Start primary fermentation and update the batch stage",
+        "status": "Pending"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "planned",
+        "started": "2026-09-05",
+        "ended": "",
+        "status": "active",
+        "label": "Planned"
+      },
+      {
+        "stage": "preparing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Preparing"
+      },
+      {
+        "stage": "primary-fermentation",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Primary Fermentation"
+      },
+      {
+        "stage": "secondary",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Secondary"
+      },
+      {
+        "stage": "clearing",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Clearing"
+      },
+      {
+        "stage": "conditioning",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Conditioning"
+      },
+      {
+        "stage": "bottled",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Bottled"
+      },
+      {
+        "stage": "aging",
+        "started": "",
+        "ended": "",
+        "status": "planned",
+        "label": "Aging"
+      }
+    ],
+    "days_elapsed": 1,
+    "target_days": 28,
+    "progress_percent": 4,
+    "thumbnail": "",
+    "accent": "#8B5E4B",
+    "current_stage": "planned",
+    "current_stage_label": "Planned",
+    "next_action_date": "TBD",
+    "next_action": "Weigh and record the apples selected for the batch",
+    "end_date": "2026-10-03"
+  },
+  {
     "batch_id": "2026-002",
     "name": "Cranberry & Maple Wine",
     "title": "Cranberry & Maple Wine",
@@ -91,7 +409,7 @@
     "name": "Plum, Cinnamon & Mint Tea Wine",
     "title": "Plum, Cinnamon & Mint Tea Wine",
     "type": "wine",
-    "status": "primary-fermentation",
+    "status": "secondary",
     "started": "2026-08-31",
     "volume_l": 2,
     "target_abv": null,
@@ -104,7 +422,8 @@
       "mint",
       "plum",
       "cinnamon",
-      "pet"
+      "pet",
+      "pectic-enzyme"
     ],
     "permalink": "/brews/2026-004/",
     "folder": "brews/2026/2026-004-plum-cinnamon-mint-tea-wine",
@@ -112,8 +431,8 @@
     "slug": "2026-004-plum-cinnamon-mint-tea-wine",
     "url": "/brews/2026-004/",
     "is_active": true,
-    "last_log_date": "2026-09-02",
-    "latest_log_excerpt": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification.",
+    "last_log_date": "2026-09-05",
+    "latest_log_excerpt": "The attached post-racking photo shows the wine in a clean PET vessel under airlock. It appears amber-gold and still visibly hazy. Pectic-enzyme addition was part of the plan but was not explicitly con",
     "log_entries": [
       {
         "date": "2026-08-31",
@@ -147,38 +466,75 @@
         "observation": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification.",
         "next": "- Continue primary fermentation.\n- Take a hydrometer reading and confirm gravity stability before racking or clearing.",
         "excerpt": "The earlier record understated the batch volume and omitted its apple base. This correction preserves the original entries while documenting the brewer's later clarification."
+      },
+      {
+        "date": "2026-09-05",
+        "day_label": "Secondary fermentation update and clarification plan",
+        "heading": "2026-09-05 — Secondary fermentation update and clarification plan",
+        "stage": "Secondary",
+        "measurements": "- No hydrometer reading was taken with this update.\n- Final gravity: not yet recorded.\n- Actual ABV: not yet measured.",
+        "actions": "- Recorded that a tasting sample was shared with friends on 2026-09-04.\n- Brewer confirmed that the batch is now in active secondary fermentation.\n- Recorded the plan to rack into a clean PET vessel and add pectic enzyme at the manufacturer's instructed dose.\n- Planned to return the wine to an airlock and allow fermentation to continue after racking.\n- Planned to confirm stable gravity with repeated hydrometer readings before moving to clearing.\n- Planned to allow the wine to clarify, rack once more off the settled sediment, confirm stability, then bottle as still wine for aging.",
+        "observation": "The wine remained plenty bubbly on 2026-09-04, indicating that fermentation activity was still obvious. Some fermentation foam had dried on the inside of the PET bottle. No detailed sensory tasting descriptors were recorded from the sample shared with friends.",
+        "next": "- Rack carefully into a clean PET vessel with minimal splashing and headspace.\n- Add pectic enzyme according to the product instructions.\n- Keep under airlock and allow secondary fermentation to continue.\n- Take a hydrometer reading after the rack, then repeat after roughly 3 days.\n- When gravity is stable, allow 1–3+ weeks for clarification.\n- Rack once more after clarification.\n- Bottle only after the wine remains stable; age in bottle.",
+        "excerpt": "The wine remained plenty bubbly on 2026-09-04, indicating that fermentation activity was still obvious. Some fermentation foam had dried on the inside of the PET bottle. No detailed sensory tasting descriptors were recor"
+      },
+      {
+        "date": "2026-09-05",
+        "day_label": "Racking completed",
+        "heading": "2026-09-05 — Racking completed",
+        "stage": "Secondary",
+        "measurements": "- No hydrometer reading was provided with this update.\n- Final gravity: not yet recorded.\n- Actual ABV: not yet measured.",
+        "actions": "- Racked the wine into a clean PET vessel.\n- Continued the batch under airlock after racking.\n- Added a post-racking photo to the batch record.",
+        "observation": "The attached post-racking photo shows the wine in a clean PET vessel under airlock. It appears amber-gold and still visibly hazy. Pectic-enzyme addition was part of the plan but was not explicitly confirmed in this update.",
+        "next": "- Confirm whether pectic enzyme was added during this rack.\n- Take a hydrometer reading on 2026-09-08 and record fermentation progress.\n- Repeat the hydrometer reading on 2026-09-11; if unchanged for roughly 3 days, confirm secondary fermentation is complete.\n- After stable gravity, allow the wine to clarify before the final rack and bottling.",
+        "excerpt": "The attached post-racking photo shows the wine in a clean PET vessel under airlock. It appears amber-gold and still visibly hazy. Pectic-enzyme addition was part of the plan but was not explicitly confirmed in this updat"
       }
     ],
-    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Fresh apple juice | ~1 L | Made from apples from the yard; this was the starting base of the batch |\n| Prepared tea component | ~1 L | Black tea, mint, and Whittard Plum & Cinnamon instant tea |\n| Black tea | Amount not recorded | Used in the tea component |\n| Mint | Amount not recorded | Used in the tea component |\n| Whittard Plum & Cinnamon instant tea | Amount not recorded | Product is sugar-based; actual quantity used was not recorded |\n| Additional fermentable sugar | Amount not recorded | Added after the 10% potential-alcohol reading to increase the reading to ~11% |\n| Yeast | Not recorded | Type and amount were not recorded |\n\n## Yeast\n\n- Fermentation is active / underway according to the brewer's correction.\n- Yeast type and amount were not recorded in the source notes.\n\n## Yeast Nutrient\n\n- Not recorded.\n\n## Additions\n\n### Fruit\n\n- Approximately 1 L fresh apple juice made from apples from the yard.\n\n### Sugar Sources\n\n- Natural sugars from the fresh apple juice.\n- Sugar contained in the Whittard Plum & Cinnamon instant tea.\n- Additional fermentable sugar added after the first hydrometer reading; quantity not recorded.\n- Product label: 95 g sugars per 100 g powder. Directions state 20 g powder per 200 mL water, but the actual amount used in this batch was not recorded.\n\n### Tea / Tannins\n\n- Black tea.\n- Whittard Plum & Cinnamon instant tea.\n\n### Herbs / Spices\n\n- Mint.\n- Plum and cinnamon flavour from the instant tea product.\n\n### Acids\n\n- No separate acid addition recorded.\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target / Measurements\n\n- Batch started: 2026-08-31\n- Fresh apple juice base: approximately 1 L\n- Prepared tea component: approximately 1 L\n- Combined batch volume: approximately 2 L\n- Starting gravity: not recorded\n- First potential-alcohol reading: 10%\n- Adjusted potential-alcohol reading: approximately 11%\n- Target final gravity: stable final hydrometer reading before clearing\n- Target ABV: not explicitly recorded\n- Actual ABV: not yet measured\n- Fermentation temperature: not recorded\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: planned still wine after fermentation, clearing, and aging\n- Priming sugar: none planned for a still wine\n- Bottle type: not yet recorded\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. On 2026-08-31, begin the batch with approximately 1 L of fresh apple juice made from apples from the yard.\n2. Prepare approximately 1 L of tea using black tea, mint, and Whittard Plum & Cinnamon instant tea and combine it with the apple base.\n3. Take a hydrometer potential-alcohol reading; the first recorded reading was 10%.\n4. Increase fermentable sugar by an unrecorded amount; the subsequent reading was approximately 11% potential alcohol.\n5. Keep the approximately 2 L must in a PET fermentation vessel away from direct sunlight.\n6. Primary fermentation is the current active stage. Yeast type and amount were not recorded.\n7. Monitor fermentation with hydrometer readings and wait for stable gravity before moving on.\n8. Rack off sediment with minimal splashing, allow the wine to clear, and cold crash if useful.\n9. Age before final bottling to allow the apple, tea, mint, plum, and cinnamon flavours to integrate.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n<!-- Narrative plan only. Dated stage timelines live in stages.md. -->\n\n1. Preparing: completed on 2026-08-31.\n2. Primary fermentation: active from 2026-08-31.\n3. Secondary / clearing: planned after fermentation is complete and gravity is stable.\n4. Conditioning / aging: planned before final still-wine bottling.\n\n</div>\n\n</div>\n\n## Quality Plan\n\nThe quality-focused plan discussed for this wine was to keep fermentation controlled, protect the clear PET vessel from direct sunlight, ferment to a stable hydrometer reading, rack carefully away from sediment and oxygen, allow several weeks for clearing, and give the finished wine time to mature. Mint and cinnamon should remain background notes rather than being allowed to extract indefinitely.\n\n## Notes\n\nThis is a separate batch from `2026-001`. The brewer later clarified that batch `2026-004` began with approximately 1 L of fresh yard apple juice before the approximately 1 L tea component was added; this correction is also preserved in `log.md`.",
-    "tasting_markdown": "# Tasting Notes\n\nNo tasting notes recorded yet.",
-    "media_markdown": "# Media\n\nRecord photos associated with this batch.\n\nStore image files in `assets/brews/2026-004/` and reference them here once copied into the repository.\n\n## 2026-08-31\n\nSource conversation included photos of:\n\n- The dark plum/cinnamon tea infusion with black tea and mint material.\n- The approximately 1 L PET-bound tea-wine must.\n- The Whittard Plum & Cinnamon instant tea packaging and nutrition label.\n- Hydrometer samples showing the initial 10% potential-alcohol reading and the later approximately 11% reading.\n\nThe source image files have not been copied into the repository assets directory yet.",
-    "summary_markdown": "# Plum, Cinnamon & Mint Tea Wine\n\n## Summary\n\nExperimental apple-and-tea wine started on 2026-08-31. The batch began with approximately 1 L of fresh apple juice made from apples from the yard, followed by approximately 1 L of tea made with black tea, mint, and Whittard Plum & Cinnamon instant tea, for an approximately 2 L combined batch. The first recorded hydrometer potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, a second reading was approximately 11%. The batch is in primary fermentation in PET. Yeast type and amount were not recorded in the source notes.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Batch start | 2026-08-31 |\n| Fresh yard apple juice | ~1 L |\n| Prepared tea component | ~1 L |\n| Combined volume | ~2 L |\n| Starting gravity | Not recorded |\n| First potential-alcohol reading | 10% |\n| Adjusted potential-alcohol reading | ~11% |\n| Final gravity | Not recorded |\n| Actual ABV | Not yet measured |",
+    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Fresh apple juice | ~1 L | Made from apples from the yard; this was the starting base of the batch |\n| Prepared tea component | ~1 L | Black tea, mint, and Whittard Plum & Cinnamon instant tea |\n| Black tea | Amount not recorded | Used in the tea component |\n| Mint | Amount not recorded | Used in the tea component |\n| Whittard Plum & Cinnamon instant tea | Amount not recorded | Product is sugar-based; actual quantity used was not recorded |\n| Additional fermentable sugar | Amount not recorded | Added after the 10% potential-alcohol reading to increase the reading to ~11% |\n| Yeast | Not recorded | Type and amount were not recorded |\n| Pectic enzyme | Planned; dose not yet recorded | To be added during the next rack according to the manufacturer's instructions |\n\n## Yeast\n\n- Fermentation is active.\n- Yeast type and amount were not recorded in the source notes.\n\n## Yeast Nutrient\n\n- Not recorded.\n\n## Additions\n\n### Fruit\n\n- Approximately 1 L fresh apple juice made from apples from the yard.\n\n### Sugar Sources\n\n- Natural sugars from the fresh apple juice.\n- Sugar contained in the Whittard Plum & Cinnamon instant tea.\n- Additional fermentable sugar added after the first hydrometer reading; quantity not recorded.\n- Product label: 95 g sugars per 100 g powder. Directions state 20 g powder per 200 mL water, but the actual amount used in this batch was not recorded.\n\n### Tea / Tannins\n\n- Black tea.\n- Whittard Plum & Cinnamon instant tea.\n\n### Herbs / Spices\n\n- Mint.\n- Plum and cinnamon flavour from the instant tea product.\n\n### Clarification\n\n- Pectic enzyme is planned for the next rack while secondary fermentation is still active.\n- Exact dose is not recorded yet and should follow the product label.\n- Clarification should be judged after fermentation has finished and gravity is stable, because active CO2 and yeast can keep material suspended.\n\n### Acids\n\n- No separate acid addition recorded.\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target / Measurements\n\n- Batch started: 2026-08-31\n- Fresh apple juice base: approximately 1 L\n- Prepared tea component: approximately 1 L\n- Combined batch volume: approximately 2 L\n- Starting gravity: not recorded\n- First potential-alcohol reading: 10%\n- Adjusted potential-alcohol reading: approximately 11%\n- Secondary fermentation confirmed active by 2026-09-04\n- Target final gravity: stable final hydrometer reading before clearing\n- Target ABV: not explicitly recorded\n- Actual ABV: not yet measured\n- Fermentation temperature: not recorded\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: still wine after fermentation and clarification are complete\n- Priming sugar: none planned\n- Bottle type: not yet recorded\n- Bottle only after gravity is stable and fermentation has stopped\n- Planned maturation: bottle aging after the final rack; a short stabilization/rest before bottling is preferred if possible\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. On 2026-08-31, begin the batch with approximately 1 L of fresh apple juice made from apples from the yard.\n2. Prepare approximately 1 L of tea using black tea, mint, and Whittard Plum & Cinnamon instant tea and combine it with the apple base.\n3. Take a hydrometer potential-alcohol reading; the first recorded reading was 10%.\n4. Increase fermentable sugar by an unrecorded amount; the subsequent reading was approximately 11% potential alcohol.\n5. Ferment the approximately 2 L must in PET away from direct sunlight.\n6. Primary fermentation completed; the batch was confirmed to be in active secondary fermentation by 2026-09-04.\n7. During secondary, the wine remained plenty bubbly. Some fermentation foam dried on the inside of the PET vessel.\n8. Planned next action: rack carefully into a clean PET vessel, add pectic enzyme at the manufacturer's dose, minimize splashing and headspace, and return the wine to an airlock so fermentation can continue.\n9. Take a hydrometer reading after the rack and repeat it after roughly 3 days. Do not move to clearing until gravity is unchanged across repeated readings.\n10. Once fermentation is stable, allow the wine to clarify for roughly 1–3+ weeks, checking clarity rather than forcing a fixed date.\n11. Rack once more off the clarified sediment.\n12. Confirm the wine remains stable before bottling. Bottle as still wine with no priming sugar, then age in bottle.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n<!-- Narrative plan only. Dated stage timelines live in stages.md. -->\n\n1. Preparing: completed on 2026-08-31.\n2. Primary fermentation: completed; exact transition date was not recorded.\n3. Secondary fermentation: active; confirmed active by 2026-09-04.\n4. Clearing: planned after stable gravity; pectic enzyme is intended to assist clarification.\n5. Final rack / conditioning: planned after the wine has clarified.\n6. Bottled / aging: planned only after stability is confirmed.\n\n</div>\n\n</div>\n\n## Added Plan — 2026-09-05\n\nThe brewer's current plan is to rack because the batch is still actively fermenting and has dried fermentation foam on the PET bottle, add pectic enzyme to help with the apple pectin haze, allow secondary fermentation to continue under airlock, then wait for a stable hydrometer reading before treating the batch as finished. Once fermentation is complete, the wine should be left to clarify, racked one final time off the settled sediment, checked again for stability, then bottled as a still wine and aged.\n\nThe key adjustment to the original idea is that clarity is not used as proof that fermentation is complete. Gravity stability comes first; clarification and bottling follow.\n\n## Quality Plan\n\nKeep oxygen exposure low during racking, keep the vessel away from direct sunlight, avoid cold-crashing while fermentation is clearly active, and avoid bottling while there is still measurable fermentation. The apple, black tea, mint, plum, and cinnamon flavours should be allowed time to integrate during maturation.\n\n## Notes\n\nThis is a separate batch from `2026-001`. The brewer clarified that batch `2026-004` began with approximately 1 L of fresh yard apple juice before the approximately 1 L tea component was added; this correction is preserved in `log.md`.",
+    "tasting_markdown": "# Tasting Notes\n\n## 2026-09-04\n\n**Stage:** Secondary\n\n- Appearance:\n- Aroma:\n- Taste:\n- Sweetness:\n- Acidity:\n- Body:\n- Finish:\n- Overall: Sampled with friends; no detailed sensory descriptors were recorded.\n- Fermentation note: The wine was still plenty bubbly and secondary fermentation remained active.",
+    "media_markdown": "# Media\n\nRecord photos associated with this batch.\n\nStore image files in `assets/brews/2026-004/` and reference them here once copied into the repository.\n\n## 2026-08-31\n\nSource conversation included photos of:\n\n- The dark plum/cinnamon tea infusion with black tea and mint material.\n- The approximately 1 L PET-bound tea-wine must.\n- The Whittard Plum & Cinnamon instant tea packaging and nutrition label.\n- Hydrometer samples showing the initial 10% potential-alcohol reading and the later approximately 11% reading.\n\nThe source image files have not been copied into the repository assets directory yet.\n\n## 2026-09-05\n\n- File: `assets/brews/2026-004/2026-09-05-after-racking.jpg`\n- Description: Post-racking photo showing the wine in a clean PET vessel under airlock; amber-gold and visibly hazy.",
+    "summary_markdown": "# Plum, Cinnamon & Mint Tea Wine\n\n## Summary\n\nExperimental apple-and-tea wine started on 2026-08-31. The batch began with approximately 1 L of fresh apple juice made from apples from the yard, followed by approximately 1 L of tea made with black tea, mint, and Whittard Plum & Cinnamon instant tea, for an approximately 2 L combined batch. The first recorded hydrometer potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, a second reading was approximately 11%.\n\nBy 2026-09-04 the batch was confirmed to be in active secondary fermentation and remained plenty bubbly. A tasting sample was shared with friends that day; no detailed sensory descriptors were recorded. Some fermentation foam had dried on the inside of the PET vessel. The current plan is to rack into a clean PET vessel, add pectic enzyme at the product's instructed dose, keep the wine under airlock while fermentation finishes, confirm stable gravity, allow it to clarify, rack once more, then bottle only after stability is confirmed and age in bottle.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Batch start | 2026-08-31 |\n| Fresh yard apple juice | ~1 L |\n| Prepared tea component | ~1 L |\n| Combined volume | ~2 L |\n| Starting gravity | Not recorded |\n| First potential-alcohol reading | 10% |\n| Adjusted potential-alcohol reading | ~11% |\n| Secondary confirmed active | 2026-09-04 |\n| Final gravity | Not recorded |\n| Actual ABV | Not yet measured |",
     "pending_schedule": [
       {
-        "date": "2026-09-02",
-        "action": "Check fermentation activity",
+        "date": "2026-09-05",
+        "action": "Confirm whether pectic enzyme was added during the rack; if not, add per product instructions",
         "status": "Pending"
       },
       {
-        "date": "2026-09-07",
-        "action": "Take hydrometer reading and check fermentation progress",
+        "date": "2026-09-08",
+        "action": "Take hydrometer reading after rack and record fermentation progress",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-11",
+        "action": "Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete",
         "status": "Pending"
       }
     ],
     "schedule": [
       {
-        "date": "2026-08-31",
-        "action": "Prepare tea must and adjust sugar from 10% to ~11% potential alcohol",
+        "date": "2026-09-04",
+        "action": "Tasting sample with friends; confirm secondary remains actively bubbly",
         "status": "Done"
       },
       {
-        "date": "2026-09-02",
-        "action": "Check fermentation activity",
+        "date": "2026-09-05",
+        "action": "Rack carefully to clean PET and return to airlock",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-05",
+        "action": "Confirm whether pectic enzyme was added during the rack; if not, add per product instructions",
         "status": "Pending"
       },
       {
-        "date": "2026-09-07",
-        "action": "Take hydrometer reading and check fermentation progress",
+        "date": "2026-09-08",
+        "action": "Take hydrometer reading after rack and record fermentation progress",
+        "status": "Pending"
+      },
+      {
+        "date": "2026-09-11",
+        "action": "Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete",
         "status": "Pending"
       }
     ],
@@ -193,15 +549,15 @@
       {
         "stage": "primary-fermentation",
         "started": "2026-08-31",
-        "ended": "",
-        "status": "active",
+        "ended": "2026-09-04",
+        "status": "completed",
         "label": "Primary Fermentation"
       },
       {
         "stage": "secondary",
-        "started": "",
+        "started": "2026-09-04",
         "ended": "",
-        "status": "planned",
+        "status": "active",
         "label": "Secondary"
       },
       {
@@ -234,20 +590,20 @@
       }
     ],
     "days_elapsed": 6,
-    "target_days": 14,
-    "progress_percent": 43,
+    "target_days": 18,
+    "progress_percent": 33,
     "thumbnail": "",
     "accent": "#AD9753",
-    "current_stage": "primary-fermentation",
-    "current_stage_label": "Primary Fermentation",
-    "next_action_date": "2026-09-02",
-    "next_action": "Check fermentation activity",
-    "end_date": "2026-09-14"
+    "current_stage": "secondary",
+    "current_stage_label": "Secondary",
+    "next_action_date": "2026-09-05",
+    "next_action": "Confirm whether pectic enzyme was added during the rack; if not, add per product instructions",
+    "end_date": "2026-09-18"
   },
   {
     "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
-    "title": "Apple & Golden Syrup Wine",
+    "name": "Rapadura Very Berry",
+    "title": "Rapadura Very Berry",
     "type": "wine",
     "status": "secondary",
     "started": "2026-08-31",
@@ -266,8 +622,8 @@
     "slug": "2026-001-apple-golden-syrup-wine",
     "url": "/brews/2026-001/",
     "is_active": true,
-    "last_log_date": "2026-09-02",
-    "latest_log_excerpt": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV.",
+    "last_log_date": "2026-09-05",
+    "latest_log_excerpt": "No new tasting sample was taken for this entry. The most recent recorded sample remains the 2026-09-04 tasting: clear but not fully brilliant, crisp, wine-like, alcohol-forward, with satisfactory tann",
     "log_entries": [
       {
         "date": "2026-08-31",
@@ -290,31 +646,53 @@
         "observation": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV.",
         "next": "- Allow secondary fermentation to finish.\n- Take a hydrometer reading and confirm gravity is stable before clearing.\n- Cold crash after fermentation is complete.\n- Rack into sanitized glass for clearing and aging.",
         "excerpt": "The wine was kept in PET with indirect light before racking. The batch is now in a second fermentation after the maple-syrup addition and has not yet reached a measured final ABV."
+      },
+      {
+        "date": "2026-09-05",
+        "day_label": "Secondary progress and finishing plan",
+        "heading": "2026-09-05 — Secondary progress and finishing plan",
+        "stage": "Secondary",
+        "measurements": "- No new gravity reading reported.\n- Final ABV not yet measured.",
+        "actions": "- Reported that an airlock was fitted and the PET bottle was moved to a dark closet around Monday 2026-08-31; date is approximate.\n- Took a tasting sample on 2026-09-04.\n- Obtained sodium benzoate, pectic enzyme, and liquid finished-wine sweetener for possible finishing work.\n- Considering an orange-zest addition for floral citrus aroma; not yet added.",
+        "observation": "Wine is clear but not yet fully brilliant. Taste is distinctly wine-like, crisp and pleasant, with alcohol currently prominent. Tannin level is satisfactory, but the wine is relatively neutral and lacks a strong defining aromatic character.",
+        "next": "- Take hydrometer readings several days apart to confirm secondary fermentation is complete.\n- If gravity is stable, rack to sanitized glass with minimal headspace and retain an airlock while finishing.\n- Use pectic enzyme only if haze persists, following the product dosage instructions.\n- Trial orange zest cautiously after fermentation has finished, avoiding white pith.\n- Do not use sodium benzoate as a clearing agent.\n- Decide on final sweetness after clarification; confirm whether the liquid wine sweetener is fermentable before bottling.",
+        "excerpt": "Wine is clear but not yet fully brilliant. Taste is distinctly wine-like, crisp and pleasant, with alcohol currently prominent. Tannin level is satisfactory, but the wine is relatively neutral and lacks a strong defining"
+      },
+      {
+        "date": "2026-09-05",
+        "day_label": "Plan revision and batch rename",
+        "heading": "2026-09-05 — Plan revision and batch rename",
+        "stage": "Secondary",
+        "measurements": "- Hydrometer reading postponed.\n- No new gravity or ABV measurement taken.",
+        "actions": "- Renamed the batch display name to **Rapadura Very Berry** while preserving batch ID `2026-001` and the existing folder name.\n- Shortened the finishing schedule.\n- Deferred the hydrometer reading until after an initial clarification period.\n- Planned the next rack into a clean PET bottle rather than glass.\n- Planned to add pectic enzyme during that rack, following the product instructions, then refit the airlock and allow the wine to clarify.\n- Recorded the 2026-09-04 tasting description in `tasting.md` as the formal tasting note.",
+        "observation": "No new tasting sample was taken for this entry. The most recent recorded sample remains the 2026-09-04 tasting: clear but not fully brilliant, crisp, wine-like, alcohol-forward, with satisfactory tannin and limited defining aroma.",
+        "next": "- Rack to a clean PET bottle and add pectic enzyme per product instructions.\n- Keep under airlock while clarifying.\n- Check clarity and sediment formation after several days.\n- Take a hydrometer reading before sweetening or bottling.\n- Rack off clarification sediment, then decide on orange zest and final sweetness.",
+        "excerpt": "No new tasting sample was taken for this entry. The most recent recorded sample remains the 2026-09-04 tasting: clear but not fully brilliant, crisp, wine-like, alcohol-forward, with satisfactory tannin and limited defin"
       }
     ],
-    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Apple wine base | 1.75 L | Recorded volume before maple secondary addition |\n| Rapadura | Amount not recorded | Pre-secondary sugar source identified in later brew notes |\n| Granulated sugar | 3 heaped spoonfuls | Brewed with the berry tea addition |\n| Lidl Very Berry tea | 1 packet | Concentrated tea addition |\n| Pure maple syrup | 90 g | Added after racking to drive secondary fermentation |\n| Water | 160 mL | Heated to dissolve the maple syrup before addition |\n| Yeast | Amount/type not recorded | Fermentation yeast |\n\n## Yeast\n\n- Type and amount not recorded.\n\n## Yeast Nutrient\n\n- Not recorded.\n\n## Additions\n\n### Fruit\n\n- Apple juice / apple wine base.\n\n### Sugar Sources\n\n- Rapadura during the earlier fermentation.\n- 3 heaped spoonfuls of sugar with the Very Berry tea.\n- 90 g pure maple syrup after racking for secondary fermentation.\n\n### Tea / Tannins\n\n- 1 packet Lidl Very Berry tea.\n\n### Herbs / Spices\n\n- None recorded for this batch.\n\n### Acids\n\n- None recorded for this batch.\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target\n\n- Volume before maple addition: 1.75 L\n- Starting gravity: not recorded\n- Target final gravity: stable final reading before clearing\n- Initial potential alcohol reading: 11%\n- Reported strength before maple secondary: ~12%\n- Target ABV: 12% in the original batch record; secondary step-feeding was later used to increase strength\n- Fermentation temperature: not recorded in the updated notes\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: planned still wine after clearing and aging\n- Priming sugar: none planned\n- Bottle type: glass bottle planned after clearing\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. Ferment the apple wine base with yeast and rapadura.\n2. During the batch, a hydrometer potential-alcohol scale reading of 11% was recorded.\n3. Brew 1 packet of Lidl Very Berry tea with 3 heaped spoonfuls of sugar; cool before mixing into the wine.\n4. Continue fermentation in PET away from direct sunlight.\n5. Once the first fermentation is complete, rack the wine off the sediment into a clean PET vessel.\n6. Dissolve 90 g pure maple syrup in 160 mL hot water, then add it to the racked wine for secondary fermentation.\n7. Keep the secondary vessel vented / under airlock until fermentation is complete and gravity is stable.\n8. Planned next step: cold crash, rack into sanitized glass, then allow the wine to clear and age.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n1. Primary fermentation: completed\n2. Secondary: active; maple syrup step-feed after racking\n3. Clearing: planned\n4. Conditioning / aging: planned\n\n</div>\n\n</div>\n\n## Notes\n\nThe original repository entry described this batch as apple and golden syrup wine. Later brew notes supplied by the brewer identify rapadura as the pre-secondary sugar source and add the Very Berry tea and maple-syrup secondary step. The folder and batch ID remain unchanged per repository rules.\n\nFinal ABV has not yet been measured and should not be inferred from the potential-alcohol scale alone.",
-    "tasting_markdown": "# Tasting Notes\n\n_No tasting notes yet._",
+    "recipe_markdown": "# Recipe\n\n## Ingredients\n\n| Ingredient | Amount | Notes |\n|---|---:|---|\n| Apple wine base | 1.75 L | Recorded volume before maple secondary addition |\n| Rapadura | Amount not recorded | Pre-secondary sugar source identified in later brew notes |\n| Granulated sugar | 3 heaped spoonfuls | Brewed with the berry tea addition |\n| Lidl Very Berry tea | 1 packet | Concentrated tea addition |\n| Pure maple syrup | 90 g | Added after racking to drive secondary fermentation |\n| Water | 160 mL | Heated to dissolve the maple syrup before addition |\n| Yeast | Amount/type not recorded | Fermentation yeast |\n| Pectic enzyme | Planned for next rack; dose not yet recorded | Use manufacturer instructions |\n| Orange zest | Planned; amount not yet decided | Optional finishing aroma trial; colored zest only, no white pith |\n| Liquid finished-wine sweetener | Optional; amount not yet decided | Bench-test after clarification |\n| Sodium benzoate | Available but not planned as a clarifier | Preservative, not a fining agent |\n\n## Yeast\n\n- Type and amount not recorded.\n\n## Yeast Nutrient\n\n- Not recorded.\n\n## Additions\n\n### Fruit\n\n- Apple juice / apple wine base.\n- Orange zest is reserved as an optional post-clarification aroma addition and has not yet been added.\n\n### Sugar Sources\n\n- Rapadura during the earlier fermentation.\n- 3 heaped spoonfuls of sugar with the Very Berry tea.\n- 90 g pure maple syrup after racking for secondary fermentation.\n- Liquid finished-wine sweetener is available for optional backsweetening after clarification.\n\n### Tea / Tannins\n\n- 1 packet Lidl Very Berry tea.\n\n### Herbs / Spices\n\n- None added.\n\n### Acids\n\n- None recorded for this batch.\n\n<div class=\"recipe-details-grid\">\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Target\n\n- Volume before maple addition: 1.75 L\n- Starting gravity: not recorded\n- Target final gravity: stable final reading before bottling\n- Initial potential alcohol reading: 11%\n- Reported strength before maple secondary: ~12%\n- Target ABV: 12% in the original batch record; secondary step-feeding was later used to increase strength\n- Fermentation temperature: not recorded in the updated notes\n- Style direction: crisp still apple wine with restrained tannin and a light floral-citrus aroma\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Bottling\n\n- Method: still wine after clarification and final sweetness/aroma adjustment\n- Priming sugar: none planned\n- Bottle type: sanitized glass bottle planned after clarification\n- Final corking: only after gravity is checked and stable and any sweetening work is complete\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Process\n\n1. Ferment the apple wine base with yeast and rapadura.\n2. Record the hydrometer potential-alcohol scale reading of 11% taken during the batch.\n3. Brew 1 packet of Lidl Very Berry tea with 3 heaped spoonfuls of sugar; cool before mixing into the wine.\n4. Continue fermentation in PET away from direct sunlight.\n5. Rack the fermented wine off the sediment into a clean PET vessel.\n6. Dissolve 90 g pure maple syrup in 160 mL hot water and add it to the racked wine for secondary fermentation.\n7. Keep the secondary vessel under airlock in a dark closet.\n8. Take a tasting sample during secondary; the 2026-09-04 sample was clear but not fully brilliant, crisp, wine-like, alcohol-forward, and relatively neutral aromatically.\n9. Skip the immediate hydrometer check and instead rack to a clean PET bottle, add pectic enzyme according to the product label, refit the airlock, and allow the wine to clarify.\n10. Check clarity and sediment formation after several days.\n11. Take a hydrometer reading before any sweetening or final bottling.\n12. Rack off the clearing sediment once sufficient clarification has occurred.\n13. Decide whether to trial orange zest for aroma; use only colored zest and remove it once the desired aroma is reached.\n14. Bench-test the finished-wine sweetener on a small sample before deciding whether to backsweeten the full batch.\n15. Do not use sodium benzoate as a clearing agent.\n16. Bottle only after the wine is clear enough for the intended style and gravity is stable.\n\n</div>\n\n<div class=\"recipe-detail-panel\" markdown=\"1\">\n\n## Fermentation Stages\n\n1. Primary fermentation: completed\n2. Secondary: active\n3. Clarification: next planned step in clean PET with pectic enzyme\n4. Conditioning / aging: planned\n\n</div>\n\n</div>\n\n## Notes\n\nThe batch display name was updated to **Rapadura Very Berry** on 2026-09-05. The existing folder name and batch ID remain unchanged in accordance with repository rules.\n\nThe original 2026-08-31 repository entry referred to golden syrup. Later brewer notes identify rapadura as the pre-secondary sugar source and document the Very Berry tea and maple-syrup secondary step. Historical log entries are preserved and corrections are recorded separately.\n\nOn 2026-09-04 the wine was sampled during secondary: clear but not fully brilliant, crisp, distinctly wine-like, alcohol-forward, with satisfactory tannin but limited aromatic character. Orange zest is being considered as a finishing aromatic element after clarification.\n\nFinal ABV has not yet been measured and should not be inferred from the potential-alcohol scale alone.",
+    "tasting_markdown": "# Tasting Notes\n\n## 2026-09-04\n\n**Stage:** Secondary\n\n- Appearance: Clear, but not yet fully brilliant.\n- Aroma: Relatively neutral; not much defining aromatic character yet.\n- Taste: Very wine-like; crisp and pleasant, with alcohol predominant.\n- Sweetness:\n- Acidity: Crisp.\n- Body:\n- Finish:\n- Overall: Good tannin level and already convincingly wine-like, but the alcohol is still prominent and the wine would benefit from more aromatic character and further clarification.\n\n**Recorded note:** This tasting was described on 2026-09-05 from a sample taken the previous day. Orange zest was proposed as a possible later floral-citrus aroma addition after clarification.",
     "media_markdown": "# Media\n\nStore image files in `assets/brews/2026-001/` and reference them here.\n\n_No photos yet._",
-    "summary_markdown": "# Apple & Golden Syrup Wine\n\n## Summary\n\nSmall-batch apple wine that completed its first fermentation, was racked off the primary sediment, and was step-fed with maple syrup for a secondary fermentation. Later brew notes identify rapadura as the pre-secondary sugar source and a Lidl Very Berry tea addition.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Starting gravity | |\n| Final gravity | |\n| Initial potential alcohol reading | 11% |\n| Reported strength before maple secondary | ~12% |\n| Actual ABV | |\n| Volume before maple addition | 1.75 L |\n| Maple syrup added in secondary | 90 g |\n| Water used to dissolve maple syrup | 160 mL |",
+    "summary_markdown": "# Rapadura Very Berry\n\n## Summary\n\nSmall-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. It is currently in secondary under airlock, with the next planned action to rack into a clean PET bottle, add pectic enzyme, and let it clarify before final aroma and sweetness decisions.\n\n## Current Status\n\n## Key Measurements\n\n| Measurement | Value |\n|---|---|\n| Starting gravity | |\n| Final gravity | |\n| Initial potential alcohol reading | 11% |\n| Reported strength before maple secondary | ~12% |\n| Actual ABV | |\n| Volume before maple addition | 1.75 L |\n| Maple syrup added in secondary | 90 g |\n| Water used to dissolve maple syrup | 160 mL |\n\n## Latest Note\n\n2026-09-04 tasting: clear but not fully brilliant; crisp and distinctly wine-like, with alcohol prominent, satisfactory tannin, and relatively little defining aroma. Orange zest remains a possible finishing aroma addition after clarification.",
     "pending_schedule": [
       {
-        "date": "2026-09-01",
-        "action": "Check fermentation activity",
+        "date": "2026-09-05",
+        "action": "Rack to a clean PET bottle and add pectic enzyme per product instructions",
         "status": "Pending"
       },
       {
-        "date": "2026-09-07",
-        "action": "Take hydrometer reading and check gravity stability",
+        "date": "2026-09-10",
+        "action": "Check clarity and sediment formation",
         "status": "Pending"
       },
       {
-        "date": "2026-09-14",
-        "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
+        "date": "2026-09-12",
+        "action": "Take hydrometer reading before any sweetening or final bottling",
         "status": "Pending"
       },
       {
-        "date": "2026-10-01",
-        "action": "First tasting",
+        "date": "2026-09-15",
+        "action": "Rack off clearing sediment and decide on orange zest / sweetness",
         "status": "Pending"
       }
     ],
@@ -325,23 +703,38 @@
         "status": "Done"
       },
       {
-        "date": "2026-09-01",
-        "action": "Check fermentation activity",
+        "date": "2026-08-31",
+        "action": "Fit airlock and move PET bottle to dark closet",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-04",
+        "action": "Take tasting sample",
+        "status": "Done"
+      },
+      {
+        "date": "2026-09-05",
+        "action": "Take hydrometer reading",
+        "status": "Skipped"
+      },
+      {
+        "date": "2026-09-05",
+        "action": "Rack to a clean PET bottle and add pectic enzyme per product instructions",
         "status": "Pending"
       },
       {
-        "date": "2026-09-07",
-        "action": "Take hydrometer reading and check gravity stability",
+        "date": "2026-09-10",
+        "action": "Check clarity and sediment formation",
         "status": "Pending"
       },
       {
-        "date": "2026-09-14",
-        "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
+        "date": "2026-09-12",
+        "action": "Take hydrometer reading before any sweetening or final bottling",
         "status": "Pending"
       },
       {
-        "date": "2026-10-01",
-        "action": "First tasting",
+        "date": "2026-09-15",
+        "action": "Rack off clearing sediment and decide on orange zest / sweetness",
         "status": "Pending"
       }
     ],
@@ -383,15 +776,15 @@
       }
     ],
     "days_elapsed": 6,
-    "target_days": 38,
-    "progress_percent": 16,
+    "target_days": 22,
+    "progress_percent": 27,
     "thumbnail": "",
     "accent": "#6B8F71",
     "current_stage": "secondary",
     "current_stage_label": "Secondary",
-    "next_action_date": "2026-09-01",
-    "next_action": "Check fermentation activity",
-    "end_date": "2026-10-08"
+    "next_action_date": "2026-09-05",
+    "next_action": "Rack to a clean PET bottle and add pectic enzyme per product instructions",
+    "end_date": "2026-09-22"
   },
   {
     "batch_id": "2026-003",

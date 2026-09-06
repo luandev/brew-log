@@ -1,35 +1,75 @@
 [
   {
-    "date": "2026-09-01",
-    "action": "Check fermentation activity",
+    "date": "2026-09-05",
+    "action": "Rack to a clean PET bottle and add pectic enzyme per product instructions",
     "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
+    "name": "Rapadura Very Berry",
     "url": "/brews/2026-001/",
     "accent": "#6B8F71"
   },
   {
-    "date": "2026-09-02",
-    "action": "Check fermentation activity",
+    "date": "2026-09-05",
+    "action": "Confirm whether pectic enzyme was added during the rack; if not, add per product instructions",
     "batch_id": "2026-004",
     "name": "Plum, Cinnamon & Mint Tea Wine",
     "url": "/brews/2026-004/",
     "accent": "#AD9753"
   },
   {
-    "date": "2026-09-07",
-    "action": "Take hydrometer reading and check gravity stability",
-    "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/",
-    "accent": "#6B8F71"
+    "date": "2026-09-06",
+    "action": "Add yeast nutrient according to product instructions; record product/dose and check fermentation activity",
+    "batch_id": "2026-006",
+    "name": "Pear & Maple Wine",
+    "url": "/brews/2026-006/",
+    "accent": "#5B7C8D"
   },
   {
-    "date": "2026-09-07",
-    "action": "Take hydrometer reading and check fermentation progress",
+    "date": "2026-09-08",
+    "action": "Take hydrometer reading after rack and record fermentation progress",
     "batch_id": "2026-004",
     "name": "Plum, Cinnamon & Mint Tea Wine",
     "url": "/brews/2026-004/",
     "accent": "#AD9753"
+  },
+  {
+    "date": "2026-09-09",
+    "action": "Take first post-start hydrometer reading and record fermentation progress",
+    "batch_id": "2026-006",
+    "name": "Pear & Maple Wine",
+    "url": "/brews/2026-006/",
+    "accent": "#5B7C8D"
+  },
+  {
+    "date": "2026-09-10",
+    "action": "Check clarity and sediment formation",
+    "batch_id": "2026-001",
+    "name": "Rapadura Very Berry",
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
+  },
+  {
+    "date": "2026-09-11",
+    "action": "Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete",
+    "batch_id": "2026-004",
+    "name": "Plum, Cinnamon & Mint Tea Wine",
+    "url": "/brews/2026-004/",
+    "accent": "#AD9753"
+  },
+  {
+    "date": "2026-09-12",
+    "action": "Take hydrometer reading before any sweetening or final bottling",
+    "batch_id": "2026-001",
+    "name": "Rapadura Very Berry",
+    "url": "/brews/2026-001/",
+    "accent": "#6B8F71"
+  },
+  {
+    "date": "2026-09-12",
+    "action": "Repeat hydrometer reading; if still falling, continue primary fermentation",
+    "batch_id": "2026-006",
+    "name": "Pear & Maple Wine",
+    "url": "/brews/2026-006/",
+    "accent": "#5B7C8D"
   },
   {
     "date": "2026-09-13",
@@ -40,10 +80,10 @@
     "accent": "#6C7C44"
   },
   {
-    "date": "2026-09-14",
-    "action": "Check whether secondary is complete and ready to cold crash / rack to glass",
+    "date": "2026-09-15",
+    "action": "Rack off clearing sediment and decide on orange zest / sweetness",
     "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
+    "name": "Rapadura Very Berry",
     "url": "/brews/2026-001/",
     "accent": "#6B8F71"
   },
@@ -54,14 +94,6 @@
     "name": "The Three Cats",
     "url": "/brews/2026-003/",
     "accent": "#6C7C44"
-  },
-  {
-    "date": "2026-10-01",
-    "action": "First tasting",
-    "batch_id": "2026-001",
-    "name": "Apple & Golden Syrup Wine",
-    "url": "/brews/2026-001/",
-    "accent": "#6B8F71"
   },
   {
     "date": "2026-10-25",
@@ -78,5 +110,61 @@
     "name": "The Three Cats",
     "url": "/brews/2026-003/",
     "accent": "#6C7C44"
+  },
+  {
+    "date": "After gravity is stable for ~3 days",
+    "action": "Rack carefully into a sanitised secondary vessel and update the active stage",
+    "batch_id": "2026-006",
+    "name": "Pear & Maple Wine",
+    "url": "/brews/2026-006/",
+    "accent": "#5B7C8D"
+  },
+  {
+    "date": "TBD",
+    "action": "Weigh and record the apples selected for the batch",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
+  },
+  {
+    "date": "TBD",
+    "action": "Juice apples and record juice yield",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
+  },
+  {
+    "date": "TBD",
+    "action": "Take pre-honey hydrometer reading",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
+  },
+  {
+    "date": "TBD",
+    "action": "Choose target strength and calculate the initial honey addition",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
+  },
+  {
+    "date": "TBD",
+    "action": "Record exact yeast strain and prepare the pitch",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
+  },
+  {
+    "date": "TBD",
+    "action": "Start primary fermentation and update the batch stage",
+    "batch_id": "2026-005",
+    "name": "Pure Orchard Cyser",
+    "url": "/brews/2026-005/",
+    "accent": "#8B5E4B"
   }
 ]
