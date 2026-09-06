@@ -10,8 +10,8 @@ Rules:
 |---|---|---|
 | 2026-09-05 | Prepare apple, pear, cranberry, honey and water must; use pectic enzyme during juice extraction | Done |
 | 2026-09-05 | Add two cinnamon sticks and pitch yeast; start primary fermentation | Done |
-| 2026-09-06 | Add yeast nutrient according to product instructions and record product/dose | Pending |
-| 2026-09-06 | Take hydrometer reading; if still excessively high, dilute with measured water or cranberry juice and remeasure | Pending |
+| 2026-09-06 | Add yeast nutrient and record actual dose | Done |
+| 2026-09-06 | Take hydrometer reading; dilute with additional water, stir thoroughly and establish working gravity at ~1.115 | Done |
 | 2026-09-09 | Take gravity/activity check and record fermentation progress | Pending |
 | 2026-09-12 | Repeat gravity check; do not step-feed honey unless fermentation is healthy and a measured addition is deliberately chosen | Pending |
 | 2026-09-19 | Weekly gravity, aroma and cinnamon-intensity check | Pending |
