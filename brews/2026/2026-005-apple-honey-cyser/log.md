@@ -64,3 +64,34 @@ No final gravity reading was available on brew day after the water addition. The
 - Add yeast nutrient on 2026-09-06 according to the product instructions and record the exact product/dose.
 - Take a hydrometer reading on 2026-09-06.
 - If the reading is still excessively high, dilute with water or cranberry juice and remeasure before setting the working starting gravity.
+
+## 2026-09-06 — Nutrient, dilution and working gravity
+
+**Time:** Morning  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- Working specific gravity after adding water and stirring thoroughly: approximately 1.115.
+- Additional water: added; exact amount not recorded.
+- Yeast nutrient: 2 spoonfuls added.
+- Final batch volume: not recorded.
+
+### Actions
+
+- Added additional water to bring the must into a more workable gravity range.
+- Stirred the must thoroughly before taking the hydrometer reading.
+- Added 2 spoonfuls of BrewBitz yeast nutrient.
+- Stopped further dilution after the approximately 1.115 reading.
+
+### Observation
+
+- Aroma was reported as very good.
+- Clear signs of fermentation were present.
+- Fermentation activity was noticeably less vigorous than the 2026-006 Pear Maple Wine, which had started the previous day.
+
+### Next
+
+- Leave the batch to establish fermentation without further dilution.
+- Take the next gravity/activity check on 2026-09-09.
+- Continue monitoring aroma and fermentation strength, especially because this is a high-gravity must.
