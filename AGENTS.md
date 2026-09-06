@@ -53,12 +53,13 @@ Site title: **The Lone Tree Orchard**
 
 ## Build
 
-Requires Ruby 3.3 (see `.ruby-version`). Before previewing or deploying, run:
+Requires **Node.js 22** and optionally **Ruby 3.3** (see `.ruby-version`). Before previewing or deploying, run:
 
 ```bash
-bundle install
-ruby scripts/generate_site_data.rb
-bundle exec jekyll serve
+npm install
+npm run web
 ```
 
-The build script regenerates `_data/batches.json` from batch folders and prints validation warnings when `README.md`, `stages.md`, and `schedule.md` are out of sync.
+The build script regenerates `_data/batches.json` and `src/data/` from batch folders and prints validation warnings when `README.md`, `stages.md`, and `schedule.md` are out of sync.
+
+After `npm run export:web`, run `npm run test:e2e` to execute the Playwright gate against `dist/`.

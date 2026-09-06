@@ -30,7 +30,7 @@ Initial versions do not need:
 - User accounts.
 - A database.
 - Cloud backend services.
-- Complex JavaScript frameworks.
+- In-app editing of brew records.
 - Live fermentation sensor integration.
 - Inventory management.
 - Social features.
@@ -335,7 +335,7 @@ The implementation should favor:
 - Fast builds
 - Simple local preview
 
-Jekyll is acceptable because GitHub Pages supports it natively, but the implementation team may propose another static approach if it preserves the Markdown-first design.
+Jekyll is acceptable because GitHub Pages supports it natively, but the implementation team may propose another static approach if it preserves the Markdown-first design. The current site is an Expo Router static export of a React Native Web journal, still generated from Markdown with no database.
 
 ---
 
@@ -369,8 +369,10 @@ Requirements:
 ├── ARCHITECTURE.md
 ├── DATA_MODEL.md
 ├── CONTRIBUTING.md
-├── _config.yml
-├── index.md
+├── package.json
+├── app.json
+├── app/                  # Expo Router pages
+├── src/                  # journal UI, generated JSON copies
 │
 ├── brews/
 │   ├── README.md
@@ -387,14 +389,6 @@ Requirements:
 │   │   ├── schedule.md
 │   │   ├── tasting.md
 │   │   └── media.md
-│
-├── pages/
-│   ├── README.md
-│   ├── active.md
-│   ├── batches.md
-│   ├── ciders.md
-│   ├── wines.md
-│   └── schedule.md
 │
 ├── docs/
 │   ├── README.md

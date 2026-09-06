@@ -9,6 +9,29 @@ _site/
 vendor/bundle/
 *.gem
 
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+public/
+*.tsbuildinfo
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+*.gem
+
 # OS
 .DS_Store
 Thumbs.db

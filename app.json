@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "The Lone Tree Orchard",
+    "slug": "brew-log",
+    "scheme": "brewlog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["web"],
+    "web": {
+      "output": "static",
+      "bundler": "metro",
+      "name": "The Lone Tree Orchard",
+      "shortName": "Brew Log",
+      "themeColor": "#0E0F10",
+      "backgroundColor": "#0E0F10"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": false,
+      "baseUrl": "/brew-log"
+    },
+    "extra": {
+      "router": {
+        "origin": "https://luandev.github.io"
+      }
+    }
+  }
+}

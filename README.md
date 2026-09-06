@@ -15,17 +15,34 @@ The Git repository is the source of truth. Each brew batch has its own recipe, c
 
 ## Local preview
 
-Requires **Ruby 3.3** (see `.ruby-version`).
+Requires **Node.js 22** and optionally **Ruby 3.3** (see `.ruby-version`). The site generator prefers Ruby when it is on `PATH`, and otherwise uses the Node generator.
 
 ```bash
-bundle install
-ruby scripts/generate_site_data.rb
-bundle exec jekyll serve
+npm install
+npm run web
 ```
 
-Open `http://localhost:4000/brew-log/`.
+Open the Expo web URL (the app is served under `/brew-log/`).
 
-The site uses **Jekyll 4** with GitHub Actions for deployment. The legacy `github-pages` gem is not used.
+To export the GitHub Pages artifact locally:
+
+```bash
+npm run export:web
+npm run serve:export
+```
+
+Then open `http://127.0.0.1:4173/brew-log/`.
+
+The public site is an **Expo Router** static export. Markdown brew records stay the source of truth.
+
+## Tests
+
+After `npm run export:web`:
+
+```bash
+npx playwright install chromium
+npm run test:e2e
+```
 
 ## Public site
 

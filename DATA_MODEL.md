@@ -8,7 +8,7 @@ Required metadata (YAML front matter in `README.md`):
 |---|---|
 | `batch_id` | Unique ID, format `YYYY-NNN` (e.g. `2026-001`) |
 | `name` | Display name |
-| `title` | Page title (should match `name`; used by Jekyll for browser tab) |
+| `title` | Page title (should match `name`; used in the browser tab) |
 | `type` | One of: `cider`, `wine`, `beer`, `vinegar`, `mead`, `experimental` |
 | `status` | Lifecycle status (see below) |
 | `started` | Start date (`YYYY-MM-DD`) |
@@ -47,7 +47,7 @@ Three files must stay in sync for active batches:
 
 ### Build validation
 
-`ruby scripts/generate_site_data.rb` prints **warnings** (non-blocking) when:
+`ruby scripts/generate_site_data.rb` (or `npm run data`) prints **warnings** (non-blocking) when:
 
 - `README.md` `status` does not match the active stage in `stages.md`
 - More than one (or zero) `active` stage rows on an active batch
@@ -79,6 +79,10 @@ These are written to `_data/batches.json` at build time:
 | `thumbnail` | From front matter or type-based placeholder |
 | `is_active` | Computed from `status` |
 | `url` | `/brews/<batch_id>/` |
+| `recipe_markdown` | Body of `recipe.md` (front matter and Liquid stripped) |
+| `tasting_markdown` | Body of `tasting.md` |
+| `media_markdown` | Body of `media.md` |
+| `summary_markdown` | `README.md` body with Liquid includes removed |
 
 ### Schedule index (`_data/schedule.json`)
 

@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
+#
+# Prefer `npm run data` in local/CI workflows. This Ruby script is used when
+# Ruby is on PATH; otherwise scripts/generate_site_data.mjs runs instead.
 
 require "date"
 require "json"
@@ -10,9 +13,11 @@ require "date"
 ROOT = File.expand_path("..", __dir__)
 BREWS_DIR = File.join(ROOT, "brews")
 DATA_DIR = File.join(ROOT, "_data")
+APP_DATA_DIR = File.join(ROOT, "src", "data")
 BATCHES_OUTPUT = File.join(DATA_DIR, "batches.json")
 SCHEDULE_OUTPUT = File.join(DATA_DIR, "schedule.json")
 CALENDAR_OUTPUT = File.join(DATA_DIR, "calendar.json")
+STATUSES_SOURCE = File.join(DATA_DIR, "statuses.json")
 
 INACTIVE_STATUSES = %w[finished failed archived].freeze
 DEFAULT_TARGET_DAYS = 28
@@ -49,6 +54,28 @@ end
 
 def read_file(path)
   File.exist?(path) ? File.read(path, encoding: "UTF-8") : ""
+end
+
+def body_after_front_matter(content)
+  return "" if content.nil? || content.empty?
+  return content.strip unless content.start_with?("---")
+
+  parts = content.split("---", 3)
+  parts.length >= 3 ? parts[2].to_s.strip : content.strip
+end
+
+def strip_liquid(content)
+  content
+    .gsub(/\{%\s*include_relative\s+.*?%\}/, "")
+    .gsub(/\{%\s*include\s+.*?%\}/, "")
+    .gsub(/\{%.*?%\}/, "")
+    .gsub(/\{\{.*?\}\}/, "")
+    .gsub(/\n{3,}/, "\n\n")
+    .strip
+end
+
+def markdown_document(path)
+  strip_liquid(body_after_front_matter(read_file(path)))
 end
 
 def parse_date(value)
@@ -292,6 +319,10 @@ find_batch_readmes.each do |readme_path|
   schedule_content = read_file(File.join(folder, "schedule.md"))
   stages_content = read_file(File.join(folder, "stages.md"))
   log_content = read_file(File.join(folder, "log.md"))
+  recipe_markdown = markdown_document(File.join(folder, "recipe.md"))
+  tasting_markdown = markdown_document(File.join(folder, "tasting.md"))
+  media_markdown = markdown_document(File.join(folder, "media.md"))
+  summary_markdown = strip_liquid(body_after_front_matter(read_file(readme_path)))
   schedule_rows = parse_schedule_rows(schedule_content)
   stage_rows = parse_stage_rows(stages_content)
   validate_batch(batch_id, metadata, stage_rows, schedule_rows, status_catalog)
@@ -315,6 +346,10 @@ find_batch_readmes.each do |readme_path|
   entry["last_log_date"] = last_log_date(log_content)
   entry["latest_log_excerpt"] = latest_log_excerpt(log_content)
   entry["log_entries"] = parse_log_entries(log_content)
+  entry["recipe_markdown"] = recipe_markdown
+  entry["tasting_markdown"] = tasting_markdown
+  entry["media_markdown"] = media_markdown
+  entry["summary_markdown"] = summary_markdown
   entry["pending_schedule"] = pending_rows
   entry["schedule"] = schedule_rows
   entry["stages"] = stage_rows.map do |row|
@@ -403,10 +438,30 @@ calendar_data = {
 }
 
 FileUtils.mkdir_p(DATA_DIR)
+FileUtils.mkdir_p(APP_DATA_DIR)
 File.write(BATCHES_OUTPUT, JSON.pretty_generate(batches))
 File.write(SCHEDULE_OUTPUT, JSON.pretty_generate(schedule_entries))
 File.write(CALENDAR_OUTPUT, JSON.pretty_generate(calendar_data))
 
+FileUtils.cp(BATCHES_OUTPUT, File.join(APP_DATA_DIR, "batches.json"))
+FileUtils.cp(SCHEDULE_OUTPUT, File.join(APP_DATA_DIR, "schedule.json"))
+FileUtils.cp(CALENDAR_OUTPUT, File.join(APP_DATA_DIR, "calendar.json"))
+FileUtils.cp(STATUSES_SOURCE, File.join(APP_DATA_DIR, "statuses.json")) if File.exist?(STATUSES_SOURCE)
+icon_lookup = File.join(DATA_DIR, "icon_lookup.json")
+FileUtils.cp(icon_lookup, File.join(APP_DATA_DIR, "icon_lookup.json")) if File.exist?(icon_lookup)
+
+public_assets = File.join(ROOT, "public", "assets")
+FileUtils.mkdir_p(public_assets)
+%w[brand brews icons].each do |folder|
+  src = File.join(ROOT, "assets", folder)
+  next unless File.exist?(src)
+
+  dest = File.join(public_assets, folder)
+  FileUtils.rm_rf(dest)
+  FileUtils.cp_r(src, dest)
+end
+
 puts "Generated #{BATCHES_OUTPUT} with #{batches.length} batch(es)."
 puts "Generated #{SCHEDULE_OUTPUT} with #{schedule_entries.length} pending task(s)."
 puts "Generated #{CALENDAR_OUTPUT} with #{calendar_stages.length} stage span(s)."
+puts "Copied JSON into #{APP_DATA_DIR}."

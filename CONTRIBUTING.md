@@ -21,21 +21,33 @@ See [brews/README.md](brews/README.md) and [DATA_MODEL.md](DATA_MODEL.md) for de
 
 ## Local preview
 
-Requires **Ruby 3.3** (see `.ruby-version`). Install via [RubyInstaller](https://rubyinstaller.org/) on Windows, or `rbenv`/`mise` on macOS/Linux.
+Requires **Node.js 22**. **Ruby 3.3** is optional (see `.ruby-version`); the generator uses Ruby when it is on `PATH`.
 
 ```bash
-bundle install
-ruby scripts/generate_site_data.rb
-bundle exec jekyll serve
+npm install
+npm run web
 ```
 
-Then open `http://localhost:4000/brew-log/`.
+Production-shaped preview:
+
+```bash
+npm run export:web
+npm run serve:export
+```
+
+Then open `http://127.0.0.1:4173/brew-log/`.
+
+## Tests
+
+```bash
+npm run export:web
+npx playwright install chromium
+npm run test:e2e
+```
 
 ## Deployment
 
-Pushing to `main` triggers the GitHub Actions workflow that builds with Jekyll 4 and deploys to GitHub Pages. Ensure GitHub Pages is configured to use **GitHub Actions** as the source (Settings → Pages → Build and deployment → Source: GitHub Actions).
-
-The `github-pages` gem is intentionally not used — the workflow builds from the `Gemfile` directly, which allows Jekyll 4 and current dependencies.
+Pushing to `main` triggers the GitHub Actions workflow that generates site data, exports the Expo static site, runs Playwright, and deploys `dist/` to GitHub Pages. Ensure GitHub Pages is configured to use **GitHub Actions** as the source (Settings → Pages → Build and deployment → Source: GitHub Actions).
 
 ## QR code labels
 

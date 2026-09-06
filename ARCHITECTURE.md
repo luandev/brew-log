@@ -1,6 +1,6 @@
 # Architecture
 
-The project is a static, Markdown-first GitHub Pages site built with Jekyll and the Minima theme.
+The project is a Markdown-first GitHub Pages site. The public UI is an Expo Router (React Native Web) app exported as static HTML.
 
 ## Source of truth
 
@@ -9,20 +9,22 @@ The project is a static, Markdown-first GitHub Pages site built with Jekyll and 
 ## Build pipeline
 
 ```text
-brews/*/*/README.md  →  scripts/generate_site_data.rb  →  _data/batches.json
-brews/ + _data/      →  bundle exec jekyll build         →  _site/
-_site/               →  GitHub Actions deploy           →  GitHub Pages
+brews/*/*/README.md  →  scripts/generate_site_data.rb|.mjs  →  _data/*.json and src/data/*.json
+src/ + app/          →  expo export --platform web          →  dist/
+dist/                →  Playwright e2e, then GitHub Actions →  GitHub Pages
 ```
 
-1. **`scripts/generate_site_data.rb`** scans batch folders, parses YAML front matter from each `README.md`, and derives schedule/log metadata into `_data/batches.json`.
-2. **Jekyll** renders the site. Batch `README.md` files use `{% include_relative %}` to assemble recipe, log, schedule, tasting, and media into a single page.
-3. **GitHub Actions** (`.github/workflows/pages.yml`) runs the script and Jekyll build on every push to `main`.
+1. **`scripts/generate_site_data.rb`** (Ruby, when available) or **`scripts/generate_site_data.mjs`** scans batch folders, parses YAML front matter, and writes derived schedule/log/recipe fields into `_data/` and `src/data/`.
+2. **Expo Router** statically renders journal routes from that JSON.
+3. **`scripts/prepare_dist.mjs`** copies brew photos, turns `.html` files into trailing-slash folders, and writes `.nojekyll`.
+4. **Playwright** serves `dist/` under `/brew-log/` and must pass before the Pages artifact is uploaded.
+5. **GitHub Actions** (`.github/workflows/pages.yml`) deploys `dist/`.
 
 ## Data
 
 - Batch metadata lives in YAML front matter (`README.md`).
 - Detailed information lives in sibling Markdown files.
-- Aggregated index data lives in `_data/batches.json` (generated, not hand-edited).
+- Aggregated index data lives in `_data/batches.json` (generated, not hand-edited). The Expo app imports the copy in `src/data/`.
 
 ## URLs
 
@@ -37,25 +39,33 @@ Batch permalinks are based on immutable `batch_id` (e.g. `/brews/2026-001/`), su
 
 ## Local preview
 
-Requires **Ruby 3.3** (see `.ruby-version`).
+Requires **Node.js 22**. Ruby 3.3 is optional (see `.ruby-version`).
 
 ```bash
-bundle install
-ruby scripts/generate_site_data.rb
-bundle exec jekyll serve
+npm install
+npm run web
 ```
 
-Open `http://localhost:4000/brew-log/`.
+Production-shaped preview:
+
+```bash
+npm run export:web
+npm run serve:export
+```
+
+Open `http://127.0.0.1:4173/brew-log/`.
 
 ## Stack
 
-- **Jekyll 4.4** with Minima theme (not the legacy `github-pages` gem)
-- **Ruby 3.3** for local development and CI
-- **GitHub Actions** for build and deploy (`actions/jekyll-build-pages`)
+- **Expo 57** with Expo Router static web output
+- **React Native Web** for the journal UI
+- **Node** (and optionally **Ruby 3.3**) to generate JSON from Markdown
+- **Playwright** (Chromium) for a minimal e2e gate
+- **GitHub Actions** for build, test, and deploy
 
 ## Rendering
 
-- Theme: Minima (GitHub Pages default)
-- Custom styles: `_sass/custom.scss` via `assets/main.scss`
-- Batch layout: `_layouts/batch.html`
-- List cards: `_includes/batch-card.html`
+- Routes live in `app/`
+- Shared UI lives in `src/components/`
+- Theme tokens live in `src/theme.ts`
+- Batch pages are generated with `generateStaticParams` from `src/data/batches.json`
