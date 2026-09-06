@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-001
-name: Apple & Golden Syrup Wine
-title: Apple & Golden Syrup Wine
+name: Rapadura Very Berry
+title: Rapadura Very Berry
 type: wine
 status: secondary
 started: 2026-08-31
@@ -16,11 +16,11 @@ tags:
 permalink: /brews/2026-001/
 ---
 
-# Apple & Golden Syrup Wine
+# Rapadura Very Berry
 
 ## Summary
 
-Small-batch apple wine that completed its first fermentation, was racked off the primary sediment, and was step-fed with maple syrup for a secondary fermentation. Later brew notes identify rapadura as the pre-secondary sugar source and a Lidl Very Berry tea addition.
+Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. It is currently in secondary under airlock, with the next planned action to rack into a clean PET bottle, add pectic enzyme, and let it clarify before final aroma and sweetness decisions.
 
 ## Current Status
 
@@ -38,6 +38,10 @@ Small-batch apple wine that completed its first fermentation, was racked off the
 | Volume before maple addition | 1.75 L |
 | Maple syrup added in secondary | 90 g |
 | Water used to dissolve maple syrup | 160 mL |
+
+## Latest Note
+
+2026-09-04 tasting: clear but not fully brilliant; crisp and distinctly wine-like, with alcohol prominent, satisfactory tannin, and relatively little defining aroma. Orange zest remains a possible finishing aroma addition after clarification.
 
 {% include_relative recipe.md %}
 
