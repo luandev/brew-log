@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-002
-name: Cranberry & Maple Wine
-title: Cranberry & Maple Wine
+name: The Fat Pigeon — Cranberry & Maple
+title: The Fat Pigeon — Cranberry & Maple
 type: wine
 status: primary-fermentation
 started: 2026-09-01
@@ -15,9 +15,11 @@ tags:
 permalink: /brews/2026-002/
 ---
 
-# Cranberry & Maple Wine
+# The Fat Pigeon — Cranberry & Maple
 
 ## Summary
+
+Project name: **The Fat Pigeon — Cranberry & Maple**. Previously listed as Cranberry & Maple Wine.
 
 Small experimental cranberry and maple wine started on 2026-09-01 in a 2 L PET bottle. The documented recipe uses two packs of cranberry product, maple syrup and fermentation yeast. Exact cranberry pack size, maple quantity, liquid volume, yeast strain and starting gravity were not recorded, so those remain explicitly unknown rather than being reconstructed.
 

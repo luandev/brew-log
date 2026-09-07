@@ -8,9 +8,9 @@ Dates assume the working start of 7 September 2026. Future dates are proposed ch
 |---|---|---|
 | 2026-09-07 | Setup reported: clean/sanitise PET and airlock; combine fruit, juice, tea and maple; add yeast, nutrient and pectic enzyme | Done |
 | 2026-09-08 | Check headspace, clear airlock and wet fruit; repeat at least daily until solids removed | Pending |
-| 2026-09-09 | Check fermentation progress and temperature; take gravity if activity is uncertain | Pending |
+| 2026-09-09 | Check fermentation progress, temperature and cinnamon intensity; remove sticks if sufficient; take gravity if activity is uncertain | Pending |
 | 2026-09-12 | Day 5 fruit-contact assessment; remove solids if appropriate and record gravity/remaining volume | Pending |
-| 2026-09-14 | Day 7 fruit-removal checkpoint if not already done; continue fermentation under airlock | Pending |
+| 2026-09-14 | Day 7 fruit-removal checkpoint if not already done; remove any remaining cinnamon sticks; continue fermentation under airlock | Pending |
 | 2026-09-17 | Record SG after fruit removal; continue if gravity is falling | Pending |
 | 2026-09-20 | Repeat SG; assess completion versus a stall before ending primary | Pending |
 

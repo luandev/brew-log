@@ -24,3 +24,10 @@ The airlock provides a path for fermentation carbon dioxide. No gravity, tempera
 ### Next
 
 - Decide on any additions after primary fermentation.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Cranberry & Maple Wine to The Fat Pigeon — Cranberry & Maple at the brewer's request. Batch ID and folder remain unchanged.

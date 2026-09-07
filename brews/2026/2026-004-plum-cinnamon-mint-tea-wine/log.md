@@ -176,3 +176,10 @@ Visible clarification was already noticeable during the evening cellar check aft
 
 - Take a hydrometer reading on 2026-09-08.
 - Repeat the hydrometer reading on 2026-09-11 and confirm stability before moving on from secondary.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Plum, Cinnamon & Mint Tea Wine to The Fat Pigeon — Plum, Cinnamon & Mint Tea at the brewer's request. Batch ID and folder remain unchanged.

@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-007
-name: Cranberry, Plum & Maple Wine
-title: Cranberry, Plum & Maple Wine
+name: The Fat Pigeon — Cranberry, Plum & Maple
+title: The Fat Pigeon — Cranberry, Plum & Maple
 type: wine
 status: primary-fermentation
 started: 2026-09-07
@@ -9,15 +9,17 @@ volume_l:
 target_abv: 9
 actual_abv:
 target_days: 42
-tags: [cranberry, plum, maple, sour-cherry-tea, experimental]
+tags: [cranberry, plum, maple, sour-cherry-tea, cinnamon, experimental]
 permalink: /brews/2026-007/
 ---
 
-# Cranberry, Plum & Maple Wine
+# The Fat Pigeon — Cranberry, Plum & Maple
 
 ## Summary
 
-Cranberry juice, approximately five large sweet plums, Whittard Sour Cherry Instant Tea and a generous dollop of maple syrup, prepared in a 2 L PET bottle with a sanitised airlock. Pectic enzyme, yeast nutrient and the same wine yeast used for the other batches were added.
+Project name: **The Fat Pigeon — Cranberry, Plum & Maple**. Previously listed as Cranberry, Plum & Maple Wine.
+
+Cranberry juice, approximately five large sweet plums, Whittard Sour Cherry Instant Tea and a generous dollop of maple syrup, prepared in a 2 L PET bottle with a sanitised airlock. Two cinnamon sticks were also added “for good luck”. Pectic enzyme, yeast nutrient and the same wine yeast used for the other batches were added.
 
 Working start date: 7 September 2026, based on the date this new experiment was reported; no separate brew-day date was supplied. Planned dates are checkpoints, not observations.
 

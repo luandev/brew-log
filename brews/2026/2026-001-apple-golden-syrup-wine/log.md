@@ -146,3 +146,10 @@ The wine was already showing noticeable clarification during the evening cellar 
 - Continue under airlock while clarification progresses.
 - Check clarity and sediment formation on 2026-09-10.
 - Take a hydrometer reading before sweetening or bottling.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Rapadura Very Berry to The Fat Pigeon — Rapadura Very Berry at the brewer's request. Batch ID and folder remain unchanged.

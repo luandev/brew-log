@@ -95,3 +95,10 @@ No final gravity reading was available on brew day after the water addition. The
 - Leave the batch to establish fermentation without further dilution.
 - Take the next gravity/activity check on 2026-09-09.
 - Continue monitoring aroma and fermentation strength, especially because this is a high-gravity must.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Pure Orchard Cyser to The 2 Foxes at the brewer's request. Batch ID and folder remain unchanged.

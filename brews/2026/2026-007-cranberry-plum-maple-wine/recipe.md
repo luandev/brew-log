@@ -10,6 +10,7 @@ These are the actual reported additions. Missing quantities cannot be reconstruc
 | Sweet plums | Approximately five large fruits | Very sweet; diced; mass and stone removal not recorded |
 | Whittard Sour Cherry Instant Tea | Not recorded | Sugar-based instant powder containing black-tea extract |
 | Maple syrup | A generous dollop | Added to reach approximately 9% potential alcohol; mass/volume unknown |
+| Cinnamon sticks | Two sticks | Added “for good luck”; mass, variety and exact addition time unrecorded |
 | Wine yeast | Not recorded | Same yeast used for the other batches; brand/strain unconfirmed |
 | Pectic enzyme | A small amount | Already added; product and dose unrecorded |
 | Yeast nutrient | Amount described as proportionate to the bottle | Already added; product and exact dose unrecorded |
@@ -40,7 +41,7 @@ Source checked 7 September 2026: [Whittard product and nutrition](https://www.wh
 
 ### Herbs / Spices
 
-No separate herbs or spices reported or planned.
+Two cinnamon sticks added, reported in the follow-up. Check intensity at the next progress check and remove once sufficient; remove with the plum solids if still present. No additional spice is planned.
 
 ### Acids
 
@@ -74,6 +75,10 @@ No separate acid addition reported. Cranberry, plums and the tea's citric acid a
 2. Combined cranberry juice, approximately five diced large sweet plums and Whittard sour cherry tea.
 3. Added a generous dollop of maple syrup, reaching approximately 9% on the hydrometer's potential-alcohol scale.
 4. Added a little pectic enzyme, a proportionate amount of nutrient and the usual wine yeast.
+
+### Follow-up addition
+
+The brewer also reports adding two cinnamon sticks “for good luck”. The exact addition time is unrecorded; this supplements the original setup report.
 
 ### Proposed next steps
 

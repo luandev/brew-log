@@ -28,3 +28,15 @@ Plums described as large and very sweet. Fermentation activity, aroma, colour an
 - Assess fruit removal on 12–14 September; continue fermenting under airlock afterward.
 - Record gravity trends before progressing to clearing and eventual still bottling.
 - Full future schedule is a proposed plan; no future action is recorded as completed.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Cranberry, Plum & Maple Wine to The Fat Pigeon — Cranberry, Plum & Maple at the brewer's request. Batch ID and folder remain unchanged.
+- Brewer additionally reports **two cinnamon sticks** added “for good luck”; exact addition time, stick mass and variety were not supplied.
+
+### Next
+
+- Check cinnamon intensity at the next progress check; remove once sufficiently strong, or with the plum solids if still present.
