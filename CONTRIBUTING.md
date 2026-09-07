@@ -19,6 +19,15 @@ Use feature branches and pull requests.
 
 See [brews/README.md](brews/README.md) and [DATA_MODEL.md](DATA_MODEL.md) for details.
 
+## Creating a wiki article
+
+1. Copy `templates/wiki/article.md` to `wiki/<slug>.md`.
+2. Set `slug`, `permalink`, `category`, and `title` in the front matter.
+3. Write only knowhow that was provided; do not invent measurements or orchard-specific results.
+4. Run the build script and preview locally before pushing.
+
+See [docs/wiki-agent.md](docs/wiki-agent.md) and [DATA_MODEL.md](DATA_MODEL.md) for details.
+
 ## Local preview
 
 Requires **Node.js 22**. **Ruby 3.3** is optional (see `.ruby-version`); the generator uses Ruby when it is on `PATH`.

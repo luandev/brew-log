@@ -11,7 +11,9 @@ The Git repository is the source of truth. Each brew batch has its own recipe, c
 - [PRD.md](PRD.md) — product definition
 - [AGENTS.md](AGENTS.md) — AI editing rules
 - [templates/batch/](templates/batch/) — template for new batches
+- [templates/wiki/article.md](templates/wiki/article.md) — template for wiki articles
 - [brews/](brews/) — actual brew records
+- [wiki/](wiki/) — brewing knowhow articles
 
 ## Local preview
 
@@ -49,3 +51,5 @@ npm run test:e2e
 Deployed to GitHub Pages at `https://luandev.github.io/brew-log/`.
 
 Batch pages: `https://luandev.github.io/brew-log/brews/<batch_id>/`
+
+Wiki pages: `https://luandev.github.io/brew-log/wiki/` and `https://luandev.github.io/brew-log/wiki/<slug>/`

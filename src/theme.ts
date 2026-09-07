@@ -76,5 +76,5 @@ export const navItems = [
   { href: "/", label: "Brew Log" },
   { href: "/pages/batches", label: "Batches" },
   { href: "/pages/schedule", label: "Schedule" },
-  { href: "/docs/brewing-notes", label: "About" },
+  { href: "/wiki", label: "Wiki" },
 ] as const;

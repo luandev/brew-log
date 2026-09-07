@@ -12,4 +12,6 @@ Public journal routes live in `app/` (Expo Router) and are exported as static HT
 | `app/pages/wines.tsx` | `/brew-log/pages/wines/` |
 | `app/pages/status-guide.tsx` | `/brew-log/pages/status-guide/` |
 | `app/docs/brewing-notes.tsx` | `/brew-log/docs/brewing-notes/` |
+| `app/wiki/index.tsx` | `/brew-log/wiki/` |
+| `app/wiki/[slug]/index.tsx` | `/brew-log/wiki/<slug>/` |
 | `app/brews/[batchId]/index.tsx` | `/brew-log/brews/<batch_id>/` |

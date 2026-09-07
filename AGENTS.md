@@ -5,6 +5,7 @@ This repository is a brewing journal and static website.
 ## Specialized agents
 
 - [docs/log-entry-agent.md](docs/log-entry-agent.md) — **adding batch records**: new batches, log entries, schedule updates, tasting notes (for ChatGPT Custom GPT, Cursor, etc.)
+- [docs/wiki-agent.md](docs/wiki-agent.md) — **adding wiki articles**: new knowhow pages, glossary terms, related-batch links (for ChatGPT Custom GPT, Cursor, etc.)
 
 ## Rules
 
@@ -65,6 +66,19 @@ All coding agents and LLMs working in this repository must use a pull-request wo
 4. Mark completed schedule rows as `Done` and add new `Pending` rows as needed.
 5. Update `recipe.md` if the actual process diverged from the plan.
 
+## Creating or updating a wiki article
+
+1. Copy [templates/wiki/article.md](templates/wiki/article.md) to `wiki/<slug>.md` (or edit the existing file).
+2. Set front matter:
+   - `slug` must match the filename and never change after publish.
+   - `permalink` must be `/wiki/<slug>/`.
+   - `category` is one of: `process`, `ingredients`, `equipment`, `measurements`, `troubleshooting`, `styles`, `cellar`, `glossary`.
+   - `status` is `published` or `draft`.
+3. Write only knowhow the user provided. Do not invent measurements or orchard-specific results.
+4. Cite existing `batch_id` values in `related_batches` when the article draws on a brew log.
+5. For a glossary term, add a heading and definition to `wiki/glossary.md` and bump `updated`.
+6. Run `npm run data` and fix any wiki validation warnings.
+
 ## Public batch URL (for QR labels)
 
 ```
@@ -84,6 +98,6 @@ npm install
 npm run web
 ```
 
-The build script regenerates `_data/batches.json` and `src/data/` from batch folders and prints validation warnings when `README.md`, `stages.md`, and `schedule.md` are out of sync.
+The build script regenerates `_data/batches.json`, `_data/wiki.json`, and `src/data/` from Markdown folders and prints validation warnings when `README.md`, `stages.md`, and `schedule.md` are out of sync, or when wiki front matter is invalid.
 
 After `npm run export:web`, run `npm run test:e2e` to execute the Playwright gate against `dist/`.

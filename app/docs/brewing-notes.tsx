@@ -5,11 +5,11 @@ import { Screen } from "../../src/components/Screen";
 import { Panel } from "../../src/components/ui";
 import { colors } from "../../src/theme";
 
-const notes = `# Brewing Notes
+const notes = `# About
 
-General reusable brewing knowledge belongs here.
+The Lone Tree Orchard brew log is a Markdown-first journal of small cider, wine, and experimental batches.
 
-Batch-specific observations belong inside the relevant batch folder.
+Reusable brewing knowhow lives in the wiki. Batch-specific observations belong inside each brew folder.
 `;
 
 export default function BrewingNotesPage() {
@@ -17,6 +17,16 @@ export default function BrewingNotesPage() {
     <Screen title="About">
       <Panel>
         <Markdown source={notes} />
+        <Link href="/wiki" asChild>
+          <Pressable>
+            <Text style={styles.link}>Wiki — techniques, terms, and lessons across batches</Text>
+          </Pressable>
+        </Link>
+        <Link href="/wiki/glossary" asChild>
+          <Pressable>
+            <Text style={styles.link}>Glossary — common brewing terms</Text>
+          </Pressable>
+        </Link>
         <Link href="/pages/status-guide" asChild>
           <Pressable>
             <Text style={styles.link}>Status Guide — batch lifecycle and current batches in each stage</Text>

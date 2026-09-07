@@ -12,12 +12,25 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const BREWS_DIR = path.join(ROOT, "brews");
+const WIKI_DIR = path.join(ROOT, "wiki");
 const DATA_DIR = path.join(ROOT, "_data");
 const APP_DATA_DIR = path.join(ROOT, "src", "data");
 const BATCHES_OUTPUT = path.join(DATA_DIR, "batches.json");
 const SCHEDULE_OUTPUT = path.join(DATA_DIR, "schedule.json");
 const CALENDAR_OUTPUT = path.join(DATA_DIR, "calendar.json");
+const WIKI_OUTPUT = path.join(DATA_DIR, "wiki.json");
 const STATUSES_SOURCE = path.join(DATA_DIR, "statuses.json");
+const WIKI_CATEGORIES = new Set([
+  "process",
+  "ingredients",
+  "equipment",
+  "measurements",
+  "troubleshooting",
+  "styles",
+  "cellar",
+  "glossary",
+]);
+const WIKI_STATUSES = new Set(["published", "draft"]);
 
 const INACTIVE_STATUSES = new Set(["finished", "failed", "archived"]);
 const DEFAULT_TARGET_DAYS = 28;
@@ -351,6 +364,83 @@ function findBatchReadmes() {
   return results.sort();
 }
 
+function findWikiArticles() {
+  if (!existsSync(WIKI_DIR)) return [];
+  return readdirSync(WIKI_DIR)
+    .filter((name) => name.toLowerCase().endsWith(".md") && name.toLowerCase() !== "readme.md")
+    .map((name) => path.join(WIKI_DIR, name))
+    .sort();
+}
+
+function wikiDate(value) {
+  if (value == null || String(value).trim() === "") return null;
+  return String(value).slice(0, 10);
+}
+
+function validateWikiArticle(fileName, metadata, batchIds) {
+  const expectedSlug = fileName.replace(/\.md$/i, "");
+  const slug = String(metadata.slug || "");
+  if (!slug) {
+    console.warn(`wiki/${fileName}: missing slug`);
+  } else if (slug !== expectedSlug) {
+    console.warn(`wiki/${fileName}: slug '${slug}' does not match filename '${expectedSlug}'`);
+  }
+  if (!metadata.title) {
+    console.warn(`wiki/${fileName}: missing title`);
+  }
+  const category = String(metadata.category || "");
+  if (!WIKI_CATEGORIES.has(category)) {
+    console.warn(`wiki/${fileName}: unknown category '${category}'`);
+  }
+  const permalink = String(metadata.permalink || "");
+  const expectedPermalink = `/wiki/${slug || expectedSlug}/`;
+  if (permalink && permalink !== expectedPermalink) {
+    console.warn(`wiki/${fileName}: permalink '${permalink}' should be '${expectedPermalink}'`);
+  }
+  const status = String(metadata.status || "published");
+  if (!WIKI_STATUSES.has(status)) {
+    console.warn(`wiki/${fileName}: unknown status '${status}'`);
+  }
+  for (const batchId of normalizeTags(metadata.related_batches)) {
+    if (!batchIds.has(String(batchId))) {
+      console.warn(`wiki/${fileName}: related batch '${batchId}' does not exist`);
+    }
+  }
+}
+
+function loadWiki(batchIds) {
+  const introPath = path.join(WIKI_DIR, "README.md");
+  const introMarkdown = existsSync(introPath) ? markdownDocument(introPath) : "";
+  const articles = [];
+  const slugs = new Set();
+  for (const filePath of findWikiArticles()) {
+    const fileName = path.basename(filePath);
+    const metadata = parseFrontMatter(readFile(filePath));
+    const expectedSlug = fileName.replace(/\.md$/i, "");
+    validateWikiArticle(fileName, metadata, batchIds);
+    const slug = String(metadata.slug || expectedSlug);
+    if (slugs.has(slug)) {
+      console.warn(`wiki/${fileName}: duplicate slug '${slug}'`);
+    }
+    slugs.add(slug);
+    articles.push({
+      slug,
+      title: String(metadata.title || slug),
+      category: String(metadata.category || ""),
+      summary: metadata.summary ? String(metadata.summary) : "",
+      updated: wikiDate(metadata.updated),
+      related_batches: normalizeTags(metadata.related_batches),
+      tags: normalizeTags(metadata.tags),
+      permalink: `/wiki/${slug}/`,
+      url: `/wiki/${slug}/`,
+      status: String(metadata.status || "published"),
+      body_markdown: markdownDocument(filePath),
+    });
+  }
+  articles.sort((a, b) => a.title.localeCompare(b.title));
+  return { intro_markdown: introMarkdown, articles };
+}
+
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 const catalog = loadStatusCatalog();
@@ -475,14 +565,19 @@ const calendarData = {
   tasks: scheduleEntries,
 };
 
+const batchIds = new Set(batches.map((batch) => String(batch.batch_id)));
+const wiki = loadWiki(batchIds);
+
 mkdirSync(DATA_DIR, { recursive: true });
 mkdirSync(APP_DATA_DIR, { recursive: true });
 writeFileSync(BATCHES_OUTPUT, `${JSON.stringify(batches, null, 2)}\n`);
 writeFileSync(SCHEDULE_OUTPUT, `${JSON.stringify(scheduleEntries, null, 2)}\n`);
 writeFileSync(CALENDAR_OUTPUT, `${JSON.stringify(calendarData, null, 2)}\n`);
+writeFileSync(WIKI_OUTPUT, `${JSON.stringify(wiki, null, 2)}\n`);
 cpSync(BATCHES_OUTPUT, path.join(APP_DATA_DIR, "batches.json"));
 cpSync(SCHEDULE_OUTPUT, path.join(APP_DATA_DIR, "schedule.json"));
 cpSync(CALENDAR_OUTPUT, path.join(APP_DATA_DIR, "calendar.json"));
+cpSync(WIKI_OUTPUT, path.join(APP_DATA_DIR, "wiki.json"));
 if (existsSync(STATUSES_SOURCE)) {
   cpSync(STATUSES_SOURCE, path.join(APP_DATA_DIR, "statuses.json"));
 }
@@ -504,4 +599,5 @@ for (const folder of ["brand", "brews", "icons"]) {
 console.log(`Generated ${BATCHES_OUTPUT} with ${batches.length} batch(es).`);
 console.log(`Generated ${SCHEDULE_OUTPUT} with ${scheduleEntries.length} pending task(s).`);
 console.log(`Generated ${CALENDAR_OUTPUT} with ${calendarStages.length} stage span(s).`);
+console.log(`Generated ${WIKI_OUTPUT} with ${wiki.articles.length} wiki article(s).`);
 console.log(`Copied JSON into ${APP_DATA_DIR}.`);
