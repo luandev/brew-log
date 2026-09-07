@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-001
-name: Rapadura Very Berry
-title: Rapadura Very Berry
+name: The Fat Pigeon — Rapadura Very Berry
+title: The Fat Pigeon — Rapadura Very Berry
 type: wine
 status: secondary
 started: 2026-08-31
@@ -17,9 +17,11 @@ tags:
 permalink: /brews/2026-001/
 ---
 
-# Rapadura Very Berry
+# The Fat Pigeon — Rapadura Very Berry
 
 ## Summary
+
+Project name: **The Fat Pigeon — Rapadura Very Berry**. Previously listed as Rapadura Very Berry.
 
 Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. On 2026-09-05 it was racked into a clean PET vessel, pectic enzyme was added according to the product instructions, and the wine was returned to an airlock. Visible clarification was already noticeable during the evening cellar check.
 

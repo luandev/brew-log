@@ -1,27 +1,40 @@
 {
-  "today": "2026-09-06",
+  "today": "2026-09-07",
   "batches": [
     {
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "type": "wine",
+      "status": "primary-fermentation",
+      "current_stage": "primary-fermentation",
+      "current_stage_label": "Primary Fermentation",
+      "started": "2026-09-07",
+      "end_date": "2026-10-19",
+      "target_days": 42,
+      "accent": "#9A6B3F"
+    },
+    {
       "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
+      "name": "The Fat Pigeon — Pear & Maple",
       "url": "/brews/2026-006/",
       "type": "wine",
       "status": "primary-fermentation",
       "current_stage": "primary-fermentation",
       "current_stage_label": "Primary Fermentation",
       "started": "2026-09-05",
-      "end_date": "2026-09-19",
-      "target_days": 14,
+      "end_date": "2026-09-26",
+      "target_days": 21,
       "accent": "#5B7C8D"
     },
     {
       "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
+      "name": "The 2 Foxes",
       "url": "/brews/2026-005/",
       "type": "mead",
-      "status": "preparing",
-      "current_stage": "planned",
-      "current_stage_label": "Planned",
+      "status": "primary-fermentation",
+      "current_stage": "primary-fermentation",
+      "current_stage_label": "Primary Fermentation",
       "started": "2026-09-05",
       "end_date": "2026-10-03",
       "target_days": 28,
@@ -29,20 +42,20 @@
     },
     {
       "batch_id": "2026-002",
-      "name": "Cranberry & Maple Wine",
+      "name": "The Fat Pigeon — Cranberry & Maple",
       "url": "/brews/2026-002/",
       "type": "wine",
       "status": "primary-fermentation",
       "current_stage": "primary-fermentation",
       "current_stage_label": "Primary Fermentation",
       "started": "2026-09-01",
-      "end_date": "2026-09-29",
-      "target_days": 28,
+      "end_date": "2026-09-20",
+      "target_days": 19,
       "accent": "#A67C52"
     },
     {
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "type": "wine",
       "status": "secondary",
@@ -55,7 +68,7 @@
     },
     {
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "type": "wine",
       "status": "secondary",
@@ -119,7 +132,7 @@
     },
     {
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "type": "wine",
       "stage": "primary-fermentation",
@@ -131,7 +144,7 @@
     },
     {
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "type": "wine",
       "stage": "secondary",
@@ -143,7 +156,7 @@
     },
     {
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "type": "wine",
       "stage": "preparing",
@@ -155,7 +168,7 @@
     },
     {
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "type": "wine",
       "stage": "primary-fermentation",
@@ -167,7 +180,7 @@
     },
     {
       "batch_id": "2026-002",
-      "name": "Cranberry & Maple Wine",
+      "name": "The Fat Pigeon — Cranberry & Maple",
       "url": "/brews/2026-002/",
       "type": "wine",
       "stage": "primary-fermentation",
@@ -179,7 +192,7 @@
     },
     {
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "type": "wine",
       "stage": "secondary",
@@ -191,11 +204,35 @@
     },
     {
       "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
+      "name": "The 2 Foxes",
       "url": "/brews/2026-005/",
       "type": "mead",
       "stage": "planned",
       "label": "Planned",
+      "started": "2026-09-05",
+      "ended": "2026-09-05",
+      "status": "completed",
+      "accent": "#8B5E4B"
+    },
+    {
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "type": "mead",
+      "stage": "preparing",
+      "label": "Preparing",
+      "started": "2026-09-05",
+      "ended": "2026-09-05",
+      "status": "completed",
+      "accent": "#8B5E4B"
+    },
+    {
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "type": "mead",
+      "stage": "primary-fermentation",
+      "label": "Primary Fermentation",
       "started": "2026-09-05",
       "ended": null,
       "status": "active",
@@ -203,7 +240,7 @@
     },
     {
       "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
+      "name": "The Fat Pigeon — Pear & Maple",
       "url": "/brews/2026-006/",
       "type": "wine",
       "stage": "primary-fermentation",
@@ -212,30 +249,34 @@
       "ended": null,
       "status": "active",
       "accent": "#5B7C8D"
+    },
+    {
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "type": "wine",
+      "stage": "primary-fermentation",
+      "label": "Primary Fermentation",
+      "started": "2026-09-07",
+      "ended": null,
+      "status": "active",
+      "accent": "#9A6B3F"
     }
   ],
   "tasks": [
     {
-      "date": "2026-09-05",
-      "action": "Rack to a clean PET bottle and add pectic enzyme per product instructions",
-      "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
-      "url": "/brews/2026-001/",
-      "accent": "#6B8F71"
-    },
-    {
-      "date": "2026-09-05",
-      "action": "Confirm whether pectic enzyme was added during the rack; if not, add per product instructions",
-      "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
-      "url": "/brews/2026-004/",
-      "accent": "#AD9753"
+      "date": "2026-09-06",
+      "action": "Check fermentation activity and take first recorded hydrometer reading",
+      "batch_id": "2026-002",
+      "name": "The Fat Pigeon — Cranberry & Maple",
+      "url": "/brews/2026-002/",
+      "accent": "#A67C52"
     },
     {
       "date": "2026-09-06",
       "action": "Add yeast nutrient according to product instructions; record product/dose and check fermentation activity",
       "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
+      "name": "The Fat Pigeon — Pear & Maple",
       "url": "/brews/2026-006/",
       "accent": "#5B7C8D"
     },
@@ -243,23 +284,55 @@
       "date": "2026-09-08",
       "action": "Take hydrometer reading after rack and record fermentation progress",
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "accent": "#AD9753"
+    },
+    {
+      "date": "2026-09-08",
+      "action": "Check headspace, clear airlock and wet fruit; repeat at least daily until solids removed",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "Repeat hydrometer reading; if still falling, continue primary fermentation",
+      "batch_id": "2026-002",
+      "name": "The Fat Pigeon — Cranberry & Maple",
+      "url": "/brews/2026-002/",
+      "accent": "#A67C52"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "Take gravity/activity check and record fermentation progress",
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "accent": "#8B5E4B"
     },
     {
       "date": "2026-09-09",
       "action": "Take first post-start hydrometer reading and record fermentation progress",
       "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
+      "name": "The Fat Pigeon — Pear & Maple",
       "url": "/brews/2026-006/",
       "accent": "#5B7C8D"
     },
     {
+      "date": "2026-09-09",
+      "action": "Check fermentation progress, temperature and cinnamon intensity; remove sticks if sufficient; take gravity if activity is uncertain",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
       "date": "2026-09-10",
-      "action": "Check clarity and sediment formation",
+      "action": "Check clarity, sediment formation and fermentation activity",
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "accent": "#6B8F71"
     },
@@ -267,7 +340,7 @@
       "date": "2026-09-11",
       "action": "Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete",
       "batch_id": "2026-004",
-      "name": "Plum, Cinnamon & Mint Tea Wine",
+      "name": "The Fat Pigeon — Plum, Cinnamon & Mint Tea",
       "url": "/brews/2026-004/",
       "accent": "#AD9753"
     },
@@ -275,17 +348,41 @@
       "date": "2026-09-12",
       "action": "Take hydrometer reading before any sweetening or final bottling",
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "accent": "#6B8F71"
     },
     {
       "date": "2026-09-12",
+      "action": "Repeat gravity check; do not step-feed honey unless fermentation is healthy and a measured addition is deliberately chosen",
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "accent": "#8B5E4B"
+    },
+    {
+      "date": "2026-09-12",
       "action": "Repeat hydrometer reading; if still falling, continue primary fermentation",
       "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
+      "name": "The Fat Pigeon — Pear & Maple",
       "url": "/brews/2026-006/",
       "accent": "#5B7C8D"
+    },
+    {
+      "date": "2026-09-12",
+      "action": "Day 5 fruit-contact assessment; remove solids if appropriate and record gravity/remaining volume",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
+      "date": "2026-09-13",
+      "action": "Take another gravity/activity check if primary is still active",
+      "batch_id": "2026-002",
+      "name": "The Fat Pigeon — Cranberry & Maple",
+      "url": "/brews/2026-002/",
+      "accent": "#A67C52"
     },
     {
       "date": "2026-09-13",
@@ -296,12 +393,60 @@
       "accent": "#6C7C44"
     },
     {
+      "date": "2026-09-14",
+      "action": "Day 7 fruit-removal checkpoint if not already done; remove any remaining cinnamon sticks; continue fermentation under airlock",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
       "date": "2026-09-15",
-      "action": "Rack off clearing sediment and decide on orange zest / sweetness",
+      "action": "Repeat hydrometer reading; if unchanged for ~3 days, confirm secondary is complete",
       "batch_id": "2026-001",
-      "name": "Rapadura Very Berry",
+      "name": "The Fat Pigeon — Rapadura Very Berry",
       "url": "/brews/2026-001/",
       "accent": "#6B8F71"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "Record SG after fruit removal; continue if gravity is falling",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
+      "date": "2026-09-19",
+      "action": "Weekly gravity, aroma and cinnamon-intensity check",
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "accent": "#8B5E4B"
+    },
+    {
+      "date": "2026-09-19",
+      "action": "Take another gravity check and assess whether primary is approaching stability",
+      "batch_id": "2026-006",
+      "name": "The Fat Pigeon — Pear & Maple",
+      "url": "/brews/2026-006/",
+      "accent": "#5B7C8D"
+    },
+    {
+      "date": "2026-09-20",
+      "action": "Repeat SG; assess completion versus a stall before ending primary",
+      "batch_id": "2026-007",
+      "name": "The Fat Pigeon — Cranberry, Plum & Maple",
+      "url": "/brews/2026-007/",
+      "accent": "#9A6B3F"
+    },
+    {
+      "date": "2026-09-26",
+      "action": "Weekly gravity check; assess whether primary is approaching completion",
+      "batch_id": "2026-005",
+      "name": "The 2 Foxes",
+      "url": "/brews/2026-005/",
+      "accent": "#8B5E4B"
     },
     {
       "date": "2026-09-27",
@@ -326,62 +471,6 @@
       "name": "The Three Cats",
       "url": "/brews/2026-003/",
       "accent": "#6C7C44"
-    },
-    {
-      "date": "After gravity is stable for ~3 days",
-      "action": "Rack carefully into a sanitised secondary vessel and update the active stage",
-      "batch_id": "2026-006",
-      "name": "Pear & Maple Wine",
-      "url": "/brews/2026-006/",
-      "accent": "#5B7C8D"
-    },
-    {
-      "date": "TBD",
-      "action": "Weigh and record the apples selected for the batch",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
-    },
-    {
-      "date": "TBD",
-      "action": "Juice apples and record juice yield",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
-    },
-    {
-      "date": "TBD",
-      "action": "Take pre-honey hydrometer reading",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
-    },
-    {
-      "date": "TBD",
-      "action": "Choose target strength and calculate the initial honey addition",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
-    },
-    {
-      "date": "TBD",
-      "action": "Record exact yeast strain and prepare the pitch",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
-    },
-    {
-      "date": "TBD",
-      "action": "Start primary fermentation and update the batch stage",
-      "batch_id": "2026-005",
-      "name": "Pure Orchard Cyser",
-      "url": "/brews/2026-005/",
-      "accent": "#8B5E4B"
     }
   ]
 }

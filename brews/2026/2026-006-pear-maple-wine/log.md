@@ -59,3 +59,10 @@ No new sensory or gravity measurement was recorded during the evening check.
 
 - Add yeast nutrient on 2026-09-06 according to the product instructions and record the product/dose.
 - Continue with the planned primary-fermentation hydrometer checks.
+
+
+## 2026-09-07 — Project name update
+
+### Actions
+
+- Renamed the display/project name from Pear & Maple Wine to The Fat Pigeon — Pear & Maple at the brewer's request. Batch ID and folder remain unchanged.

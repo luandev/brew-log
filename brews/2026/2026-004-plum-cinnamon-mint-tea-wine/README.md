@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-004
-name: Plum, Cinnamon & Mint Tea Wine
-title: Plum, Cinnamon & Mint Tea Wine
+name: The Fat Pigeon — Plum, Cinnamon & Mint Tea
+title: The Fat Pigeon — Plum, Cinnamon & Mint Tea
 type: wine
 status: secondary
 started: 2026-08-31
@@ -21,9 +21,11 @@ tags:
 permalink: /brews/2026-004/
 ---
 
-# Plum, Cinnamon & Mint Tea Wine
+# The Fat Pigeon — Plum, Cinnamon & Mint Tea
 
 ## Summary
+
+Project name: **The Fat Pigeon — Plum, Cinnamon & Mint Tea**. Previously listed as Plum, Cinnamon & Mint Tea Wine.
 
 Experimental apple-and-tea wine started on 2026-08-31 from approximately 1 L fresh yard-apple juice plus approximately 1 L tea made with black tea, mint, and Whittard Plum & Cinnamon instant tea. The first recorded potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, the reading was approximately 11%.
 

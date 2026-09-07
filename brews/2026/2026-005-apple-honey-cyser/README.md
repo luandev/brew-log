@@ -1,7 +1,7 @@
 ---
 batch_id: 2026-005
-name: Pure Orchard Cyser
-title: Pure Orchard Cyser
+name: The 2 Foxes
+title: The 2 Foxes
 type: mead
 # status must match the `active` row in stages.md (see Status Guide for valid IDs)
 status: primary-fermentation
@@ -14,9 +14,11 @@ tags: [cyser, apple, pear, cranberry, honey, cinnamon, pectic-enzyme, high-abv]
 permalink: /brews/2026-005/
 ---
 
-# Pure Orchard Cyser
+# The 2 Foxes
 
 ## Summary
+
+Project name: **The 2 Foxes**. Previously listed as Pure Orchard Cyser.
 
 The planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. The exact water addition and final brew-day gravity were not recorded. Two cinnamon sticks were added in a tea bag, pectic enzyme was used during apple and pear juice extraction, and high-alcohol-tolerance wine yeast was pitched on 2026-09-05.
 
