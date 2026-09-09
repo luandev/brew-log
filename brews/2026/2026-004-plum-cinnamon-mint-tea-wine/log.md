@@ -183,3 +183,29 @@ Visible clarification was already noticeable during the evening cellar check aft
 ### Actions
 
 - Renamed the display/project name from Plum, Cinnamon & Mint Tea Wine to The Fat Pigeon — Plum, Cinnamon & Mint Tea at the brewer's request. Batch ID and folder remain unchanged.
+
+## 2026-09-09 — Racking and tasting checkpoint
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- No hydrometer reading was taken with this update.
+- Final gravity: not yet recorded.
+- Actual ABV: not yet measured.
+
+### Actions
+
+- Racked the wine again.
+- Returned the batch to continued secondary fermentation/clearing under airlock.
+
+### Observation
+
+The wine is clearing nicely, though not as clear as the Rapadura Very Berry batch. The taste is becoming more wine-like, and the tannins from the tea are starting to show more clearly. It still tastes fairly sweet and has not yet developed the finished wine quality the brewer is aiming for.
+
+### Next
+
+- Continue secondary fermentation and clearing under airlock.
+- Take a hydrometer reading before deciding whether fermentation is complete.
+- Do not advance to bottling until gravity stability is confirmed.
