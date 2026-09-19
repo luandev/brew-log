@@ -23,7 +23,9 @@ Project name: **The Fat Pigeon — Cranberry & Maple**. Previously listed as Cra
 
 Small experimental cranberry and maple wine started on 2026-09-01 in a 2 L PET bottle. The documented recipe uses two packs of cranberry product, maple syrup and fermentation yeast. Exact cranberry pack size, maple quantity, liquid volume, yeast strain and starting gravity were not recorded, so those remain explicitly unknown rather than being reconstructed.
 
-The batch is still treated as active primary fermentation because no stable gravity pair or racking event has been recorded. It was intentionally not included in the 2026-09-05 racking session. The working plan now has dated fermentation checks, a conditional secondary rack, clearing checkpoints and a still-wine bottling checkpoint through early October.
+At the 2026-09-19 retrospective checkpoint the batch was still clearly in active primary fermentation. Fermentation was described as clean, with white foam, a lively fizzy character and a very pleasant tutti-frutti-like aroma. Maple remained perceptible in the taste. Routine inspections during the unlogged period found continued activity, functioning airlocks and no visible mold.
+
+The next planned action is a rack from primary to secondary. Any pectic enzyme, nutrient, sugar or flavour addition is still a plan and must be measured and recorded when actually performed.
 
 ## Current Status
 
