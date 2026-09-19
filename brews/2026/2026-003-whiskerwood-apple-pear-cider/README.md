@@ -3,7 +3,7 @@ batch_id: 2026-003
 name: The Three Cats
 title: The Three Cats
 type: cider
-status: conditioning
+status: finished
 started: 2026-08-16
 volume_l:
 target_abv:
@@ -20,9 +20,9 @@ The Three Cats is a small, improvised house cider built around fresh apple and p
 
 The original gravity was read from a hydrometer photo at approximately 1.038–1.040 at about 20 °C. Fermentation became vigorous by about Day 3 and later slowed substantially. A later hydrometer reading reached 1.000, but a second matching stable final-gravity reading was not recorded, so no final measured ABV is claimed in this log.
 
-The batch was bottled on 2026-08-30. Bottles and bottling equipment were sanitised with NoRinze no-rinse sanitiser, the cider was siphoned gently away from the lees, and crown-cap beer bottles were primed with vanilla-infused sugar at a target rate of 5 g/L. A 620 mL bottle received approximately 3 g of priming sugar, effectively matching that target. The newly bottled cider was visibly cloudy and was expected to settle during conditioning.
+The batch was bottled on 2026-08-30 and bottle-conditioned successfully. The brewer used several bottle formats, including Duvel-style bottles, small approximately 300 mL bottles, 500 mL bottles and larger approximately 600+ mL beer bottles. A larger beer bottle tasted by the 2026-09-19 retrospective checkpoint had pleasant gentle carbonation and a noticeably mellower, improved flavour.
 
-The name evolved during label work. "Whiskerwood" was an intermediate concept; the final brew name became **The Three Cats**, with later label treatment also playing visually on "Three" / "Tree". The batch is now bottle-conditioning, with staged carbonation, maturation and Christmas-aging checks planned.
+The batch is now considered **finished**. Continued bottle aging has no fixed final date. Future pairings, serving experiments and mature-bottle tastings can be recorded when useful without keeping the batch artificially open.
 
 ## Current Status
 
