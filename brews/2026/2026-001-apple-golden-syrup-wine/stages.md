@@ -8,7 +8,7 @@ README.md status must match the active row below.
 | Stage | Started | Ended | Status |
 |---|---|---|---|
 | primary-fermentation | 2026-08-31 | 2026-08-31 | completed |
-| secondary | 2026-08-31 | | active |
-| clearing | | | planned |
-| conditioning | | | planned |
+| secondary | 2026-08-31 | 2026-09-19 | completed |
+| clearing | 2026-09-19 | | active |
 | bottled | | | planned |
+| finished | | | planned |
