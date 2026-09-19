@@ -20,11 +20,13 @@ permalink: /brews/2026-005/
 
 Project name: **The 2 Foxes**. Previously listed as Pure Orchard Cyser.
 
-The planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. The exact water addition and final brew-day gravity were not recorded. Two cinnamon sticks were added in a tea bag, pectic enzyme was used during apple and pear juice extraction, and high-alcohol-tolerance wine yeast was pitched on 2026-09-05.
+The planned pure apple-and-honey cyser changed on brew day into an apple-dominant apple, pear, cranberry, and honey mead. Approximately 3 L apple juice, 1.5 L pear juice, and 0.5 L cranberry juice were combined with 2 kg honey. Some water was added after the first hydrometer sample read above the useful range of the instrument. Two cinnamon sticks were added in a tea bag, pectic enzyme was used during juice extraction, and yeast was pitched on 2026-09-05.
 
-The brewer's working strength goal is approximately 20% ABV, with 20%+ desired if the yeast and fermentation health permit. This is a target, not a measured ABV. Yeast nutrient and a readable hydrometer measurement are planned for 2026-09-06. If gravity remains excessively high, the must will be diluted with water or cranberry juice and remeasured before the working starting gravity is established.
+On 2026-09-06 the must was diluted further, stirred, measured at approximately 1.115 SG and given two spoonfuls of BrewBitz yeast nutrient.
 
-Because this is a high-gravity mead, the schedule uses repeated gravity checkpoints and treats later rack/bottle dates as conditional rather than guaranteed completion dates.
+By the 2026-09-19 retrospective checkpoint the fermentation was vigorous and healthy, with the airlock described as "burping like crazy". The brewer had been concerned about a possible stall but is now encouraged by the continued activity. Routine inspections found functioning airlocks and no visible mold. No tasting has been taken yet; the plan is to wait until activity relaxes before taking a tasting sample.
+
+The working strength goal remains approximately 20% ABV, with 20%+ desired if fermentation health permits. This remains a target rather than a measured final ABV.
 
 ## Current Status
 
@@ -40,8 +42,8 @@ Because this is a high-gravity mead, the schedule uses repeated gravity checkpoi
 | Honey used | 2 kg |
 | Water | Added; amount not recorded |
 | Initial hydrometer result | Above useful/readable range; exact value not recorded |
+| Working gravity after dilution | ~1.115 on 2026-09-06 |
 | Working target ABV | ~20%, with 20%+ desired if feasible |
-| Final brew-day gravity | Not recorded |
 | Final gravity | Not recorded |
 | Actual ABV | Not yet established |
 | Final volume | Not recorded |
