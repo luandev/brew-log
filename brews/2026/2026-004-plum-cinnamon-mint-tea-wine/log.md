@@ -177,7 +177,6 @@ Visible clarification was already noticeable during the evening cellar check aft
 - Take a hydrometer reading on 2026-09-08.
 - Repeat the hydrometer reading on 2026-09-11 and confirm stability before moving on from secondary.
 
-
 ## 2026-09-07 — Project name update
 
 ### Actions
@@ -209,3 +208,30 @@ The wine is clearing nicely, though not as clear as the Rapadura Very Berry batc
 - Continue secondary fermentation and clearing under airlock.
 - Take a hydrometer reading before deciding whether fermentation is complete.
 - Do not advance to bottling until gravity stability is confirmed.
+
+## 2026-09-19 — Retrospective cellar and flavour checkpoint
+
+**Time:** Morning  
+**Stage:** Secondary
+
+### Measurements
+
+- No hydrometer reading taken with this update.
+
+### Actions
+
+- Recorded routine visual inspections during the unlogged period for mold, airlock condition and continued fermentation activity.
+- Recorded continued improvement in clarity after the pectic-enzyme addition.
+- Planned a focused tasting in the next few days.
+- Planned a small bench trial with finished-wine sweetener to test whether sweetness improves the flavour profile; no bulk sweetener addition has been made.
+
+### Observation
+
+The wine is clearing well and is visually getting closer to Rapadura Very Berry. Despite that progress, this remains the brewer's least satisfying batch by taste so far. Recent unlogged tastings focused on the plum/cinnamon character, but exact intermediate tasting dates were not recorded.
+
+### Next
+
+- Taste again before making a bulk adjustment.
+- Bench-test a small sample with finished-wine sweetener and compare it with an untreated sample.
+- Take a gravity reading while evaluating the batch.
+- Once the flavour direction is chosen and gravity is stable, bottle and treat later bottle aging as open-ended.

@@ -3,9 +3,7 @@ batch_id: 2026-006
 name: The Fat Pigeon — Pear & Maple
 title: The Fat Pigeon — Pear & Maple
 type: wine
-# status must match the `active` row in stages.md (see Status Guide for valid IDs)
 status: primary-fermentation
-# started should match the active stage Started date in stages.md
 started: 2026-09-05
 volume_l: 1.7
 target_abv: 12
@@ -22,9 +20,9 @@ Project name: **The Fat Pigeon — Pear & Maple**. Previously listed as Pear & M
 
 Small-batch pear and maple wine started on 2026-09-05 from fresh pear juice produced during the same juice-extraction session as batch 2026-005. The pear juice was notably sweet before adjustment. Approximately 100 mL maple syrup was added until the hydrometer showed 12% potential alcohol. The exact specific gravity was not recorded. The final batch volume is exactly 1.7 L.
 
-Pectic enzyme was used during juice extraction, two cinnamon sticks were added to the PET fermentation vessel, yeast was pitched on 2026-09-05, and primary fermentation is active. The working target is 12% ABV based on the initial potential-alcohol adjustment; this remains a target rather than a measured final ABV. Yeast nutrient is scheduled for 2026-09-06.
+Pectic enzyme was used during juice extraction, two cinnamon sticks were added, and yeast was pitched on 2026-09-05. Through the unlogged period the batch remained actively fermenting, the airlock continued to function, no visible mold was reported, and clarification/settling continued to improve.
 
-The current plan is to monitor gravity through primary, rack only after stable gravity, use a restrained secondary aroma/spice addition if desired, clear under airlock, take a final stability reading, and bottle as still wine.
+As of 2026-09-19 the batch is still recorded in primary because the planned rack has not yet been performed. The brewer intends to rack it to secondary, take/record gravity, and during that work may add more pectic enzyme, yeast nutrient, a measured interesting sugar, and possibly a flavour addition. None of those planned additions are recorded as completed yet.
 
 ## Current Status
 

@@ -11,6 +11,6 @@ README.md status must match the active row below.
 | secondary | | | skipped |
 | clearing | | | skipped |
 | bottled | 2026-08-30 | 2026-08-30 | completed |
-| conditioning | 2026-08-30 | | active |
-| aging | | | planned |
-| finished | | | planned |
+| conditioning | 2026-08-30 | 2026-09-19 | completed |
+| aging | | | skipped |
+| finished | 2026-09-19 | | active |

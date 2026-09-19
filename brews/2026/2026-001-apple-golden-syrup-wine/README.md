@@ -3,7 +3,7 @@ batch_id: 2026-001
 name: The Fat Pigeon — Rapadura Very Berry
 title: The Fat Pigeon — Rapadura Very Berry
 type: wine
-status: secondary
+status: clearing
 started: 2026-08-31
 volume_l: 1.75
 target_abv: 12
@@ -23,9 +23,11 @@ permalink: /brews/2026-001/
 
 Project name: **The Fat Pigeon — Rapadura Very Berry**. Previously listed as Rapadura Very Berry.
 
-Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. On 2026-09-05 it was racked into a clean PET vessel, pectic enzyme was added according to the product instructions, and the wine was returned to an airlock. Visible clarification was already noticeable during the evening cellar check.
+Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, and a later maple-syrup step-feed. On 2026-09-05 it was racked into a clean PET vessel, pectic enzyme was added, and it returned to an airlock. Through the following weeks it progressively clarified while fermentation remained visibly active.
 
-The batch remains in secondary until repeated hydrometer readings show stable gravity. After stability is confirmed, the working plan is to let it clear, rack off the clarification sediment, make any restrained orange-zest or sweetness adjustment, confirm stability again, then bottle as a still wine.
+By the 2026-09-19 retrospective cellar checkpoint, visible fermentation had stopped and the wine was clearing very well. Its earlier sweet brown-sugar/rapadura character had fermented away, leaving a very dry drink with a distinctive cachaça-like character. The brewer currently prefers it as-is and does not plan to backsweeten.
+
+The batch is now in clearing. The remaining active work is to confirm gravity stability and bottle once suitable corks are available. Bottle aging is open-ended rather than a fixed project deadline.
 
 ## Current Status
 
@@ -47,7 +49,7 @@ The batch remains in secondary until repeated hydrometer readings show stable gr
 
 ## Latest Note
 
-2026-09-05 evening cellar check: pectic enzyme was confirmed added during the rack and visible clarification was already noticeable. The airlock is being topped with correctly diluted no-rinse sanitiser solution. The most recent tasting remains the 2026-09-04 sample: crisp, distinctly wine-like and alcohol-forward, with satisfactory tannin and relatively little defining aroma.
+2026-09-19 retrospective checkpoint: visible fermentation has stopped, clarification continues, and the wine now tastes very dry with a cachaça-like character. No backsweetening is currently planned. Confirm stable gravity before bottling; bottle aging will be open-ended.
 
 {% include_relative recipe.md %}
 

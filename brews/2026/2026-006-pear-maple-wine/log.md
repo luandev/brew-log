@@ -60,9 +60,35 @@ No new sensory or gravity measurement was recorded during the evening check.
 - Add yeast nutrient on 2026-09-06 according to the product instructions and record the product/dose.
 - Continue with the planned primary-fermentation hydrometer checks.
 
-
 ## 2026-09-07 — Project name update
 
 ### Actions
 
 - Renamed the display/project name from Pear & Maple Wine to The Fat Pigeon — Pear & Maple at the brewer's request. Batch ID and folder remain unchanged.
+
+## 2026-09-19 — Retrospective primary-fermentation checkpoint
+
+**Time:** Morning  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- No new hydrometer reading taken with this update.
+
+### Actions
+
+- Recorded routine inspections during the unlogged period for visible mold, airlock condition and fermentation activity.
+- Recorded continued improvement in settling/clarity while fermentation remained active.
+- Planned a rack from primary to secondary on 2026-09-19; the rack has not yet been recorded as completed.
+
+### Observation
+
+The batch continued fermenting through the unlogged period. The airlock remained functional, no visible mold was reported, and the wine continued to improve visually as solids settled.
+
+### Next
+
+- Take and record a gravity reading when handling the batch.
+- Rack to secondary when the planned work is actually performed.
+- If adding more pectic enzyme or yeast nutrient, record the product/dose used.
+- If adding sugar or flavour, choose it deliberately, measure it and record the actual addition.
+- Continue under airlock and reassess fermentation/clarity after the rack.
