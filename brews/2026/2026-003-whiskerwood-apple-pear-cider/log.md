@@ -97,3 +97,30 @@ The bottled cider was visibly cloudy on bottling day, with settling expected dur
 - 2026-09-27: early conditioned tasting and sediment/clarity check.
 - 2026-10-25: maturation check.
 - 2026-12-20: Christmas-aging check and chill a bottle for the holiday period.
+
+## 2026-09-19 — Bottle-conditioning retrospective and completion
+
+**Time:** Morning  
+**Stage:** Finished
+
+### Measurements
+
+- No new gravity measurement.
+- Bottle formats reported: Duvel-style bottles, small approximately 300 mL bottles, 500 mL bottles and larger approximately 600+ mL beer bottles.
+
+### Actions
+
+- Tasted one of the larger beer bottles after bottle conditioning.
+- Recorded the batch as finished rather than keeping Christmas as an artificial final deadline.
+- Planned future serving experiments with lime, sugar and ice, plus broader pairing exploration; these are optional tasting experiments rather than required batch milestones.
+- Planning to acquire a thermal printer for bottle labels.
+
+### Observation
+
+The sampled larger beer bottle was pleasantly carbonated with a gentle/subtle level of fizz. The brewer would personally enjoy slightly more carbonation, but considers the current level nice. The flavour has improved in bottle and become noticeably mellower.
+
+### Next
+
+- No required production work remains.
+- Allow bottles to age for as long as desired.
+- Record future mature-bottle tastings, pairings or serving experiments only when useful.
