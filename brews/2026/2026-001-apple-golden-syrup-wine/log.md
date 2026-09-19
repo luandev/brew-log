@@ -147,9 +147,37 @@ The wine was already showing noticeable clarification during the evening cellar 
 - Check clarity and sediment formation on 2026-09-10.
 - Take a hydrometer reading before sweetening or bottling.
 
-
 ## 2026-09-07 — Project name update
 
 ### Actions
 
 - Renamed the display/project name from Rapadura Very Berry to The Fat Pigeon — Rapadura Very Berry at the brewer's request. Batch ID and folder remain unchanged.
+
+## 2026-09-19 — Retrospective cellar checkpoint
+
+**Time:** Morning  
+**Stage:** Clearing
+
+### Measurements
+
+- No gravity reading taken with this update.
+- Final ABV remains unconfirmed.
+
+### Actions
+
+- Recorded the brewer's retrospective observation that the batch was inspected routinely during the unlogged period for fermentation activity, airlock condition and signs of mold.
+- Recorded continued visible improvement in clarity after the pectic-enzyme addition.
+- Recorded that visible fermentation has now stopped.
+- Decided not to plan backsweetening at this stage because the current dry profile is interesting as-is.
+- Waiting for corks before final bottling.
+
+### Observation
+
+Over the intervening weeks the wine became progressively clearer. The earlier distinct sweet brown-sugar/rapadura character has fermented away. It now tastes very dry and has developed a character the brewer compares to cachaça, making it an interesting drink without further sweetening.
+
+### Next
+
+- Take a hydrometer reading.
+- Repeat the reading after roughly three days to confirm stability.
+- If stable and corks are available, bottle as a still wine.
+- Treat bottle aging as open-ended rather than a fixed completion schedule.
