@@ -96,9 +96,33 @@ No final gravity reading was available on brew day after the water addition. The
 - Take the next gravity/activity check on 2026-09-09.
 - Continue monitoring aroma and fermentation strength, especially because this is a high-gravity must.
 
-
 ## 2026-09-07 — Project name update
 
 ### Actions
 
 - Renamed the display/project name from Pure Orchard Cyser to The 2 Foxes at the brewer's request. Batch ID and folder remain unchanged.
+
+## 2026-09-19 — Retrospective vigorous-primary checkpoint
+
+**Time:** Morning  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- No new hydrometer reading taken with this update.
+
+### Actions
+
+- Recorded routine inspections during the unlogged period for visible mold, airlock condition and fermentation activity.
+- Left the batch undisturbed while fermentation remained vigorous.
+- Deliberately postponed tasting until airlock activity becomes less intense.
+
+### Observation
+
+The cyser is fermenting vigorously and the airlock is described as "burping like crazy". The brewer had been concerned about a possible stall but now has high confidence in the fermentation based on the continued activity. No visible mold or airlock problem was reported. No taste assessment has been made yet.
+
+### Next
+
+- Continue primary fermentation without forcing a rack while activity remains this vigorous.
+- When activity relaxes, take a gravity reading and use the same sample for the first tasting.
+- Base the primary-to-secondary decision on gravity progress rather than airlock activity alone.
