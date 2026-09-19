@@ -29,7 +29,6 @@ Plums described as large and very sweet. Fermentation activity, aroma, colour an
 - Record gravity trends before progressing to clearing and eventual still bottling.
 - Full future schedule is a proposed plan; no future action is recorded as completed.
 
-
 ## 2026-09-07 — Project name update
 
 ### Actions
@@ -40,3 +39,30 @@ Plums described as large and very sweet. Fermentation activity, aroma, colour an
 ### Next
 
 - Check cinnamon intensity at the next progress check; remove once sufficiently strong, or with the plum solids if still present.
+
+## 2026-09-19 — Retrospective primary-fermentation checkpoint
+
+**Time:** Morning  
+**Stage:** Primary fermentation
+
+### Measurements
+
+- No new gravity reading taken with this update.
+
+### Actions
+
+- Recorded routine inspections during the unlogged period for visible mold, airlock condition and fermentation activity.
+- Recorded continued visual improvement as solids settled/clarity improved.
+- Planned a rack from primary to secondary on 2026-09-19; the rack has not yet been recorded as completed.
+
+### Observation
+
+The batch remained actively fermenting during the unlogged period. The airlock remained functional and no visible mold was reported. Clarification/settling continued to improve.
+
+### Next
+
+- Take and record a gravity reading during the planned rack.
+- Record whether plum solids and cinnamon sticks are removed or retained.
+- If adding more pectic enzyme or yeast nutrient, record the actual product/dose.
+- If adding sugar or flavour, choose it deliberately, measure it and record the actual addition.
+- Continue under airlock after racking and reassess fermentation/clarity.
