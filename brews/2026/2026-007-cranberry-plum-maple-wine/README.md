@@ -19,15 +19,15 @@ permalink: /brews/2026-007/
 
 Project name: **The Fat Pigeon — Cranberry, Plum & Maple**. Previously listed as Cranberry, Plum & Maple Wine.
 
-Cranberry juice, approximately five large sweet plums, Whittard Sour Cherry Instant Tea and a generous dollop of maple syrup, prepared in a 2 L PET bottle with a sanitised airlock. Two cinnamon sticks were also added “for good luck”. Pectic enzyme, yeast nutrient and the same wine yeast used for the other batches were added.
+Cranberry juice, approximately five large sweet plums, Whittard Sour Cherry Instant Tea and a generous dollop of maple syrup, prepared in a 2 L PET bottle with a sanitised airlock. Two cinnamon sticks were also added “for good luck”. Pectic enzyme, yeast nutrient and the same wine yeast used for the other batches were added at setup.
 
-Working start date: 7 September 2026, based on the date this new experiment was reported; no separate brew-day date was supplied. Planned dates are checkpoints, not observations.
+Through the unlogged period the batch remained actively fermenting. Routine inspections found the airlock working and no visible mold, while solids/clarity continued to improve. No later gravity reading has yet been recorded.
+
+As of 2026-09-19 the batch remains in primary because the planned rack has not yet been performed. The brewer intends to rack it to secondary and may add more pectic enzyme, more yeast nutrient, a measured interesting sugar and possibly another flavour. Those additions remain plans until they are actually measured and recorded. Plum solids and cinnamon should also be explicitly recorded as retained or removed during the rack.
 
 ## Current Status
 
 {% include batch-current-status.html %}
-
-Primary fermentation setup reported; activity and temperature have not yet been described. The working strength target follows the reported ~9% potential-alcohol reading, not measured final ABV. Fruit sugars may not have fully extracted at that reading.
 
 ## Key Measurements
 
