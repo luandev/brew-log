@@ -29,9 +29,11 @@ Project name: **The Fat Pigeon — Plum, Cinnamon & Mint Tea**. Previously liste
 
 Experimental apple-and-tea wine started on 2026-08-31 from approximately 1 L fresh yard-apple juice plus approximately 1 L tea made with black tea, mint, and Whittard Plum & Cinnamon instant tea. The first recorded potential-alcohol reading was 10%; after an unmeasured increase in fermentable sugar, the reading was approximately 11%.
 
-Secondary fermentation was confirmed active by 2026-09-04. On 2026-09-05 the wine was racked into a clean PET vessel, pectic enzyme was confirmed added according to the product instructions, and the wine was returned to an airlock. Visible clarification was already noticeable during the evening cellar check.
+Secondary fermentation was confirmed active by 2026-09-04. On 2026-09-05 the wine was racked into a clean PET vessel, pectic enzyme was confirmed added, and the wine returned to an airlock. It has continued to clear steadily and by 2026-09-19 was visually getting closer to Rapadura Very Berry.
 
-The batch remains in secondary until repeated gravity readings confirm stability. The full working plan now covers gravity checks, clearing, final racking, a short stability period, still-wine bottling, and later aging.
+The flavour remains the weakest part of the experiment for the brewer and this is currently the least satisfying batch to taste. A short tasting/bench-trial phase is planned before bottling: assess the current profile, trial the finished-wine sweetener in a small sample, then decide whether any finishing adjustment improves the wine. No bulk sweetener addition has been made.
+
+The batch remains in secondary while fermentation status and the flavour decision are unresolved. Once the profile is settled and gravity is stable, the intended finish line is bottling, after which bottle aging is open-ended.
 
 ## Current Status
 
