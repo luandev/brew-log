@@ -235,3 +235,32 @@ The wine is clearing well and is visually getting closer to Rapadura Very Berry.
 - Bench-test a small sample with finished-wine sweetener and compare it with an untreated sample.
 - Take a gravity reading while evaluating the batch.
 - Once the flavour direction is chosen and gravity is stable, bottle and treat later bottle aging as open-ended.
+
+
+## 2026-09-22 — Sweetener bench trial and flavour decision checkpoint
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- No hydrometer reading was taken or reported.
+- Finished-wine sweetener amount used in the test sample: not recorded.
+- No sweetener was added to the full batch.
+
+### Actions
+
+- Tasted an untreated sample.
+- Tasted a separate sample with finished-wine sweetener.
+- Compared the sweetened and unsweetened samples.
+- Left the full batch unchanged.
+
+### Observation
+
+The sweetened sample was somewhat nicer, but the brewer remains unhappy with the overall flavour. It is unclear whether the plum character is the main source of the problem. The batch is currently disappointing enough that discarding it is being considered, but no discard decision has been made.
+
+### Next
+
+- Decide whether to keep, rework, bottle or discard the batch.
+- If keeping or bottling, take a gravity reading and confirm stability before sealing.
+- Do not add finished-wine sweetener to the full batch unless a later decision explicitly calls for it.
