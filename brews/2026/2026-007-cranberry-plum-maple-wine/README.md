@@ -3,8 +3,8 @@ batch_id: 2026-007
 name: The Fat Pigeon — Cranberry, Plum & Maple
 title: The Fat Pigeon — Cranberry, Plum & Maple
 type: wine
-status: primary-fermentation
-started: 2026-09-07
+status: secondary
+started: 2026-09-22
 volume_l:
 target_abv: 9
 actual_abv:
@@ -23,7 +23,7 @@ Cranberry juice, approximately five large sweet plums, Whittard Sour Cherry Inst
 
 Through the unlogged period the batch remained actively fermenting. Routine inspections found the airlock working and no visible mold, while solids/clarity continued to improve. No later gravity reading has yet been recorded.
 
-As of 2026-09-19 the batch remains in primary because the planned rack has not yet been performed. The brewer intends to rack it to secondary and may add more pectic enzyme, more yeast nutrient, a measured interesting sugar and possibly another flavour. Those additions remain plans until they are actually measured and recorded. Plum solids and cinnamon should also be explicitly recorded as retained or removed during the rack.
+On 2026-09-22 the batch was racked from primary into secondary fermentation without a tasting. At the rack, 50 g light brown sugar was added together with additional yeast, yeast nutrient/food and pectic enzyme. The brewer reports that the yeast, nutrient and enzyme were dosed appropriately for the batch volume; exact quantities were not recorded. No hydrometer reading was reported. Whether the plum solids and cinnamon sticks were retained or removed was not reported, so the record does not infer it.
 
 ## Current Status
 
