@@ -14,8 +14,8 @@ Rules:
 
 | Stage | Started | Ended | Status |
 |---|---|---|---|
-| primary-fermentation | 2026-09-05 | | active |
-| secondary | | | planned |
+| primary-fermentation | 2026-09-05 | 2026-09-22 | completed |
+| secondary | 2026-09-22 | | active |
 | clearing | | | planned |
 | conditioning | | | planned |
 | bottled | | | planned |
