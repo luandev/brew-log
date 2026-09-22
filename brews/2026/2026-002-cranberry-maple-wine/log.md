@@ -57,3 +57,34 @@ Fermentation appears clean, with white foam and a very lively fizzy character. T
 - Rack to secondary when today's planned work is actually performed and record the event.
 - If adding pectic enzyme, yeast nutrient, sugar or flavour, measure and record each addition rather than treating the plan as completed.
 - Continue under airlock and reassess fermentation/clarity after the rack.
+
+
+## 2026-09-22 — Rack to secondary
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- Light brown sugar: 50 g.
+- No hydrometer reading was taken or reported.
+- Additional yeast, yeast nutrient/food and pectic-enzyme doses: appropriate for the batch volume according to the brewer; exact quantities not recorded.
+
+### Actions
+
+- Racked the wine from primary into secondary fermentation.
+- Added 50 g light brown sugar.
+- Added additional yeast.
+- Added yeast nutrient/food.
+- Added pectic enzyme.
+- No tasting sample was taken during the rack.
+
+### Observation
+
+No tasting observation was made at this checkpoint.
+
+### Next
+
+- Continue secondary fermentation under airlock.
+- Monitor fermentation activity and clarification.
+- Take a gravity reading at the next useful checkpoint before deciding whether fermentation is complete or the batch is ready to clear further.
