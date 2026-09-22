@@ -6,9 +6,10 @@
 |---|---:|---|
 | Cranberry product | 2 packs | Exact product and pack size not recorded |
 | Maple syrup | Amount not recorded | Fermentable sugar source used on brew day |
-| Yeast | Type/amount not recorded | Added on brew day |
-| Yeast nutrient | Not recorded | No confirmed addition in the current record |
-| Pectic enzyme | Not recorded | No confirmed addition in the current record |
+| Yeast | Type/amount not recorded | Added on brew day; additional yeast added at the 2026-09-22 secondary rack, exact amount not recorded |
+| Light brown sugar | 50 g | Added at the 2026-09-22 secondary rack |
+| Yeast nutrient | Exact dose not recorded | Added at the 2026-09-22 secondary rack at an appropriate dose for the batch volume |
+| Pectic enzyme | Exact dose not recorded | Added at the 2026-09-22 secondary rack at an appropriate dose for the batch volume |
 
 ## Yeast
 
@@ -16,7 +17,7 @@
 
 ## Yeast Nutrient
 
-- No nutrient addition is recorded. Do not back-fill a dose unless actually added and reported later.
+- Yeast nutrient/food was added at the 2026-09-22 secondary rack. The brewer reports an appropriate dose for the batch volume; the exact quantity was not recorded.
 
 ## Additions
 
@@ -28,6 +29,7 @@
 ### Sugar Sources
 
 - Maple syrup; exact quantity was not recorded.
+- Light brown sugar: 50 g added at the 2026-09-22 secondary rack.
 
 ### Tea / Tannins
 
@@ -40,8 +42,8 @@
 
 ### Clarification
 
-- No pectic-enzyme addition is confirmed for this batch.
-- Clarification will be managed after fermentation is confirmed stable by gravity readings.
+- Pectic enzyme was added at the 2026-09-22 secondary rack at an appropriate dose for the batch volume; exact quantity was not recorded.
+- Clarification will be managed alongside secondary fermentation and later gravity checks.
 
 ### Acids
 
@@ -83,12 +85,13 @@
 3. Ferment in primary while monitoring airlock activity and gravity rather than relying on bubbles alone.
 4. Take the first scheduled hydrometer reading and repeat it several days later.
 5. If gravity is still falling, leave the wine in primary and continue weekly checks.
-6. Once gravity is stable for roughly three days and primary is sufficiently complete, rack carefully into a sanitised secondary vessel with minimal splashing.
-7. Taste after racking. Keep the wine cranberry/maple only unless a later addition is deliberately chosen and measured.
-8. Allow sediment to settle and clarity to improve under airlock.
-9. Rack again only if a meaningful sediment layer develops.
-10. Take a final stability reading before bottling.
-11. Bottle as still wine with no priming sugar once gravity is stable and the wine is acceptably clear.
+6. On 2026-09-22, rack from primary into a sanitised secondary vessel.
+7. Add 50 g light brown sugar plus additional yeast, yeast nutrient/food and pectic enzyme. The latter three were dosed appropriately for the batch volume, but exact quantities were not recorded.
+8. No tasting was performed at this rack.
+9. Allow secondary fermentation and clarification to continue under airlock.
+10. Rack again only if a meaningful sediment layer develops.
+11. Take a final stability reading before bottling.
+12. Bottle as still wine with no priming sugar once gravity is stable and the wine is acceptably clear.
 
 </div>
 
@@ -96,8 +99,8 @@
 
 ## Fermentation Stages
 
-1. Primary: active from 2026-09-01; no rack recorded as of 2026-09-05.
-2. Secondary: conditional rack after stable gravity; default plan is no extra flavour addition unless tasting justifies one.
+1. Primary: 2026-09-01 to 2026-09-22.
+2. Secondary: active from 2026-09-22 after racking with 50 g light brown sugar, additional yeast, yeast nutrient/food and pectic enzyme; no tasting was performed at the rack.
 3. Clearing: allow settling under airlock and rack again only if needed.
 4. Conditioning: short stability/rest period before packaging.
 5. Bottling: still wine after confirmed stability.
@@ -108,4 +111,4 @@
 
 ## Notes
 
-The airlock was fixed to the PET bottle cap using acrylate adhesive. The record intentionally does not invent the cranberry pack size, maple quantity, exact volume, yeast strain, nutrient dose, pectic-enzyme dose, starting gravity or actual ABV. The schedule provides practical future checkpoints without converting unknown historical values into measurements.
+The airlock was fixed to the PET bottle cap using acrylate adhesive. The record intentionally does not invent the cranberry pack size, maple quantity, exact volume, yeast strain, nutrient dose, pectic-enzyme dose, starting gravity or actual ABV. The 50 g light brown sugar addition is measured and confirmed. The schedule provides practical future checkpoints without converting unknown historical values into measurements.
