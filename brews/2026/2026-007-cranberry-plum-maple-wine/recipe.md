@@ -11,9 +11,10 @@ These are the actual reported additions. Missing quantities cannot be reconstruc
 | Whittard Sour Cherry Instant Tea | Not recorded | Sugar-based instant powder containing black-tea extract |
 | Maple syrup | A generous dollop | Added to reach approximately 9% potential alcohol; mass/volume unknown |
 | Cinnamon sticks | Two sticks | Added “for good luck”; mass, variety and exact addition time unrecorded |
-| Wine yeast | Not recorded | Same yeast used for the other batches; brand/strain unconfirmed |
-| Pectic enzyme | A small amount | Already added; product and dose unrecorded |
-| Yeast nutrient | Amount described as proportionate to the bottle | Already added; product and exact dose unrecorded |
+| Wine yeast | Not recorded | Same yeast used for the other batches; brand/strain unconfirmed; additional yeast added at the 2026-09-22 secondary rack |
+| Light brown sugar | 50 g | Added at the 2026-09-22 secondary rack |
+| Pectic enzyme | Exact doses unrecorded | Added at setup and again at the 2026-09-22 secondary rack at an appropriate dose for the batch volume |
+| Yeast nutrient | Exact doses unrecorded | Added at setup and again at the 2026-09-22 secondary rack at an appropriate dose for the batch volume |
 
 ## Yeast
 
@@ -21,7 +22,7 @@ The brewer reports using the same wine yeast as for the other brews. Do not assi
 
 ## Yeast Nutrient
 
-Already added at setup. No automatic extra dose is planned. Check the product instructions and actual liquid volume before any further addition, and record it separately.
+Added at setup and again at the 2026-09-22 secondary rack. The brewer reports that the secondary dose was appropriate for the batch volume; the exact quantity was not recorded.
 
 ## Additions
 
@@ -31,7 +32,7 @@ Cranberry juice and diced sweet plums. For a repeat, wash sound fruit, remove st
 
 ### Sugar Sources
 
-Cranberry juice, plums, maple syrup and the instant tea contribute sugar. The liquid reading may not include all sugars subsequently released from the plum pieces. Do not convert the approximate potential reading into an invented original SG or claim a precise final ABV.
+Cranberry juice, plums, maple syrup and the instant tea contribute sugar. An additional 50 g light brown sugar was added at the 2026-09-22 secondary rack. The liquid reading may not include all sugars subsequently released from the plum pieces. Do not convert the approximate potential reading into an invented original SG or claim a precise final ABV.
 
 ### Tea / Tannins
 
@@ -80,24 +81,28 @@ No separate acid addition reported. Cranberry, plums and the tea's citric acid a
 
 The brewer also reports adding two cinnamon sticks “for good luck”. The exact addition time is unrecorded; this supplements the original setup report.
 
+### Secondary rack — 22 September 2026
+
+1. Racked the batch from primary into secondary fermentation.
+2. Added 50 g light brown sugar.
+3. Added additional yeast, yeast nutrient/food and pectic enzyme. The latter three were dosed appropriately for the batch volume; exact quantities were not recorded.
+4. No tasting was performed at the rack.
+5. Whether the plum solids and cinnamon sticks were retained or removed was not reported and is left explicitly unknown.
+
 ### Proposed next steps
 
-1. Check twice daily initially that foam and fruit remain below the neck and the airlock is unobstructed. Leave expansion space. If the fruit crowds the neck or cannot be managed, transfer to a larger sanitised food-grade fermenter with an airlock.
-2. Keep exposed fruit wet at least daily using a sanitised utensil or gentle swirling that does not carry liquid into the airlock; minimise opening time. Never seal active fermentation with an unvented cap.
-3. Check progress on 9 September. If activity is uncertain, use gravity trends, not airlock bubbles alone; inspect temperature, seal and juice label before changing anything.
-4. Assess fruit extraction on 12 September (day 5); aim to strain/rack off the plum solids by 14 September (day 7), earlier if neck crowding requires it. This is a proposed small-batch contact window, not proof fermentation has finished. Use sanitised equipment, avoid aggressive squeezing and continue fermenting under airlock.
-5. Take and record a gravity sample at fruit removal, then check again on 17 and 20 September. Degas the sample, exclude pulp, read at the hydrometer's calibration temperature or apply its correction, and record the actual SG.
-6. If gravity is still falling, continue fermentation and move later checkpoints forward. Once fermentation is complete, assess sediment and rack only when needed into a suitably sized vessel with minimal headspace.
-7. Allow clearing under airlock, checking on 28 September and 5 October. Pectic enzyme has already been added; do not automatically redose. Haze may take longer than this schedule.
-8. Assess taste and sediment on 12 October. Rack gently only if useful, then allow settling. Record gravity on 16 and 19 October after any adjustments.
-9. Bottle only when the completion and stability conditions above are met. Otherwise extend clearing/conditioning and reschedule.
+1. Continue secondary fermentation under airlock and monitor activity, sediment and clarification.
+2. Take a gravity reading at the next useful checkpoint.
+3. If gravity is still falling, continue secondary fermentation rather than forcing a clearing or bottling date.
+4. Once fermentation is stable, assess whether another rack is useful based on sediment.
+5. Bottle only when the completion and stability conditions above are met.
 
 The daily fruit-cap approach is supported by the [American Homebrewers Association's fruit-mead guidance](https://homebrewersassociation.org/beyond-beer/hydromel-how-to-make-session-strength-mead/); its use here is an adaptation to this fruit-wine experiment.
 
 ## Fermentation Stages
 
-1. Primary: fruit extraction and fermentation under airlock, including continued fermentation after removing solids.
-2. Secondary: optional sediment-separation stage once primary is complete; minimise headspace.
+1. Primary: 2026-09-07 to 2026-09-22.
+2. Secondary: active from 2026-09-22 after racking with 50 g light brown sugar, additional yeast, yeast nutrient/food and pectic enzyme; no tasting was performed at the rack.
 3. Clearing: settle under airlock; dates depend on observed clarity.
 4. Conditioning: assess flavour and confirm final stability; no extra sweeteners assumed.
 5. Bottled / aging: still bottling followed by cool, dark storage and later tasting.
