@@ -3,8 +3,8 @@ batch_id: 2026-002
 name: The Fat Pigeon — Cranberry & Maple
 title: The Fat Pigeon — Cranberry & Maple
 type: wine
-status: primary-fermentation
-started: 2026-09-01
+status: secondary
+started: 2026-09-22
 volume_l:
 target_abv: 14
 actual_abv:
@@ -25,7 +25,7 @@ Small experimental cranberry and maple wine started on 2026-09-01 in a 2 L PET b
 
 At the 2026-09-19 retrospective checkpoint the batch was still clearly in active primary fermentation. Fermentation was described as clean, with white foam, a lively fizzy character and a very pleasant tutti-frutti-like aroma. Maple remained perceptible in the taste. Routine inspections during the unlogged period found continued activity, functioning airlocks and no visible mold.
 
-The next planned action is a rack from primary to secondary. Any pectic enzyme, nutrient, sugar or flavour addition is still a plan and must be measured and recorded when actually performed.
+On 2026-09-22 the batch was racked from primary into secondary fermentation without a tasting. At the rack, 50 g light brown sugar was added together with additional yeast, yeast nutrient/food and pectic enzyme. The brewer reports that the yeast, nutrient and enzyme were dosed appropriately for the batch volume; their exact quantities were not recorded. No hydrometer reading was reported for the rack.
 
 ## Current Status
 
