@@ -1,15 +1,16 @@
 # Schedule
 
 <!-- Status values: Pending, Done, Skipped -->
-<!-- The batch remains in primary until today's planned rack is actually completed. -->
+<!-- Secondary fermentation started on 2026-09-22. -->
 
 | Date | Action | Status |
 |---|---|---|
 | 2026-09-05 | Start 1.7 L pear-maple wine, add two cinnamon sticks and pitch yeast | Done |
 | 2026-09-19 | Record retrospective active-fermentation/clarity checkpoint | Done |
-| 2026-09-19 | Take gravity reading and rack from primary to secondary | Pending |
-| 2026-09-19 | During rack, record any additional pectic enzyme, nutrient, measured sugar or flavour actually used | Pending |
-| 2026-09-22 | Check fermentation activity, gravity trend, sediment and clarity after the rack | Pending |
+| 2026-09-19 | Planned gravity reading and rack from primary to secondary | Skipped |
+| 2026-09-19 | Planned secondary additions checkpoint | Skipped |
+| 2026-09-22 | Rack to secondary; add 50 g light brown sugar plus appropriately dosed yeast, yeast nutrient/food and pectic enzyme; no tasting | Done |
+| 2026-09-25 | Check secondary fermentation activity, sediment and clarification; take gravity if useful | Pending |
 
 ## Finish line
 

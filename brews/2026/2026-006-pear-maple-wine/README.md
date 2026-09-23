@@ -3,8 +3,8 @@ batch_id: 2026-006
 name: The Fat Pigeon — Pear & Maple
 title: The Fat Pigeon — Pear & Maple
 type: wine
-status: primary-fermentation
-started: 2026-09-05
+status: secondary
+started: 2026-09-22
 volume_l: 1.7
 target_abv: 12
 actual_abv:
@@ -22,7 +22,7 @@ Small-batch pear and maple wine started on 2026-09-05 from fresh pear juice prod
 
 Pectic enzyme was used during juice extraction, two cinnamon sticks were added, and yeast was pitched on 2026-09-05. Through the unlogged period the batch remained actively fermenting, the airlock continued to function, no visible mold was reported, and clarification/settling continued to improve.
 
-As of 2026-09-19 the batch is still recorded in primary because the planned rack has not yet been performed. The brewer intends to rack it to secondary, take/record gravity, and during that work may add more pectic enzyme, yeast nutrient, a measured interesting sugar, and possibly a flavour addition. None of those planned additions are recorded as completed yet.
+On 2026-09-22 the batch was racked from primary into secondary fermentation without a tasting. At the rack, 50 g light brown sugar was added together with additional yeast, yeast nutrient/food and pectic enzyme. The brewer reports that the yeast, nutrient and enzyme were dosed appropriately for the batch volume; exact quantities were not recorded. No hydrometer reading was reported for the rack.
 
 ## Current Status
 

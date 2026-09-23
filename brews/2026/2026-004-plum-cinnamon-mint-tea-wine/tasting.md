@@ -42,3 +42,19 @@
 - Overall: Clarification is encouraging, but the flavour profile still needs work before bottling.
 
 **Recorded note:** Intermediate tastings occurred during the previously unlogged period, but exact dates were not recorded. The next tasting will include a small finished-wine-sweetener bench trial before any bulk adjustment.
+
+
+## 2026-09-22 — Sweetener bench trial
+
+**Stage:** Secondary
+
+- Appearance:
+- Aroma:
+- Taste: The untreated sample remains unsatisfactory. The sample with finished-wine sweetener was somewhat nicer, but still not good enough for the brewer to be happy with the batch.
+- Sweetness: Sweetener improved the sample somewhat; exact amount used in the test was not recorded.
+- Acidity:
+- Body:
+- Finish:
+- Overall: Still the least successful batch by flavour. The brewer is unsure whether the plum character is responsible and is considering discarding the batch.
+
+**Recorded note:** This was a bench comparison only. No finished-wine sweetener was added to the full batch, and no discard decision has been made.

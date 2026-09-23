@@ -31,9 +31,9 @@ Experimental apple-and-tea wine started on 2026-08-31 from approximately 1 L fre
 
 Secondary fermentation was confirmed active by 2026-09-04. On 2026-09-05 the wine was racked into a clean PET vessel, pectic enzyme was confirmed added, and the wine returned to an airlock. It has continued to clear steadily and by 2026-09-19 was visually getting closer to Rapadura Very Berry.
 
-The flavour remains the weakest part of the experiment for the brewer and this is currently the least satisfying batch to taste. A short tasting/bench-trial phase is planned before bottling: assess the current profile, trial the finished-wine sweetener in a small sample, then decide whether any finishing adjustment improves the wine. No bulk sweetener addition has been made.
+The flavour remains the weakest part of the experiment for the brewer. On 2026-09-22 an untreated sample was compared with a sample containing finished-wine sweetener. Sweetening made the sample somewhat nicer, but the brewer remains unhappy with the overall flavour and is unsure whether the plum character is the main problem. No bulk sweetener addition was made.
 
-The batch remains in secondary while fermentation status and the flavour decision are unresolved. Once the profile is settled and gravity is stable, the intended finish line is bottling, after which bottle aging is open-ended.
+The batch remains in secondary while a keep/rework/bottle-versus-discard decision is unresolved. Discarding is being considered, but has not been decided. If the batch is kept, gravity stability still needs to be confirmed before bottling.
 
 ## Current Status
 

@@ -66,3 +66,35 @@ The batch remained actively fermenting during the unlogged period. The airlock r
 - If adding more pectic enzyme or yeast nutrient, record the actual product/dose.
 - If adding sugar or flavour, choose it deliberately, measure it and record the actual addition.
 - Continue under airlock after racking and reassess fermentation/clarity.
+
+
+## 2026-09-22 — Rack to secondary
+
+**Time:** Not recorded  
+**Stage:** Secondary
+
+### Measurements
+
+- Light brown sugar: 50 g.
+- No hydrometer reading was taken or reported.
+- Additional yeast, yeast nutrient/food and pectic-enzyme doses: appropriate for the batch volume according to the brewer; exact quantities not recorded.
+- Plum-solid and cinnamon-stick retention/removal: not reported.
+
+### Actions
+
+- Racked the wine from primary into secondary fermentation.
+- Added 50 g light brown sugar.
+- Added additional yeast.
+- Added yeast nutrient/food.
+- Added pectic enzyme.
+- No tasting sample was taken during the rack.
+
+### Observation
+
+No tasting observation was made at this checkpoint. The record does not infer whether plum solids or cinnamon sticks were retained or removed.
+
+### Next
+
+- Continue secondary fermentation under airlock.
+- Monitor fermentation activity, sediment and clarification.
+- Take a gravity reading at the next useful checkpoint before deciding whether fermentation is complete or the batch is ready to clear further.

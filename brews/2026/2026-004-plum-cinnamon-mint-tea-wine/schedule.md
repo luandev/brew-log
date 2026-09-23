@@ -11,9 +11,10 @@
 | 2026-09-08 | Take hydrometer reading after rack | Skipped |
 | 2026-09-11 | Repeat hydrometer reading | Skipped |
 | 2026-09-19 | Record retrospective clarity/flavour checkpoint | Done |
-| 2026-09-20 | Taste untreated sample and bench-test a small sample with finished-wine sweetener | Pending |
-| 2026-09-22 | Take gravity reading and decide final flavour/bottling direction | Pending |
+| 2026-09-20 | Planned untreated/sweetener bench test | Skipped |
+| 2026-09-22 | Compare untreated sample with finished-wine-sweetener bench sample; leave full batch unchanged | Done |
+| 2026-09-22 | Decide whether to keep, rework, bottle or discard; if keeping, take gravity before bottling | Pending |
 
 ## Finish line
 
-Once the flavour decision is made and gravity is stable, bottle the wine and mark the production work finished. Bottle aging is open-ended; there is no required final aging date.
+There is no assumption that this batch must be saved. The next decision is keep/rework/bottle versus discard. If it is kept for bottling, confirm gravity stability first; bottle aging is then open-ended.
