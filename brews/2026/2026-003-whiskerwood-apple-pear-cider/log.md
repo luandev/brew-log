@@ -124,3 +124,20 @@ The sampled larger beer bottle was pleasantly carbonated with a gentle/subtle le
 - No required production work remains.
 - Allow bottles to age for as long as desired.
 - Record future mature-bottle tastings, pairings or serving experiments only when useful.
+
+## 2026-09-25 — Cider label
+
+**Time:**  
+**Stage:** Finished
+
+### Actions
+
+- Rotated the supplied The Three Cats label artwork into its upright, landscape reading orientation and added it to the batch media.
+
+### Observation
+
+The artwork depicts three cats around an apple and pear tree and includes a framed QR code. Its printed 5.5% ABV is label copy; this log does not have a confirmed measured actual ABV. Other artwork copy is not a new brewing or tasting record.
+
+### Next
+
+- No required production work remains; continue optional bottle aging and record future tastings if useful.
