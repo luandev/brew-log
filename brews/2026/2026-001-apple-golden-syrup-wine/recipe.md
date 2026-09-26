@@ -83,6 +83,7 @@
 - Priming sugar: none planned
 - Bottle type: sanitised still-wine bottle or other suitable pressure-free wine bottle
 - Bottle only after repeated gravity readings are stable and no renewed fermentation is evident after any finishing addition
+- Actual packaging, reported 2026-09-26: one corked bottle and one small bottle with a normal cap; exact physical bottling date, bottle volumes, final gravity and priming/finishing additions were not reported. The earlier still-wine, no-priming instructions remain the plan, not a confirmed account of what was done.
 
 </div>
 
