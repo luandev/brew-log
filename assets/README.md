@@ -9,6 +9,7 @@ Static files copied into the Expo web export.
 | `tree.svg` | Decorative tree |
 | `seal.svg` | Header seal |
 | `branch-divider.svg` | Divider ornament |
+| `orchard/` | About-page garden and wildlife photos |
 
 ## Icon pack (`icons/`)
 
