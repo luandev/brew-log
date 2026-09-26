@@ -181,3 +181,27 @@ Over the intervening weeks the wine became progressively clearer. The earlier di
 - Repeat the reading after roughly three days to confirm stability.
 - If stable and corks are available, bottle as a still wine.
 - Treat bottle aging as open-ended rather than a fixed completion schedule.
+
+## 2026-09-26 — Bottling reported and bottle conditioning
+
+**Time:** Not recorded  
+**Stage:** Conditioning in bottle
+
+### Measurements
+
+- Bottles reported: one with a cork and one small bottle with a normal cap.
+- Exact physical bottling date, bottle volumes, final gravity, priming details and measured ABV: not reported.
+
+### Actions
+
+- The brewer reported that Rapadura Very Berry has been bottled and is now conditioning in bottle.
+- Recorded the two closure types without assuming the type of the small bottle's cap.
+
+### Observation
+
+No new tasting or appearance observation was reported. The record still does not confirm stable gravity before bottling or whether any priming or sweetening was added.
+
+### Next
+
+- Confirm whether pre-bottling gravity readings were taken and whether any priming or finishing additions were used.
+- Monitor bottle condition and record a tasting when opened.

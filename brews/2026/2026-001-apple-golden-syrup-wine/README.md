@@ -3,7 +3,7 @@ batch_id: 2026-001
 name: The Fat Pigeon — Rapadura Very Berry
 title: The Fat Pigeon — Rapadura Very Berry
 type: wine
-status: clearing
+status: conditioning
 started: 2026-08-31
 volume_l: 1.75
 target_abv: 12
@@ -27,7 +27,7 @@ Small-batch apple wine fermented with rapadura, a Lidl Very Berry tea addition, 
 
 By the 2026-09-19 retrospective cellar checkpoint, visible fermentation had stopped and the wine was clearing very well. Its earlier sweet brown-sugar/rapadura character had fermented away, leaving a very dry drink with a distinctive cachaça-like character. The brewer currently prefers it as-is and does not plan to backsweeten.
 
-The batch is now in clearing. The remaining active work is to confirm gravity stability and bottle once suitable corks are available. Bottle aging is open-ended rather than a fixed project deadline.
+Bottling was reported on 2026-09-26: one bottle was closed with a cork and a smaller bottle with a normal cap. The exact physical bottling date, gravity stability before bottling and any priming or finishing additions were not reported. The wine is now conditioning in bottle; bottle aging remains open-ended.
 
 ## Current Status
 
@@ -49,7 +49,7 @@ The batch is now in clearing. The remaining active work is to confirm gravity st
 
 ## Latest Note
 
-2026-09-19 retrospective checkpoint: visible fermentation has stopped, clarification continues, and the wine now tastes very dry with a cachaça-like character. No backsweetening is currently planned. Confirm stable gravity before bottling; bottle aging will be open-ended.
+2026-09-26 bottling report: one corked bottle and one small capped bottle are conditioning. No final gravity, priming details or measured ABV were reported; the physical bottling date was not separately specified.
 
 {% include_relative recipe.md %}
 
